@@ -1,0 +1,19 @@
+# --- Datos crudos de World Aquatics -----------------------------------------
+# Sus terminos de uso prohiben redistribuirlos, asi que no van al repositorio.
+# Se regeneran con `uv run python capstone/descargar.py` (ver README).
+datos/nados.csv
+datos/pares_lcm_scm.csv
+datos/cache/
+
+# Si vuelven las salidas grandes, agregarlas aca antes de hacer commit.
+
+# --- Temporales --------------------------------------------------------------
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+
+# --- Envios y sobras ---------------------------------------------------------
+para_javier.zip
+zi1018Vc
+_muestra_test.csv
