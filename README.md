@@ -6,12 +6,28 @@ en las marcas mínimas vigentes de World Aquatics?
 
 Felipe Leiva y Javier Fuentes · Diplomado en Ciencia de Datos Aplicada, UTFSM.
 
+---
+
+## Entrega — evaluación 2, primer análisis exploratorio (martes 15 de septiembre)
+
+**El entregable es [`03_eda_capstone.ipynb`](03_eda_capstone.ipynb)**, ejecutado de
+principio a fin, con una sección por criterio de la rúbrica. Su primera celda trae la
+declaración de uso de IA, la nota sobre los datos que no se pueden compartir y el
+orden en que se ejecutan los archivos.
+
+Para correrlo hacen falta dos archivos: `datos/comparacion_wa.csv`, que está en el
+repositorio, y `datos/nados.csv`, que **no** está y se regenera con
+`uv run python capstone/descargar.py` (ver más abajo). Los demás `.py` de esta carpeta
+sirven para reproducir esos insumos; el notebook no los importa.
+
+---
+
 ## Estado
 
 | Entrega | Cuándo | Estado |
 |---|---|---|
-| Formulación (30%) | lu 7-sep | `Formulacion_Capstone_Leiva_Fuentes.pdf`, lista |
-| Análisis exploratorio (40%) | lu 15-sep | `03_eda_capstone.ipynb`, ejecutado; falta agregarle los intervalos de confianza |
+| Formulación (30%) | lu 7-sep | `Formulacion_Capstone_Leiva_Fuentes.pdf`, entregada |
+| Análisis exploratorio (40%) | **ma 15-sep** | `03_eda_capstone.ipynb`, ejecutado y revisado contra la rúbrica. Listo |
 | Presentación oral del avance | ma 22-sep | Por armar |
 | Informe de avance (25%) | vi 25-sep | Por escribir. Entra la regresión `diferencia_s ~ vueltas_extra` |
 
@@ -59,7 +75,7 @@ agregados: `factores_por_prueba.csv`, `comparacion_wa.csv`, `factor_por_nivel.cs
 |---|---|
 | `Formulacion_Capstone_Leiva_Fuentes.pdf` | La entrega del 7-sep. 3 páginas |
 | `formulacion.py` | Genera ese PDF con reportlab. **El texto se edita acá, no en el PDF** |
-| `03_eda_capstone.ipynb` | La entrega del 15-sep. 69 celdas, una sección por criterio de la rúbrica |
+| `03_eda_capstone.ipynb` | **La entrega del martes 15-sep.** 69 celdas, una sección por criterio de la rúbrica |
 | `figuras_eda/` | Las 5 figuras del EDA. Son las salidas inline del notebook, no hay `savefig` |
 | `descargar.py` | Baja los tiempos de la API: 48 consultas, con caché y pausa entre peticiones |
 | `factor_implicito_wa.py` | Marcas mínimas de Beijing 2026 transcritas + comparación con el factor medido |
