@@ -56,6 +56,7 @@ uv run python capstone/descargar.py --prueba     # verifica que la API responda
 uv run python capstone/descargar.py              # baja la muestra (unos minutos)
 uv run python capstone/factor_implicito_wa.py    # marcas mínimas vs. factor medido
 uv run python capstone/formulacion.py            # regenera el PDF de la formulación
+uv run python capstone/entrega_eda.py            # regenera el PDF con el link al repo
 ```
 
 El notebook se abre en VS Code eligiendo el kernel `.venv`. Requiere **scipy**
@@ -71,19 +72,50 @@ agregados: `factores_por_prueba.csv`, `comparacion_wa.csv`, `factor_por_nivel.cs
 
 ## Qué hay en cada archivo
 
+### Lo que se entrega, y el orden en que se ejecuta
+
+| Orden | Archivo | Qué es |
+|---|---|---|
+| 1 | `descargar.py` | Baja los tiempos de la API de World Aquatics: 48 consultas, con caché y pausa entre peticiones → `datos/nados.csv` (no versionado) |
+| 2 | `factor_implicito_wa.py` | Transcribe las marcas mínimas de Beijing 2026, calcula el factor implícito de la federación y su brecha contra el medido → `datos/comparacion_wa.csv` |
+| 3 | **`03_eda_capstone.ipynb`** | **La entrega del martes 15-sep.** 69 celdas, una sección por criterio de la rúbrica. Lee los dos archivos anteriores y calcula todo lo demás |
+
+El notebook no importa ningún otro `.py` de esta carpeta.
+
+### Los datos versionados
+
 | Archivo | Qué es |
 |---|---|
+| `datos/comparacion_wa.csv` | Marcas mínimas oficiales, factor implícito y brecha, por prueba. Lo lee el notebook |
+| `datos/factores_por_prueba.csv` | Factor mediano por prueba, con 5 decimales |
+| `datos/factor_por_nivel.csv` | El chequeo del sesgo de selección, por nivel de marca |
+| `datos/metadatos.md` | Diccionario de las 25 variables del archivo crudo |
+
+### Respaldo de lo que se afirma en el texto
+
+| Archivo | Qué es |
+|---|---|
+| `nivel_y_factor.py` | El chequeo del sesgo de selección de la sección 3.2, con una segunda definición de nivel (por marca mínima en vez de percentil) → `datos/factor_por_nivel.csv` |
+| `metadatos.py` | Genera el diccionario de las 25 variables → `datos/metadatos.md` |
+| `probar_paginacion.py` | Sonda: cómo pedirle a la API más de 1.000 filas. Documenta que `page` se ignora y que `pageSize` topa en 5.000 |
+| `probar_profundidad.py` | Sonda: cuántos nadadores distintos hay a cada profundidad del ranking. Es la que justifica usar `BEST_TIMES` |
+
+### Entregas anteriores y material de trabajo
+
+| Archivo | Qué es |
+|---|---|
+| `Entrega_EDA_Leiva_Fuentes.pdf` | El PDF con el link a este repositorio, que es lo que se sube al aula virtual el martes 15 |
+| `entrega_eda.py` | Genera ese PDF con reportlab. **El texto se edita acá, no en el PDF** |
 | `Formulacion_Capstone_Leiva_Fuentes.pdf` | La entrega del 7-sep. 3 páginas |
 | `formulacion.py` | Genera ese PDF con reportlab. **El texto se edita acá, no en el PDF** |
-| `03_eda_capstone.ipynb` | **La entrega del martes 15-sep.** 69 celdas, una sección por criterio de la rúbrica |
+| `Presentacion_idea_Capstone.pptx` | Las 3 láminas del 3-sep, ya presentadas |
+| `Guion_presentacion_Capstone.pdf` | El guion de esa presentación |
+| `Capstone_natacion_avance.pdf` | Borrador del 2-sep, previo a la formulación. Se conserva por historia |
 | `figuras_eda/` | Las 5 figuras del EDA. Son las salidas inline del notebook, no hay `savefig` |
-| `descargar.py` | Baja los tiempos de la API: 48 consultas, con caché y pausa entre peticiones |
-| `factor_implicito_wa.py` | Marcas mínimas de Beijing 2026 transcritas + comparación con el factor medido |
-| `nivel_y_factor.py` | El chequeo del sesgo de selección por nivel |
-| `metadatos.py` | Genera el diccionario de las 25 variables |
+| `grafico_comparacion.py`, `figura_comparacion.png` | La figura de la presentación del 3-sep: exigencia oficial contra factor medido |
+| `grafico_dispersion.py`, `figura_dispersion.png` | La otra figura de esa presentación: boxplot del factor por estilo |
 | `01_exploracion.ipynb` | La exploración original. El EDA la reemplaza como entregable |
 | `02_explorando.ipynb` | Cuaderno didáctico de pandas, no es entregable |
-| `Presentacion_idea_Capstone.pptx` | Las 3 láminas del 3-sep, ya presentadas |
 
 ## Dos cuidados al editar
 
