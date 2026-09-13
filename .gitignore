@@ -13,6 +13,12 @@ __pycache__/
 .DS_Store
 .venv/
 
+# --- Material de estudio, no es parte de la entrega --------------------------
+# Guia de repaso para la clase. Util, pero no tiene por que estar en el
+# repositorio publico que ven los ayudantes.
+Guia_de_estudio_EDA.pdf
+guia_estudio.py
+
 # --- Envios y sobras ---------------------------------------------------------
 para_javier.zip
 zi1018Vc
