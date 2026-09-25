@@ -44,7 +44,7 @@ DERIVADAS = [
     ("tiempo_s_lcm", "segundos", "marca del nadador en piscina de 50 m"),
     ("tiempo_s_scm", "segundos", "marca del mismo nadador en piscina de 25 m"),
     ("diferencia_s", "segundos", "tiempo_s_lcm − tiempo_s_scm"),
-    ("factor", "adimensional", "tiempo_s_lcm / tiempo_s_scm: la variable central"),
+    ("factor_tiempo_s", "adimensional", "tiempo_s_lcm / tiempo_s_scm entre las mejores marcas: la variable central"),
     ("vueltas_extra", "conteo", "distancia / 50: virajes adicionales en piscina corta"),
     ("por_vuelta_s", "segundos por viraje", "diferencia_s / vueltas_extra"),
     ("qt25_A_s, qt50_A_s", "segundos", "marca mínima A de Beijing 2026, por tipo de piscina"),
@@ -53,14 +53,18 @@ DERIVADAS = [
 
 
 def main():
-    d = pd.read_csv(DATOS / "nados.csv", low_memory=False)
-    p = pd.read_csv(DATOS / "pares_lcm_scm.csv")
+    # Base definitiva (20-sep): descarga mensual, dos archivos por sexo.
+    d = pd.concat([pd.read_csv(DATOS / "nadosFull_masculino.csv", low_memory=False),
+                   pd.read_csv(DATOS / "nadosFull_femenino.csv", low_memory=False)],
+                  ignore_index=True)
+    p = pd.read_csv(DATOS / "pares_mensual.csv")
+    p = p.rename(columns={"factor_tiempo_s": "factor"})
 
     lineas = []
     lineas.append("# Metadatos del proyecto\n")
-    lineas.append(f"Generado automáticamente desde `nados.csv` "
+    lineas.append(f"Generado automáticamente desde `nadosFull_masculino.csv` + `nadosFull_femenino.csv` "
                   f"({len(d):,} filas × {d.shape[1]} columnas) ".replace(",", ".") +
-                  f"y `pares_lcm_scm.csv` ({len(p):,} filas).\n".replace(",", "."))
+                  f"y `pares_mensual.csv` ({len(p):,} filas).\n".replace(",", "."))
 
     lineas.append("\n## Fuente 1 — API pública de World Aquatics (rankings)\n")
     lineas.append("| Variable | Tipo | Unidad / valores | % nulos | Distintos | Quién lo produce | Uso |")

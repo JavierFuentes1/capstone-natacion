@@ -95,11 +95,11 @@ def main():
     # No se lee de factores_por_prueba.csv: ese archivo guardaba el factor
     # redondeado, y con 3 decimales el redondeo mueve la brecha hasta 0,1 s
     # (100 libre masculino pasaba de -0,02 a -0,04 s).
-    pares = pd.read_csv(DATOS / "pares_lcm_scm.csv",
-                        usecols=["sexo", "estilo", "distancia", "factor_tiempo_mediana"])
-
-    pares = pares.rename(columns = {"factor_tiempo_mediana":"factor"})
-
+    # Base definitiva del proyecto (decision del 20-sep): descarga MENSUAL y
+    # factor con la MEJOR MARCA del anio, que es con la que se cumple una minima.
+    pares = pd.read_csv(DATOS / "pares_mensual.csv",
+                        usecols=["sexo", "estilo", "distancia", "factor_tiempo_s"])
+    pares = pares.rename(columns={"factor_tiempo_s": "factor"})
     nuestro = (pares.groupby(["sexo", "estilo", "distancia"])["factor"]
                     .agg(n_pares="size", factor_real="median")
                     .reset_index())

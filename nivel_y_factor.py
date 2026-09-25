@@ -1,7 +1,7 @@
 """
 ¿El factor de conversión depende del nivel del nadador?
 
-Motivo: nuestro factor es la mediana sobre los ~5.000 mejores de cada prueba,
+Motivo: nuestro factor es la mediana sobre los mejores de cada ranking mensual,
 pero las marcas mínimas de un campeonato son de nivel más alto. Si el factor
 cambiara con el nivel, comparar nuestra mediana con la tabla de World Aquatics
 sería comparar dos poblaciones distintas.
@@ -33,7 +33,9 @@ UMBRAL_ELITE = 1.03   # hasta 3% por debajo de la marca mínima A
 
 
 def cargar():
-    d = pd.read_csv(DATOS / "pares_lcm_scm.csv")
+    # Base definitiva: descarga mensual y factor con la mejor marca del anio.
+    d = pd.read_csv(DATOS / "pares_mensual.csv")
+    d = d.rename(columns={"factor_tiempo_s": "factor"})
     qt = pd.DataFrame(
         [{"sexo": s, "estilo": e, "distancia": dd,
           "qt25_A_s": a_segundos(v[0]), "qt50_A_s": a_segundos(v[2])}

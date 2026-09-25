@@ -1,0 +1,5 @@
+# Los PDF que genera reportlab parecen texto, y con core.autocrlf=true Git les
+# cambiaria LF por CRLF al hacer checkout: eso corrompe la tabla xref del PDF.
+*.pdf  binary
+*.png  binary
+*.pptx binary

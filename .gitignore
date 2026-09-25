@@ -2,6 +2,9 @@
 # Sus terminos de uso prohiben redistribuirlos, asi que no van al repositorio.
 # Se regeneran con `uv run python capstone/descargar.py` (ver README).
 datos/nados.csv
+datos/nadosFull_femenino.csv
+datos/nadosFull_masculino.csv
+datos/nadosFull_*.csv
 datos/pares_lcm_scm.csv
 datos/cache/
 
@@ -23,3 +26,20 @@ guia_estudio.py
 para_javier.zip
 zi1018Vc
 _muestra_test.csv
+
+# --- Tablas de pares: siguen siendo marcas individuales ----------------------
+# pares_mensual.csv y pares_javier.csv son 31 MB cada una y contienen el nombre,
+# el pais y los tiempos de cada nadador. Es contenido de la fuente, no una tabla
+# agregada, asi que tampoco se redistribuye. Se regenera corriendo el notebook.
+datos/pares_*.csv
+
+# --- Respaldos y cuadernos de trabajo ----------------------------------------
+# No son parte de la entrega: son copias de seguridad y pruebas sueltas.
+*_ANTES.ipynb
+*_RESPALDO.ipynb
+99_pruebas.ipynb
+
+# --- Notas internas de coordinacion ------------------------------------------
+# Documentos de trabajo entre los autores, no material entregable.
+para_hablar_con_javier.md
+cifras_por_corregir.md
