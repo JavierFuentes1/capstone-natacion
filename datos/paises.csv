@@ -1,0 +1,247 @@
+pais_codigo,pais_nombre,continente
+AFG,Afghanistan,Asia
+AGU,Anguilla,Americas
+AHO,Netherlands Antilles,Americas
+AIN,Individual Neutral Athlete,
+ALB,Albania,Europe
+ALG,Algeria,Africa
+AND,Andorra,Europe
+ANG,Angola,Africa
+ANT,Antigua and Barbuda,Americas
+ANZ,Australasia,Oceania
+ARG,Argentina,Americas
+ARM,Armenia,Europe
+ART,World Aquatics Refugee Team,Europe
+ARU,Aruba,Americas
+ASA,American Samoa,Oceania
+AUS,Australia,Oceania
+AUT,Austria,Europe
+AZE,Azerbaijan,Europe
+BAH,Bahamas,Americas
+BAN,Bangladesh,Asia
+BAR,Barbados,Americas
+BDI,Burundi,Africa
+BEL,Belgium,Europe
+BEN,Benin,Africa
+BER,Bermuda,Americas
+BHU,Bhutan,Asia
+BIH,Bosnia and Herzegovina,Europe
+BIZ,Belize,Americas
+BLR,Belarus,Europe
+BOL,Bolivia,Americas
+BOT,Botswana,Africa
+BRA,Brazil,Americas
+BRN,Bahrain,Asia
+BRU,Brunei Darussalam,Asia
+BUL,Bulgaria,Europe
+BUR,Burkina Faso,Africa
+CAF,Central African Republic,Africa
+CAM,Cambodia,Asia
+CAN,Canada,Americas
+CAY,Cayman Islands,Americas
+CGO,Republic of Congo,Africa
+CHA,Chad,Africa
+CHI,Chile,Americas
+CHN,People's Republic of China,Asia
+CIS,Commonwealth of Independent States,Europe
+CIV,Côte d'Ivoire,Africa
+CLB,Club,
+CMR,Cameroon,Africa
+COD,Democratic Republic of the Congo,Africa
+COK,Cook Islands,Oceania
+COL,Colombia,Americas
+COM,Comoros,Africa
+CPV,Cape Verde,Africa
+CRC,Costa Rica,Americas
+CRO,Croatia,Europe
+CUB,Cuba,Americas
+CUR,Curacao,Americas
+CYP,Cyprus,Europe
+CZE,Czechia,Europe
+DEN,Denmark,Europe
+DJI,Djibouti,Africa
+DMA,Dominica,Americas
+DOM,Dominican Republic,Americas
+ECU,Ecuador,Americas
+EGY,Egypt,Africa
+EOR,Refugee Olympic Team,
+ERI,Eritrea,Africa
+ESA,El Salvador,Americas
+ESP,Spain,Europe
+EST,Estonia,Europe
+ETH,Ethiopia,Africa
+EUA,United Team of Germany,Europe
+EUN,Unified Team,Europe
+FIJ,Fiji,Oceania
+FIN,Finland,Europe
+FINA,FINA,
+FRA,France,Europe
+FRG,Federal Republic of Germany,Europe
+FRO,Faroe Islands,Europe
+FSM,Federated States of Micronesia,Oceania
+GAB,Gabon,Africa
+GAM,Gambia,Africa
+GBR,Great Britain,Europe
+GBS,Guinea-Bissau,Africa
+GDR,German Democratic Republic,Europe
+GEO,Georgia,Europe
+GEQ,Ecuatorial Guinea,Africa
+GER,Germany,Europe
+GHA,Ghana,Africa
+GIB,Gibraltar,Europe
+GRE,Greece,Europe
+GRN,Grenada,Americas
+GUA,Guatemala,Americas
+GUI,Guinea,Africa
+GUM,Guam,Oceania
+GUY,Guyana,Americas
+HAI,Haiti,Americas
+HKG,"Hong Kong, China",Asia
+HON,Honduras,Americas
+HUN,Hungary,Europe
+INA,Indonesia,Asia
+IND,India,Asia
+IOA,Individual Olympic Athletes,
+IOC,International Olympic Committee,
+IOP,Independent Olympic Participants,
+IRI,Islamic Republic of Iran,Asia
+IRL,Ireland,Europe
+IRQ,Iraq,Asia
+ISL,Iceland,Europe
+ISR,Israel,Europe
+ISV,"Virgin Islands, US",Americas
+ITA,Italy,Europe
+IVB,British Virgin Islands,Americas
+JAM,Jamaica,Americas
+JOR,Jordan,Asia
+JPN,Japan,Asia
+KAZ,Kazakhstan,Asia
+KEN,Kenya,Africa
+KGZ,Kyrgyzstan,Asia
+KIR,Kiribati,Oceania
+KOR,Republic of Korea,Asia
+KOS,Kosovo,Europe
+KSA,Saudi Arabia,Asia
+KUW,Kuwait,Asia
+LAO,Lao People's Democratic Republic,Asia
+LAT,Latvia,Europe
+LBA,Libya,Africa
+LBN,Lebanon,Asia
+LBR,Liberia,Africa
+LCA,Saint Lucia,Americas
+LES,Lesotho,Africa
+LIE,Liechtenstein,Europe
+LTU,Lithuania,Europe
+LUX,Luxembourg,Europe
+MAA,Sint Maarten,Americas
+MAC,"Macau, China",Asia
+MAD,Madagascar,Africa
+MAR,Morocco,Africa
+MAS,Malaysia,Asia
+MAW,Malawi,Africa
+MDA,Republic of Moldova,Europe
+MDV,Maldives,Asia
+MEX,Mexico,Americas
+MGL,Mongolia,Asia
+MHL,Marshall Islands,Oceania
+MKD,North Macedonia,Europe
+MLI,Mali,Africa
+MLT,Malta,Europe
+MNE,Montenegro,Europe
+MON,Monaco,Europe
+MOZ,Mozambique,Africa
+MRI,Mauritius,Africa
+MTN,Mauritania,Africa
+MYA,Myanmar,Asia
+NAA,Neutral Athletes A,
+NAB,Neutral Athletes B,
+NAC,Neutral Athletes C,
+NAM,Namibia,Africa
+NCA,Nicaragua,Americas
+NED,Netherlands,Europe
+NEP,Nepal,Asia
+NGR,Nigeria,Africa
+NIA,Neutral Independent Athletes,Europe
+NIG,Niger,Africa
+NMA,Northern Mariana Islands,Oceania
+NOR,Norway,Europe
+NRU,Nauru,Oceania
+NZL,New Zealand,Oceania
+OMA,Oman,Asia
+PAK,Pakistan,Asia
+PAN,Panama,Americas
+PAR,Paraguay,Americas
+PER,Peru,Americas
+PHI,Philippines,Asia
+PLE,Palestine,Asia
+PLW,Palau,Oceania
+PNG,Papua New Guinea,Oceania
+POL,Poland,Europe
+POR,Portugal,Europe
+PRK,Democratic People's Republic of Korea,Asia
+PUR,Puerto Rico,Americas
+QAT,Qatar,Asia
+RHO,Rhodesia,Africa
+ROC,ROC,Europe
+ROU,Romania,Europe
+RSA,South Africa,Africa
+RSF,RSF,Europe
+RUS,Russia,Europe
+RWA,Rwanda,Africa
+SAA,Saar,Europe
+SAM,Samoa,Oceania
+SCG,Serbia and Montenegro,Europe
+SEN,Senegal,Africa
+SEY,Seychelles,Africa
+SGP,Singapore,Asia
+SHN,Saint Helena,Africa
+SKN,St. Kitts and Nevis,Americas
+SLE,Sierra Leone,Africa
+SLO,Slovenia,Europe
+SMF,Suspended Member Federation,
+SMR,San Marino,Europe
+SOL,Solomon Islands,Oceania
+SOM,Somalia,Africa
+SRB,Serbia,Europe
+SRI,Sri Lanka,Asia
+STP,São Tomé e Príncipe,Africa
+SUD,Sudan,Africa
+SUI,Switzerland,Europe
+SUR,Suriname,Americas
+SVK,Slovakia,Europe
+SWE,Sweden,Europe
+SWZ,Eswatini,Africa
+SYR,Syrian Arab Republic,Asia
+TAH,Tahiti,Oceania
+TAN,United Republic of Tanzania,Africa
+TCH,Czechoslovakia,Europe
+TCN,Turks and Caicos Islands,Americas
+TGA,Tonga,Oceania
+THA,Thailand,Asia
+TJK,Tajikistan,Asia
+TKM,Turkmenistan,Asia
+TLS,Federação Natação de Timor Leste,Asia
+TOG,Togo,Africa
+TPE,Chinese Taipei,Asia
+TTO,Trinidad and Tobago,Americas
+TUN,Tunisia,Africa
+TUR,Türkiye,Europe
+TUV,Tuvalu,Oceania
+UAE,United Arab Emirates,Asia
+UAR,United Arab Republic,Asia
+UGA,Uganda,Africa
+UKR,Ukraine,Europe
+URS,Soviet Union,Europe
+URU,Uruguay,Americas
+USA,United States of America,Americas
+UZB,Uzbekistan,Asia
+VAN,Vanuatu,Oceania
+VEN,Venezuela,Americas
+VIE,Vietnam,Asia
+VIN,Saint Vincent and the Grenadines,Americas
+VNM,South Vietnam,Asia
+WIN,West Indies,Americas
+YEM,Yemen,Asia
+YUG,Yugoslavia,Europe
+ZAM,Zambia,Africa
+ZIM,Zimbabwe,Africa

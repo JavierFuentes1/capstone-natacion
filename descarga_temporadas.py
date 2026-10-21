@@ -9,6 +9,9 @@ import urllib.parse
 import urllib.request
 import pandas as pd
 from calendar import monthrange
+from datetime import datetime, timedelta
+
+FORMATO_FECHA = "%m/%d/%Y"     # el que espera la API; tambien es parte de la llave de cache
 
 
 def rangos_mensuales(anio):
@@ -58,6 +61,7 @@ PAUSA = 0.5                    # segundos entre peticiones
 # ----------------------------------------------------------------------
 
 BASE = "https://api.worldaquatics.com/fina/rankings/swimming"
+FALLIDAS = []                  # consultas que no respondieron tras los reintentos
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DIR_DATOS = os.path.join(AQUI, "datos")
 DIR_CACHE = os.path.join(DIR_DATOS, "cache")
@@ -69,6 +73,7 @@ COLUMNAS = [
     "pais", "pais_codigo", "club",
     "fecha", "competencia", "ciudad",
     "medalla", "record", "result_id", "event_id", "discipline_id",
+    "club_nombre", "club_pais_codigo", "sede_pais_codigo", "tags",
 ]
 
 
@@ -121,6 +126,9 @@ def pedir(params, intentos=3):
             ultimo_error = e
             time.sleep(2.0 * (intento + 1))
     print("  ! fallo la peticion:", type(ultimo_error).__name__, ultimo_error)
+    # La version anterior seguia como si la ventana estuviera vacia: asi se
+    # perdieron agosto y diciembre (50 m) de la base del informe. Ahora se anota.
+    FALLIDAS.append(params)
     return None
 
 
@@ -147,6 +155,45 @@ def bajar_combinacion(anio, sexo, piscina, distancia, estilo,start_date, end_dat
     filas = datos.get("swimmingWorldRankings") or []
     total = datos.get("totalRowCount")
     return filas, (total if total is not None else len(filas))
+
+
+def bajar_rango(anio, sexo, piscina, distancia, estilo, start_date, end_date, maximo):
+    """Como bajar_combinacion, pero sin perder nadadores por el tope de 5.000.
+
+    Si la ventana trae mas nadadores de los que la API devuelve, se parte en dos
+    mitades, se baja cada una y se deja la mejor marca de cada nadador: el mismo
+    resultado que daria BEST_TIMES sobre la ventana completa si no hubiera tope.
+    Las ventanas que no se topan no cambian, asi que siguen saliendo de la cache.
+    """
+    crudas, total = bajar_combinacion(anio, sexo, piscina, distancia, estilo,
+                                      start_date, end_date, maximo)
+    ini = datetime.strptime(start_date, FORMATO_FECHA).date()
+    fin = datetime.strptime(end_date, FORMATO_FECHA).date()
+    if total <= len(crudas):
+        return crudas
+    if ini == fin:
+        print(f"  ! {start_date}: {total} nadadores en un solo dia, quedan {len(crudas)}")
+        return crudas
+
+    medio = ini + (fin - ini) // 2
+    print(f"  tope alcanzado ({total} > {len(crudas)}): se parte en "
+          f"{ini:%d-%m} a {medio:%d-%m} y {medio + timedelta(days=1):%d-%m} a {fin:%d-%m}")
+    mitades = (
+        bajar_rango(anio, sexo, piscina, distancia, estilo,
+                    ini.strftime(FORMATO_FECHA), medio.strftime(FORMATO_FECHA), maximo)
+        + bajar_rango(anio, sexo, piscina, distancia, estilo,
+                      (medio + timedelta(days=1)).strftime(FORMATO_FECHA),
+                      fin.strftime(FORMATO_FECHA), maximo)
+    )
+    mejor = {}
+    for r in mitades:
+        t = tiempo_a_segundos(r.get("time"))
+        previo = mejor.get(r.get("personId"))
+        if t is not None and (previo is None or t < tiempo_a_segundos(previo.get("time"))):
+            mejor[r.get("personId")] = r
+    # el rank de cada mitad ya no vale: se recalcula sobre la ventana completa
+    ordenadas = sorted(mejor.values(), key=lambda r: tiempo_a_segundos(r.get("time")))
+    return [dict(r, rank=i) for i, r in enumerate(ordenadas, start=1)]
 
 
 def normalizar(r, anio, sexo, piscina, distancia, estilo):
@@ -177,6 +224,13 @@ def normalizar(r, anio, sexo, piscina, distancia, estilo):
         "result_id": r.get("resultId"),
         "event_id": r.get("eventId"),
         "discipline_id": r.get("disciplineId"),
+        # Campos que la API siempre entrego y la version anterior descartaba.
+        # El 82% de los nadadores viene con pais "CLB" (inscrito por club): su pais
+        # sale de club_pais_codigo, y el de la competencia, de sede_pais_codigo.
+        "club_nombre": r.get("clubName"),
+        "club_pais_codigo": r.get("clubCountryCode"),
+        "sede_pais_codigo": r.get("eventCountryCode"),
+        "tags": r.get("tags"),
     }
 
 
@@ -225,7 +279,14 @@ def main():
         text = "femenino"
     elif "--masculino" in sys.argv:
         SEXOS = ["M"]
-        text = "masculino"    
+        text = "masculino"
+    else:
+        print("Falta el sexo: python descarga_temporadas.py --femenino | --masculino [--anios=2023,2024]")
+        return 1
+    ANIOS = globals()["ANIOS"]
+    for arg in sys.argv:
+        if arg.startswith("--anios="):
+            ANIOS = [int(a) for a in arg.split("=", 1)[1].split(",")]
     combinaciones = [
         (a, s, p, d, e)
         for a in ANIOS for s in SEXOS for p in PISCINAS for (d, e) in PRUEBAS
@@ -254,7 +315,7 @@ def main():
                         print("{:2}".format(
                             etiqueta),end = " ", flush=True)
                         print("")
-                        crudas, disponibles = bajar_combinacion(
+                        crudas = bajar_rango(
                             anio, sexo, piscina, distancia, estilo,
                             start_date, end_date, MAX_NADADORES)
                         filas = [normalizar(r, anio, sexo, piscina,
@@ -276,9 +337,21 @@ def main():
                     print("Filas bajadas: {:>5}".format(len(df_temp)))
                     final.append(df_temp)
     df = pd.concat(final)
-    
-    df.to_csv(os.path.join(DIR_DATOS, f"nadosFull_{text}.csv"), index=False, encoding="utf-8")
-    print("Listo. Guardado en datos/nadosFull_{}.csv".format(text))
+
+    # nadosFull_<sexo>.csv es la base del informe del 25-sep y no se sobrescribe.
+    # La v2 agrega los campos de club y sede y no pierde nadadores por el tope.
+    sufijo = "" if ANIOS == [2024] else "_" + "-".join(str(a) for a in ANIOS)
+    nombre = f"nadosFull_v2_{text}{sufijo}.csv"
+    df.to_csv(os.path.join(DIR_DATOS, nombre), index=False, encoding="utf-8")
+    print("Listo. Guardado en datos/{}".format(nombre))
+    if FALLIDAS:
+        print(f"\n!! {len(FALLIDAS)} consultas fallaron y esas ventanas quedaron VACIAS:")
+        for p in FALLIDAS:
+            print("   ", p.get("gender"), p.get("distance"), p.get("stroke"),
+                  p.get("poolConfiguration"), p.get("startDate"), "a", p.get("endDate"))
+        print("Volver a correr el script: lo que ya respondio sale de la cache.")
+        return 1
+    return 0
 
 
 if __name__ == "__main__":

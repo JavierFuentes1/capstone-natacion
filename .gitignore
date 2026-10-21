@@ -33,6 +33,18 @@ _muestra_test.csv
 # agregada, asi que tampoco se redistribuye. Se regenera corriendo el notebook.
 datos/pares_*.csv
 
+# --- Material del curso (Modulo 2) -------------------------------------------
+# Clases, pauta y brochure son del diplomado, no nuestros: no van a un repo publico.
+Modulo 2/Clases/
+Modulo 2/*.pdf
+
+# --- Base del dashboard (Modulo 2) -------------------------------------------
+# Esta anonimizada (sin nombre, fecha de nacimiento ni club), pero sigue siendo un
+# nado por fila de la fuente: tampoco se redistribuye. Se regenera con
+# base_federaciones.py. Las tablas kpi_*.csv, torneos.csv y sedes.csv si se versionan.
+datos/base_dashboard.csv
+datos/cache_geo/
+
 # --- Respaldos y cuadernos de trabajo ----------------------------------------
 # No son parte de la entrega: son copias de seguridad y pruebas sueltas.
 *_ANTES.ipynb

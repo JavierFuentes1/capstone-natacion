@@ -16,6 +16,7 @@ Felipe Leiva y Javier Fuentes · Diplomado en Ciencia de Datos Aplicada, UTFSM.
 | Análisis exploratorio (40%) | ma 15-sep | `03_eda_capstone.ipynb` · entregado por este repositorio |
 | Presentación oral del avance | ma 22-sep | `Presentacion_avance_Capstone.pdf` · presentada |
 | Informe de avance (25%) | **vi 25-sep** | `Informe_Avance_Leiva_Fuentes.pdf` · listo, 7 páginas |
+| Módulo 2 · Evaluación 2: dashboard de KPI | **do 25-oct** | En curso · contexto en `Modulo 2/README.md`, KPI en `Modulo 2/Fichas_KPI.md` |
 
 ---
 
@@ -110,6 +111,29 @@ marcas individuales: `factores_por_prueba.csv`, `comparacion_wa.csv`,
 | 5 | `figuras_avance.py` | Regenera las figuras 4-1, 4-4 y 4-5 sobre la base definitiva |
 | 6 | `figuras_informe.py` | Las dos figuras agregadas al informe tras la presentación: el esquema de virajes (1-1) y los 24 factores con su intervalo frente al factor global (4-0). Solo lee tablas versionadas |
 | 7 | `informe_avance.py` | Arma `Informe_Avance_Leiva_Fuentes.pdf` con las figuras de `figuras_eda/` |
+
+### Módulo 2: base por federación (dashboard y KPI)
+
+El porqué de todo esto (enfoque por federación, decisiones y pendientes) está en
+`Modulo 2/README.md`; las definiciones de los KPI, en `Modulo 2/Fichas_KPI.md`.
+
+```
+python descarga_temporadas.py --femenino     # -> datos/nadosFull_v2_femenino.csv (casi todo sale de la caché)
+python descarga_temporadas.py --masculino
+python descarga_complementos.py              # países y continente, coordenadas de sedes (Nominatim)
+python base_federaciones.py                  # base anonimizada, torneos y KPI
+```
+
+| Archivo | Qué hace |
+|---|---|
+| `descarga_temporadas.py` | Desde el 17-oct guarda país del club y de la sede, parte en dos las ventanas que topan en 5.000 y avisa de las consultas fallidas. La v2 recupera 11.578 nados: 7.782 del tope de abril y 3.788 de dos consultas que habían fallado sin aviso (50 libre M de diciembre y 400 libre M de agosto, en 50 m). `nadosFull_<sexo>.csv`, la base del informe, no se toca |
+| `descarga_complementos.py` | `datos/paises.csv` (continente), `datos/sedes.csv` y `datos/paises_coord.csv`. Coordenadas © colaboradores de OpenStreetMap (ODbL) |
+| `base_federaciones.py` | Imputa la federación en cascada (oficial → club → sede), clasifica los torneos, calcula km y husos horarios desde la ciudad base y las marcas mínimas de Beijing 2026 → `datos/base_dashboard.csv` (anonimizada, no se versiona), `datos/torneos.csv`, `datos/kpi_federacion_semestre.csv`, `datos/kpi_continente_semestre.csv` |
+| `04_kpi_federaciones.ipynb` | Los tres KPI y sus gráficos en Python (calidad del dato, temporada, mapa de sedes, mapas de viajes), antes de maquetar el dashboard |
+
+Las correcciones manuales a la clasificación de torneos van en `datos/torneos_override.csv`
+(columnas `competencia, alcance, categoria`); los casos dudosos vienen marcados con
+`revisar = True` en `datos/torneos.csv`.
 
 ### Los datos versionados
 
