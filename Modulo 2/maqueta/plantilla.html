@@ -1,0 +1,698 @@
+<title>Tablero de Federaciones</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: lienzo de dashboard tipo Tableau — barra de filtros fija arriba, tres vistas (los tres actos), paneles en grilla con nota de implementación plegable */
+:root {
+  --bg: #f3f6f7;
+  --panel: #ffffff;
+  --fg: #0f1b21;
+  --muted: #56646b;
+  --faint: #8a979d;
+  --line: #dbe3e6;
+  --grid: #edf1f2;
+  --land: #e7ecee;
+  --land-line: #ffffff;
+  --accent: #2a78d6;
+  --accent-soft: #d9e8fa;
+  --s25: #eb6834;
+  --gray-mark: #b8c2c6;
+  --note-bg: #eef4fb;
+  --note-fg: #234a77;
+  --good: #0ca30c;
+  --warn: #fab219;
+  --bad: #d03b3b;
+  --good-text: #0b6e0b;
+  --warn-text: #8a5d00;
+  --bad-text: #a52a2a;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12181b; --panel: #1a2226; --fg: #e9eff1; --muted: #a8b5ba; --faint: #7d8a90;
+    --line: #2c373c; --grid: #232d31; --land: #29343a; --land-line: #1a2226;
+    --accent: #3987e5; --accent-soft: #1d3554; --s25: #d95926; --gray-mark: #56636a;
+    --note-bg: #182a3d; --note-fg: #b9d4f3;
+    --good-text: #4fd14f; --warn-text: #fab219; --bad-text: #f07a7a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12181b; --panel: #1a2226; --fg: #e9eff1; --muted: #a8b5ba; --faint: #7d8a90;
+  --line: #2c373c; --grid: #232d31; --land: #29343a; --land-line: #1a2226;
+  --accent: #3987e5; --accent-soft: #1d3554; --s25: #d95926; --gray-mark: #56636a;
+  --note-bg: #182a3d; --note-fg: #b9d4f3;
+  --good-text: #4fd14f; --warn-text: #fab219; --bad-text: #f07a7a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 14px; line-height: 1.45; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--panel); }
+.wrap { max-width: 1280px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+header.top { background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
+.top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; padding-block: 12px; }
+.brand { display: flex; flex-direction: column; min-width: 0; }
+.brand h1 { font-family: var(--font-display); font-weight: 700; font-size: 24px; line-height: 1; margin: 0; letter-spacing: .01em; text-wrap: balance; }
+.brand span { color: var(--muted); font-size: 12.5px; }
+.filters { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-left: auto; }
+.field { display: flex; align-items: center; gap: 8px; }
+.field label, .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+select { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 6px 28px 6px 10px; max-width: 260px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.seg button { font: inherit; font-size: 13px; background: var(--bg); color: var(--muted); border: 0; padding: 6px 12px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); cursor: pointer; user-select: none; }
+.toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
+button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+nav.acts { display: flex; gap: 4px; padding-block: 14px 4px; overflow-x: auto; }
+nav.acts button { font: inherit; background: none; border: 0; border-bottom: 3px solid transparent; color: var(--muted); padding: 8px 14px 8px 0; margin-right: 14px; cursor: pointer; text-align: left; white-space: nowrap; }
+nav.acts button b { font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--fg); display: block; line-height: 1.1; }
+nav.acts button small { font-size: 12px; }
+nav.acts button[aria-selected="true"] { border-bottom-color: var(--accent); }
+nav.acts button[aria-selected="true"] b { color: var(--accent); }
+
+main { padding-block: 10px 40px; }
+.view { display: grid; gap: 14px; }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.c4 { grid-column: span 4; } .c5 { grid-column: span 5; } .c6 { grid-column: span 6; } .c7 { grid-column: span 7; } .c8 { grid-column: span 8; } .c12 { grid-column: span 12; }
+@media (max-width: 900px) { .c4, .c5, .c6, .c7, .c8 { grid-column: span 12; } }
+
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.panel h2 { font-family: var(--font-display); font-weight: 600; font-size: 17px; margin: 0; letter-spacing: .01em; text-wrap: balance; }
+.panel .sub { color: var(--muted); font-size: 12.5px; margin: -4px 0 0; }
+.note { display: none; background: var(--note-bg); color: var(--note-fg); border-radius: 4px; padding: 8px 10px; font-size: 12.5px; }
+.note strong { font-weight: 600; }
+.note code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 11.5px; }
+body.notas .note { display: block; }
+
+/* Tarjetas KPI */
+.kpi { gap: 6px; }
+.kpi .dim { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+.kpi .name { font-size: 13px; color: var(--fg); min-height: 2.6em; }
+.kpi .row { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.kpi .big { font-family: var(--font-display); font-weight: 700; font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; }
+.pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; border-radius: 999px; padding: 3px 10px 3px 8px; border: 1px solid currentColor; }
+.pill i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; background: currentColor; }
+.st-good { color: var(--good-text); } .st-good i { background: var(--good); }
+.st-warn { color: var(--warn-text); } .st-warn i { background: var(--warn); }
+.st-bad { color: var(--bad-text); } .st-bad i { background: var(--bad); }
+.st-none { color: var(--muted); } .st-none i { background: var(--gray-mark); }
+.kpi .frac { color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.kpi .ref { color: var(--faint); font-size: 12px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; }
+.chip i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+.stat b { display: block; font-family: var(--font-display); font-size: 28px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.05; }
+.stat span { color: var(--muted); font-size: 12px; }
+
+svg text { fill: var(--muted); font-family: var(--font-body); font-size: 11px; }
+svg .ink { fill: var(--fg); }
+.chart { width: 100%; min-width: 0; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+.legend i.dot { width: 9px; height: 9px; border-radius: 50%; }
+.empty { color: var(--muted); font-size: 13px; padding: 20px 0; }
+
+#tip { position: fixed; pointer-events: none; z-index: 20; background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 4px; padding: 6px 9px; font-size: 12.5px; box-shadow: 0 4px 14px rgba(0,0,0,.12); max-width: 260px; }
+#tip b { font-weight: 600; }
+footer { color: var(--faint); font-size: 12px; padding-block: 0 30px; }
+footer p { max-width: 90ch; margin: 4px 0; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Tablero de Federaciones · temporada 2024</h1>
+      <span>Maqueta para Tableau · Módulo 2, Evaluación 2</span>
+    </div>
+    <div class="filters" role="group" aria-label="Filtros">
+      <div class="field"><label for="f-fed">Federación</label><select id="f-fed"></select></div>
+      <div class="field"><span class="lbl" id="l-sem">Semestre</span>
+        <div class="seg" role="group" aria-labelledby="l-sem">
+          <button type="button" id="s-1" data-sem="2024-S1" aria-pressed="true">Ene–jun</button>
+          <button type="button" id="s-2" data-sem="2024-S2" aria-pressed="false">Jul–dic</button>
+        </div>
+      </div>
+      <div class="field"><span class="lbl" id="l-sx">Sexo</span>
+        <div class="seg" role="group" aria-labelledby="l-sx">
+          <button type="button" id="x-T" data-sx="T" aria-pressed="true">Todos</button>
+          <button type="button" id="x-F" data-sx="F" aria-pressed="false">Mujeres</button>
+          <button type="button" id="x-M" data-sx="M" aria-pressed="false">Hombres</button>
+        </div>
+      </div>
+      <label class="toggle"><input type="checkbox" id="f-notas" checked> Notas para Tableau</label>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="acts" role="tablist" aria-label="Vistas">
+    <button role="tab" id="t-resumen" aria-selected="true" data-view="resumen"><b>1 · Mi federación</b><small>Los tres KPI frente a su continente</small></button>
+    <button role="tab" id="t-temporada" aria-selected="false" data-view="temporada"><b>2 · La temporada</b><small>Cuándo, dónde y qué se compite</small></button>
+    <button role="tab" id="t-costo" aria-selected="false" data-view="costo"><b>3 · El costo de competir</b><small>Distancia y piscina</small></button>
+  </nav>
+
+  <main>
+    <!-- 1 · Mi federación -->
+    <section class="view" id="v-resumen">
+      <div class="grid">
+        <article class="panel kpi c4" id="k-pctB"></article>
+        <article class="panel kpi c4" id="k-pctExt"></article>
+        <article class="panel kpi c4" id="k-pctPod"></article>
+        <div class="note c12" style="grid-column: span 12">
+          <strong>Tarjetas (3 hojas, una por KPI).</strong> Estado como campo calculado:
+          <code>IF [KPI] &gt;= [p75] THEN "Sobre p75" ELSEIF [KPI] &gt;= [p25] THEN "Entre p25 y p75" ELSE "Bajo p25" END</code>;
+          forma y color por <code>[Estado]</code>, siempre con texto (matriz de símbolos, Clase 6). Los cuartiles vienen de
+          <code>{FIXED [Continente], [Semestre] : PERCENTILE([KPI], 0.75)}</code>, o de una tabla de cuartiles unida si el
+          continente tiene menos de 5 federaciones comparables y la referencia pasa a ser el mundo.
+          La barra bajo el número es una gráfica de viñeta: banda p25–p75, marca de la mediana y punto de la federación.
+        </div>
+      </div>
+      <div class="panel" id="p-calidad">
+        <h2>Calidad del dato de esta federación</h2>
+        <div class="chips" id="calidad"></div>
+        <div class="note"><strong>Hoja de texto con íconos.</strong> Muestra lo que limita la lectura de los KPI: si la federación tiene torneos locales en el ranking (si no, no se compara), qué parte de sus nadadores tiene la federación imputada por sede, y el tamaño de muestra.</div>
+      </div>
+      <div class="grid">
+        <article class="panel c7">
+          <h2 id="h-flujos">A dónde viajaron sus nadadores</h2>
+          <p class="sub" id="sub-flujos"></p>
+          <div class="chart" id="map-flujos"></div>
+          <div class="legend" id="leg-flujos"></div>
+          <div class="note"><strong>Mapa de flujos.</strong> <code>MAKELINE(MAKEPOINT([Lat base],[Lon base]), MAKEPOINT([Lat sede],[Lon sede]))</code>, marca de línea, grosor <code>COUNTD([Id nadador])</code>. Una segunda capa de puntos para las sedes (mapa de capas). <code>DISTANCE(...,'km')</code> sirve para validar los km del CSV. Es la razón para usar Tableau.</div>
+        </article>
+        <article class="panel c5">
+          <h2>Comparación con su continente</h2>
+          <div class="seg" role="group" aria-label="KPI a comparar" id="cmp-kpi">
+            <button type="button" id="c-pctB" data-k="pctB" aria-pressed="true">KPI 1 · Mínima B</button>
+            <button type="button" id="c-pctExt" data-k="pctExt" aria-pressed="false">KPI 2 · Exterior</button>
+            <button type="button" id="c-pctPod" data-k="pctPod" aria-pressed="false">KPI 3 · Podio</button>
+          </div>
+          <p class="sub" id="sub-cmp"></p>
+          <div class="chart" id="bar-cmp"></div>
+          <div class="note"><strong>Barras ordenadas con resaltado.</strong> Parámetro <code>[Federación elegida]</code> y campo <code>[Es elegida]</code> para colorear sin filtrar; filtro del continente con <code>{FIXED [Federación] : MIN([Continente])}</code>. Líneas de referencia en p25 y p75. Se cambia de KPI con un parámetro.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2 · La temporada -->
+    <section class="view" id="v-temporada" hidden>
+      <div class="panel">
+        <h2>La temporada 2024 en el ranking mundial</h2>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="grid">
+        <article class="panel c8">
+          <h2>Dónde se compitió</h2>
+          <p class="sub" id="sub-sedes"></p>
+          <div class="chart" id="map-sedes"></div>
+          <div class="note"><strong>Símbolos proporcionales.</strong> Tamaño <code>COUNTD([Id nadador])</code> por sede, área proporcional (no radio). Responde al filtro de semestre; la federación elegida no lo filtra, para no perder el contexto mundial.</div>
+        </article>
+        <article class="panel c4">
+          <h2>Qué se compite</h2>
+          <p class="sub">Torneos y participaciones por alcance</p>
+          <div class="chart" id="bar-alcance"></div>
+          <div class="note"><strong>Barras horizontales.</strong> Alcance según <code>torneos.csv</code>. Declarar en la entrega que la clasificación es por reglas y que 40 torneos quedaron sin revisión manual.</div>
+        </article>
+      </div>
+      <div class="grid">
+        <article class="panel c6">
+          <h2>El calendario alterna piscinas · mundo</h2>
+          <div class="chart" id="line-mundo"></div>
+          <div class="legend"><span><i style="background:var(--accent)"></i>50 m</span><span><i style="background:var(--s25)"></i>25 m</span></div>
+        </article>
+        <article class="panel c6">
+          <h2 id="h-line-fed">Su calendario</h2>
+          <div class="chart" id="line-fed"></div>
+          <div class="legend"><span><i style="background:var(--accent)"></i>50 m</span><span><i style="background:var(--s25)"></i>25 m</span></div>
+          <div class="note"><strong>Dos hojas, no eje doble.</strong> Mundo y federación tienen escalas muy distintas. Estas dos ignoran el filtro de semestre: muestran el año completo.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 · El costo de competir -->
+    <section class="view" id="v-costo" hidden>
+      <div class="grid">
+        <article class="panel c6">
+          <h2>Cuánto se viaja para competir afuera</h2>
+          <p class="sub">km por viaje desde la ciudad base, por continente (p10–p90, caja p25–p75)</p>
+          <div class="chart" id="box-km"></div>
+          <div class="legend"><span><i class="dot" style="background:var(--s25)"></i><span id="leg-km">Mediana de la federación</span></span></div>
+          <div class="note"><strong>Diagrama de caja</strong> (Análisis → Diagrama de caja) más una línea de referencia con la mediana de la federación elegida. Los husos horarios cruzados van como etiqueta de texto: aproximados por longitud.</div>
+        </article>
+        <article class="panel c6">
+          <h2>¿Se consiguen las mínimas donde se nada?</h2>
+          <p class="sub">Por federación, año 2024: proporción de nados en 25 m frente a proporción de mínimas B logradas en 25 m</p>
+          <div class="chart" id="scatter"></div>
+          <div class="legend" id="leg-scatter"></div>
+          <div class="note"><strong>Dispersión con diagonal de referencia</strong> (campo calculado y = x en eje común). Color por <code>[Es elegida]</code> y <code>[Mismo continente]</code>, el resto en gris. Sobre la diagonal, la federación logra en 25 m más mínimas de las que correspondería por cuánto nada ahí: es el gancho hacia la pregunta del Capstone.</div>
+        </article>
+      </div>
+      <div class="grid">
+        <article class="panel c6">
+          <h2>En qué pruebas rinde buscar la mínima en 25 m</h2>
+          <p class="sub">Proporción de mínimas B logradas en 25 m ÷ proporción de nados en 25 m. Sobre 1, la piscina corta entrega más mínimas de las que le corresponden</p>
+          <div class="chart" id="dumbbell"></div>
+          <div class="legend"><span><i class="dot" style="background:var(--accent)"></i>Mujeres</span><span><i class="dot" style="background:var(--s25)"></i>Hombres</span></div>
+          <div class="note"><strong>Gráfico de pesas.</strong> Una fila por prueba, un círculo por sexo unidos por una línea (marca de línea con <code>[Sexo]</code> en Ruta), línea de referencia fija en 1. Muestra siempre ambos sexos: el filtro de sexo no aplica a esta hoja. Ordenado por la razón de las mujeres.</div>
+        </article>
+        <article class="panel c6">
+          <h2>La tabla de mínimas y lo que hacen los nadadores</h2>
+          <p class="sub" id="sub-corr"></p>
+          <div class="chart" id="scatter-brecha"></div>
+          <div class="legend"><span><i class="dot" style="background:var(--accent)"></i>Mujeres</span><span><i class="dot" style="background:var(--s25)"></i>Hombres</span></div>
+          <div class="note"><strong>Dispersión de 24 puntos</strong> (prueba × sexo). Eje x: brecha del informe (<code>comparacion_wa.csv</code>), en segundos; positiva = más fácil clasificar en 25 m. Eje y: la razón del gráfico de la izquierda. Etiquetas solo en los extremos. Es el panel que une el dashboard con el informe.</div>
+        </article>
+      </div>
+      <div class="panel">
+        <h2>Lectura para el Capstone</h2>
+        <p style="margin:0;max-width:80ch">El 26 % de los nados de 2024 es en piscina de 25 m, pero ahí se logra el 36 % de las mínimas B. Y la ventaja no es pareja: en las pruebas donde el informe encontró que la tabla de World Aquatics es más fácil en 25 m, los nadadores consiguen proporcionalmente más mínimas en 25 m (correlación de Spearman <span id="txt-corr">—</span> en 24 combinaciones de prueba y sexo). Son dos caminos independientes que apuntan a lo mismo. El nivel general puede estar inflado porque los campeonatos de fin de año son en piscina corta; las diferencias entre pruebas, no tanto, porque ese efecto las toca a todas por igual.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fuente: ranking mensual de World Aquatics 2024, base v2. Federación imputada en cascada: país oficial → país del club → país donde más compite. Mínimas: Beijing 2026, usadas como torneo genérico. Coordenadas de sedes: © colaboradores de OpenStreetMap (ODbL).</p>
+    <p>La API entrega la mejor marca de cada nadador por mes: participaciones y podios son cotas inferiores. Solo se comparan federaciones con torneos locales en el ranking y al menos 30 nadadores en el semestre (del sexo elegido, si se filtra).</p>
+  </footer>
+</div>
+<div id="tip" hidden></div>
+
+<script type="application/json" id="datos">__DATOS__</script>
+<script type="application/json" id="mundo">__MUNDO__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById("datos").textContent);
+  const W = JSON.parse(document.getElementById("mundo").textContent);
+  const tierra = topojson.feature(W, W.objects.countries);
+  const fronteras = topojson.mesh(W, W.objects.countries, (a, b) => a !== b);
+
+  const CONT = { Europe: "Europa", Americas: "América", Asia: "Asia", Oceania: "Oceanía", Africa: "África" };
+  const ORDEN_CONT = ["Europe", "Americas", "Asia", "Oceania", "Africa"];
+  const KPI = {
+    pctB: { dim: "KPI 1 · Eficacia", nombre: "Nadadores que lograron la mínima B, respecto de sus nadadores rankeados",
+            frac: f => `${fmtN(f.conB)} de ${fmtN(f.nad)} nadadores`, corto: "% con mínima B" },
+    pctExt: { dim: "KPI 2 · Participación en el exterior", nombre: "Nadadores que compitieron fuera de su país, respecto de sus nadadores rankeados",
+              frac: f => `${fmtN(f.ext)} de ${fmtN(f.nad)} nadadores`, corto: "% en el exterior" },
+    pctPod: { dim: "KPI 3 · Calidad", nombre: "Nadadores con podio en torneos internacionales absolutos, respecto de los que compitieron en ellos",
+              frac: f => `${fmtN(f.podio)} de ${fmtN(f.intl)} nadadores en torneos internacionales`, corto: "% con podio" },
+  };
+  const fmtP = v => v == null ? "—" : (v * 100).toLocaleString("es-CL", { maximumFractionDigits: v < 0.1 ? 1 : 0 }) + " %";
+  const fmtN = v => v == null ? "—" : Math.round(v).toLocaleString("es-CL");
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+  const estado = { fed: "BRA", sem: "2024-S1", sx: "T", vista: "resumen", cmp: "pctB" };
+  try { const g = JSON.parse(localStorage.getItem("tablero-fed") || "{}"); Object.assign(estado, g); } catch (e) {}
+  const guardar = () => { try { localStorage.setItem("tablero-fed", JSON.stringify(estado)); } catch (e) {} };
+
+  // ---------- tooltip ----------
+  const tip = document.getElementById("tip");
+  function mostrarTip(ev, partes) {
+    tip.replaceChildren();
+    partes.forEach((p, i) => {
+      const el = document.createElement(i === 0 ? "b" : "div");
+      el.textContent = p; tip.appendChild(el);
+    });
+    tip.hidden = false;
+    const r = tip.getBoundingClientRect();
+    let x = ev.clientX + 14, y = ev.clientY + 14;
+    if (x + r.width > window.innerWidth - 8) x = ev.clientX - r.width - 14;
+    if (y + r.height > window.innerHeight - 8) y = ev.clientY - r.height - 14;
+    tip.style.left = Math.max(8, x) + "px"; tip.style.top = Math.max(8, y) + "px";
+  }
+  const ocultarTip = () => { tip.hidden = true; };
+
+  // ---------- datos derivados ----------
+  const feds = sem => D.feds.filter(f => f.sem === sem && f.sx === estado.sx);
+  const fedSel = () => D.feds.find(f => f.fed === estado.fed && f.sem === estado.sem && f.sx === estado.sx);
+  const cuartil = (f, k) => D.cuartiles[`${f.sx}|${f.sem}|${f.cont}|${k}`];
+  const SX = { T: "todos", F: "mujeres", M: "hombres" };
+  function status(v, q) {
+    if (v == null || !q) return { cls: "st-none", txt: "Sin dato" };
+    if (v >= q.p75) return { cls: "st-good", txt: "Sobre p75" };
+    if (v >= q.p25) return { cls: "st-warn", txt: "Entre p25 y p75" };
+    return { cls: "st-bad", txt: "Bajo p25" };
+  }
+
+  // ---------- filtros ----------
+  const sel = document.getElementById("f-fed");
+  function llenarSelect() {
+    const lista = feds(estado.sem);
+    if (!lista.some(f => f.fed === estado.fed)) estado.fed = (lista.find(f => f.fed === "BRA") || lista[0]).fed;
+    sel.replaceChildren();
+    ORDEN_CONT.forEach(c => {
+      const g = document.createElement("optgroup"); g.label = CONT[c];
+      lista.filter(f => f.cont === c).sort((a, b) => a.nombre.localeCompare(b.nombre, "es"))
+        .forEach(f => { const o = document.createElement("option"); o.value = f.fed; o.textContent = `${f.nombre} (${f.fed})`; g.appendChild(o); });
+      if (g.children.length) sel.appendChild(g);
+    });
+    sel.value = estado.fed;
+  }
+  sel.addEventListener("change", () => { estado.fed = sel.value; guardar(); render(); });
+  document.querySelectorAll("[data-sem]").forEach(b => b.addEventListener("click", () => {
+    estado.sem = b.dataset.sem; guardar(); llenarSelect(); render();
+  }));
+  document.querySelectorAll("[data-sx]").forEach(b => b.addEventListener("click", () => {
+    estado.sx = b.dataset.sx; guardar(); llenarSelect(); render();
+  }));
+  const notas = document.getElementById("f-notas");
+  notas.addEventListener("change", () => document.body.classList.toggle("notas", notas.checked));
+  document.body.classList.toggle("notas", notas.checked);
+  document.querySelectorAll("nav.acts [data-view]").forEach(b => b.addEventListener("click", () => {
+    estado.vista = b.dataset.view; guardar(); render();
+  }));
+  document.querySelectorAll("#cmp-kpi [data-k]").forEach(b => b.addEventListener("click", () => {
+    estado.cmp = b.dataset.k; guardar(); dibujarComparacion();
+  }));
+
+  // ---------- 1 · tarjetas ----------
+  function tarjeta(k) {
+    const f = fedSel(), el = document.getElementById("k-" + k), q = cuartil(f, k), v = f[k], st = status(v, q);
+    el.replaceChildren();
+    const add = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; el.appendChild(e); return e; };
+    add("div", "dim", KPI[k].dim);
+    add("div", "name", KPI[k].nombre);
+    const row = add("div", "row");
+    const big = document.createElement("span"); big.className = "big"; big.textContent = fmtP(v); row.appendChild(big);
+    const pill = document.createElement("span"); pill.className = "pill " + st.cls;
+    const dot = document.createElement("i"); pill.append(dot, document.createTextNode(st.txt)); row.appendChild(pill);
+    add("div", "frac", v == null ? `Menos de ${D.param.minIntl} nadadores en torneos internacionales: no se evalúa` : KPI[k].frac(f));
+    // viñeta
+    const host = add("div", "chart");
+    if (q) vineta(host, v, q);
+    const refTxt = !q ? "" : q.ref === "continente"
+      ? `Referencia: cuartiles de ${CONT[f.cont]} (${q.n} federaciones) · p25 ${fmtP(q.p25)} · p75 ${fmtP(q.p75)}`
+      : `Referencia: cuartiles del mundo (${q.n} federaciones); ${CONT[f.cont]} tiene ${q.nCont}, menos de ${D.param.minFeds} · p25 ${fmtP(q.p25)} · p75 ${fmtP(q.p75)}`;
+    add("div", "ref", refTxt);
+  }
+  function vineta(host, v, q) {
+    const w = host.clientWidth || 300, h = 30;
+    const max = Math.max(q.p75 * 1.6, (v || 0) * 1.15, 0.05);
+    const x = d3.scaleLinear().domain([0, max]).range([4, w - 4]);
+    const svg = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`).attr("role", "img")
+      .attr("aria-label", `Banda p25 a p75 entre ${fmtP(q.p25)} y ${fmtP(q.p75)}`);
+    svg.append("rect").attr("x", x(0)).attr("y", 9).attr("width", x(max) - x(0)).attr("height", 8).attr("rx", 4).attr("fill", css("--grid"));
+    svg.append("rect").attr("x", x(q.p25)).attr("y", 9).attr("width", Math.max(2, x(q.p75) - x(q.p25))).attr("height", 8).attr("rx", 4).attr("fill", css("--accent-soft"));
+    svg.append("rect").attr("x", x(q.p50) - 1).attr("y", 5).attr("width", 2).attr("height", 16).attr("fill", css("--muted"));
+    if (v != null) svg.append("circle").attr("cx", x(v)).attr("cy", 13).attr("r", 6).attr("fill", css("--accent")).attr("stroke", css("--panel")).attr("stroke-width", 2);
+  }
+
+  // ---------- 1 · calidad ----------
+  function calidad() {
+    const f = fedSel(), host = document.getElementById("calidad");
+    host.replaceChildren();
+    const chip = (color, txt) => { const s = document.createElement("span"); s.className = "chip"; const i = document.createElement("i"); i.style.background = color; s.append(i, document.createTextNode(txt)); host.appendChild(s); };
+    chip(css("--good"), "Tiene torneos locales en el ranking: se compara con su continente");
+    const ps = f.pctSede;
+    chip(ps > 0.5 ? css("--warn") : css("--good"), `Federación imputada por sede: ${fmtP(ps)} de sus nadadores${ps > 0.5 ? " (lectura con cautela)" : ""}`);
+    chip(css("--gray-mark"), `${fmtN(f.nad)} nadadores rankeados en el semestre`);
+    chip(css("--gray-mark"), f.km == null ? "Sin viajes al exterior" : `Mediana por viaje: ${fmtN(f.km)} km`);
+  }
+
+  // ---------- mapa base ----------
+  function mapa(host, alto) {
+    host.replaceChildren();
+    const w = host.clientWidth || 600, h = Math.round(Math.min(alto, w * 0.52));
+    const proj = d3.geoNaturalEarth1().fitExtent([[4, 4], [w - 4, h - 4]], { type: "Sphere" });
+    const path = d3.geoPath(proj);
+    const svg = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`);
+    svg.append("path").datum({ type: "Sphere" }).attr("d", path).attr("fill", "none").attr("stroke", css("--line"));
+    svg.append("path").datum(tierra).attr("d", path).attr("fill", css("--land"));
+    svg.append("path").datum(fronteras).attr("d", path).attr("fill", "none").attr("stroke", css("--land-line")).attr("stroke-width", 0.6);
+    return { svg, proj, path, w, h };
+  }
+
+  function dibujarFlujos() {
+    const f = fedSel(), host = document.getElementById("map-flujos");
+    const viajes = D.flujos.filter(x => x.fed === f.fed && x.sem === f.sem && x.sx === f.sx).sort((a, b) => a.n - b.n);
+    const base = D.bases[f.fed];
+    document.getElementById("h-flujos").textContent = `A dónde viajaron los nadadores de ${f.nombre}`;
+    const total = d3.sum(viajes, d => d.n);
+    document.getElementById("sub-flujos").textContent = viajes.length
+      ? `${viajes.length} sedes en el exterior · ${fmtN(total)} viajes (nadador × torneo) · origen: ${base.ciudad}`
+      : "Sin nados en el exterior en este semestre";
+    const { svg, proj, path } = mapa(host, 380);
+    const ancho = d3.scaleSqrt().domain([1, d3.max(viajes, d => d.n) || 1]).range([0.8, 5]);
+    const r = d3.scaleSqrt().domain([1, d3.max(viajes, d => d.n) || 1]).range([2.5, 10]);
+    svg.append("g").selectAll("path").data(viajes).join("path")
+      .attr("d", d => path({ type: "LineString", coordinates: [[base.lon, base.lat], [d.lon, d.lat]] }))
+      .attr("fill", "none").attr("stroke", css("--s25")).attr("stroke-opacity", 0.45).attr("stroke-width", d => ancho(d.n)).attr("stroke-linecap", "round");
+    svg.append("g").selectAll("circle").data(viajes).join("circle")
+      .attr("cx", d => proj([d.lon, d.lat])[0]).attr("cy", d => proj([d.lon, d.lat])[1]).attr("r", d => r(d.n))
+      .attr("fill", css("--s25")).attr("stroke", css("--panel")).attr("stroke-width", 1.5)
+      .on("mousemove", (ev, d) => mostrarTip(ev, [`${d.ciudad} (${d.pais})`, `${fmtN(d.n)} nadadores`, `${fmtN(d.km)} km · ~${d.h} h de diferencia horaria`]))
+      .on("mouseleave", ocultarTip);
+    const [ox, oy] = proj([base.lon, base.lat]);
+    svg.append("circle").attr("cx", ox).attr("cy", oy).attr("r", 6).attr("fill", css("--fg")).attr("stroke", css("--panel")).attr("stroke-width", 2);
+    svg.append("text").attr("x", ox + 9).attr("y", oy + 4).attr("class", "ink").style("font-weight", 600).text(f.fed);
+    const leg = document.getElementById("leg-flujos");
+    leg.replaceChildren();
+    [["--fg", `Origen: ${base.ciudad}`], ["--s25", "Sede en el exterior (tamaño = nadadores)"]].forEach(([c, t]) => {
+      const s = document.createElement("span"); const i = document.createElement("i"); i.className = "dot"; i.style.background = css(c); s.append(i, document.createTextNode(t)); leg.appendChild(s);
+    });
+  }
+
+  function dibujarComparacion() {
+    const f = fedSel(), k = estado.cmp, host = document.getElementById("bar-cmp");
+    document.querySelectorAll("#cmp-kpi [data-k]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.k === k)));
+    const q = cuartil(f, k);
+    let grupo = feds(f.sem).filter(x => x[k] != null && (q && q.ref === "continente" ? x.cont === f.cont : true));
+    grupo.sort((a, b) => b[k] - a[k]);
+    const sub = document.getElementById("sub-cmp");
+    sub.textContent = !q ? "" : q.ref === "continente"
+      ? `${KPI[k].corto} · ${CONT[f.cont]}, ${grupo.length} federaciones comparables`
+      : `${KPI[k].corto} · mundo, ${grupo.length} federaciones (${CONT[f.cont]} tiene menos de ${D.param.minFeds})`;
+    host.replaceChildren();
+    if (f[k] == null) { const p = document.createElement("p"); p.className = "empty"; p.textContent = "Esta federación no tiene dato para este KPI en el semestre."; host.appendChild(p); }
+    // Si el grupo es largo se muestran las 12 primeras y la federación elegida.
+    let filas = grupo.slice(0, 12);
+    if (f[k] != null && !filas.some(x => x.fed === f.fed)) filas = filas.slice(0, 11).concat(grupo.filter(x => x.fed === f.fed));
+    const w = host.clientWidth || 400, fila = 22, h = filas.length * fila + 24;
+    const x = d3.scaleLinear().domain([0, d3.max(filas, d => d[k]) * 1.18 || 0.1]).range([48, w - 54]);
+    const svg = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`);
+    if (q) [["p25", q.p25], ["p75", q.p75]].forEach(([t, v]) => {
+      svg.append("line").attr("x1", x(v)).attr("x2", x(v)).attr("y1", 14).attr("y2", h - 6).attr("stroke", css("--faint")).attr("stroke-width", 1);
+      svg.append("text").attr("x", x(v)).attr("y", 10).attr("text-anchor", "middle").text(t);
+    });
+    const g = svg.append("g").attr("transform", "translate(0,18)");
+    filas.forEach((d, i) => {
+      const y = i * fila, es = d.fed === f.fed;
+      g.append("text").attr("x", 42).attr("y", y + 14).attr("text-anchor", "end").attr("class", es ? "ink" : null).style("font-weight", es ? 600 : 400).text(d.fed);
+      g.append("rect").attr("x", x(0)).attr("y", y + 4).attr("height", 13).attr("rx", 3)
+        .attr("width", Math.max(1, x(d[k]) - x(0))).attr("fill", es ? css("--accent") : css("--gray-mark"))
+        .on("mousemove", ev => mostrarTip(ev, [`${d.nombre}`, `${KPI[k].corto}: ${fmtP(d[k])}`, KPI[k].frac(d)])).on("mouseleave", ocultarTip);
+      g.append("text").attr("x", x(d[k]) + 5).attr("y", y + 14).attr("class", es ? "ink" : null).text(fmtP(d[k]));
+    });
+  }
+
+  // ---------- 2 · temporada ----------
+  function dibujarTemporada() {
+    const T = Object.assign({ torneos: D.param.torneos }, D.totales[estado.sx]), st = document.getElementById("stats");
+    st.replaceChildren();
+    [[T.nados, "nados (mejor marca por mes)"], [T.nadadores, "nadadores"], [T.federaciones, "federaciones"], [T.sedes, "ciudades sede"], [T.torneos, "torneos"]]
+      .forEach(([v, t]) => { const d = document.createElement("div"); d.className = "stat"; const b = document.createElement("b"); b.textContent = fmtN(v); const s = document.createElement("span"); s.textContent = t; d.append(b, s); st.appendChild(d); });
+
+    const sedes = D.sedes.filter(s => s.sem === estado.sem && s.sx === estado.sx).sort((a, b) => b.n - a.n);
+    document.getElementById("sub-sedes").textContent = `${sedes.length} sedes en ${estado.sem === "2024-S1" ? "enero–junio" : "julio–diciembre"} · área proporcional a los nadadores`;
+    const { svg, proj } = mapa(document.getElementById("map-sedes"), 420);
+    const r = d3.scaleSqrt().domain([1, d3.max(D.sedes.filter(s => s.sx === "T"), d => d.n)]).range([2, 18]);
+    svg.append("g").selectAll("circle").data(sedes).join("circle")
+      .attr("cx", d => proj([d.lon, d.lat])[0]).attr("cy", d => proj([d.lon, d.lat])[1]).attr("r", d => r(d.n))
+      .attr("fill", css("--accent")).attr("fill-opacity", 0.55).attr("stroke", css("--panel")).attr("stroke-width", 1)
+      .on("mousemove", (ev, d) => mostrarTip(ev, [`${d.ciudad} (${d.pais})`, `${fmtN(d.n)} nadadores · ${d.torneos} torneos`, `${d.feds} federaciones`]))
+      .on("mouseleave", ocultarTip);
+
+    // alcance
+    const orden = ["mundial", "continental", "internacional", "nacional", "regional", "escolar-universitario"];
+    const al = orden.map(o => D.alcance.find(a => a.alcance === o)).filter(Boolean);
+    const host = document.getElementById("bar-alcance"); host.replaceChildren();
+    const w = host.clientWidth || 300, fila = 34, h = al.length * fila + 6;
+    const x = d3.scaleLinear().domain([0, d3.max(al, d => d.part)]).range([0, w - 150]);
+    const svg2 = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`);
+    al.forEach((d, i) => {
+      const y = i * fila;
+      svg2.append("text").attr("x", 0).attr("y", y + 12).attr("class", "ink").text(d.alcance);
+      svg2.append("rect").attr("x", 0).attr("y", y + 17).attr("height", 10).attr("rx", 3).attr("width", Math.max(2, x(d.part))).attr("fill", css("--accent"))
+        .on("mousemove", ev => mostrarTip(ev, [d.alcance, `${d.torneos} torneos`, `${fmtN(d.part)} participaciones`])).on("mouseleave", ocultarTip);
+      svg2.append("text").attr("x", Math.max(2, x(d.part)) + 6).attr("y", y + 26).text(`${fmtN(d.part)} · ${d.torneos} torneos`);
+    });
+
+    linea(document.getElementById("line-mundo"), D.mesMundo[estado.sx], "nados");
+    const f = fedSel();
+    document.getElementById("h-line-fed").textContent = `El calendario de ${f.nombre}${estado.sx === "T" ? "" : " · " + SX[estado.sx]}`;
+    linea(document.getElementById("line-fed"), D.mesFed[estado.sx][f.fed], "nados");
+  }
+  function linea(host, serie, etiqueta) {
+    host.replaceChildren();
+    if (!serie) return;
+    const w = host.clientWidth || 400, h = 190, m = { l: 44, r: 10, t: 10, b: 22 };
+    const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+    const x = d3.scalePoint().domain(d3.range(12)).range([m.l, w - m.r]);
+    const y = d3.scaleLinear().domain([0, d3.max([...serie.LCM, ...serie.SCM]) || 1]).nice().range([h - m.b, m.t]);
+    const svg = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`);
+    y.ticks(4).forEach(t => {
+      svg.append("line").attr("x1", m.l).attr("x2", w - m.r).attr("y1", y(t)).attr("y2", y(t)).attr("stroke", css("--grid"));
+      svg.append("text").attr("x", m.l - 6).attr("y", y(t) + 4).attr("text-anchor", "end").text(fmtN(t));
+    });
+    meses.forEach((t, i) => { if (w > 420 || i % 2 === 0) svg.append("text").attr("x", x(i)).attr("y", h - 6).attr("text-anchor", "middle").text(t); });
+    [["LCM", "--accent", "50 m"], ["SCM", "--s25", "25 m"]].forEach(([p, c, nom]) => {
+      svg.append("path").datum(serie[p]).attr("fill", "none").attr("stroke", css(c)).attr("stroke-width", 2)
+        .attr("d", d3.line().x((d, i) => x(i)).y(d => y(d)));
+      svg.append("g").selectAll("circle").data(serie[p]).join("circle").attr("cx", (d, i) => x(i)).attr("cy", d => y(d)).attr("r", 3.5)
+        .attr("fill", css(c)).attr("stroke", css("--panel")).attr("stroke-width", 1.5)
+        .on("mousemove", (ev, d) => { const i = serie[p].indexOf(d); mostrarTip(ev, [`${meses[i]} · ${nom}`, `${fmtN(d)} ${etiqueta}`]); }).on("mouseleave", ocultarTip);
+    });
+  }
+
+  // ---------- 3 · costo ----------
+  function dibujarCosto() {
+    const f = fedSel(), host = document.getElementById("box-km"); host.replaceChildren();
+    const w = host.clientWidth || 400, fila = 44, m = { l: 74, r: 64 }, h = ORDEN_CONT.length * fila + 26;
+    const x = d3.scaleLinear().domain([0, 16000]).range([m.l, w - m.r]);
+    const svg = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`);
+    x.ticks(w > 420 ? 5 : 3).forEach(t => {
+      svg.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", 4).attr("y2", h - 20).attr("stroke", css("--grid"));
+      svg.append("text").attr("x", x(t)).attr("y", h - 6).attr("text-anchor", "middle").text(t === 0 ? "0" : `${t / 1000} mil km`);
+    });
+    svg.append("text").attr("x", w - 2).attr("y", 12).attr("text-anchor", "end").text("husos");
+    ORDEN_CONT.forEach((c, i) => {
+      const q = D.kmCont[estado.sx][c]; if (!q) return;
+      const y = i * fila + 26, es = c === f.cont;
+      svg.append("text").attr("x", 0).attr("y", y + 4).attr("class", es ? "ink" : null).style("font-weight", es ? 600 : 400).text(CONT[c]);
+      svg.append("line").attr("x1", x(q.p10)).attr("x2", x(Math.min(q.p90, 16000))).attr("y1", y).attr("y2", y).attr("stroke", css("--muted"));
+      svg.append("rect").attr("x", x(q.p25)).attr("y", y - 8).attr("width", Math.max(2, x(q.p75) - x(q.p25))).attr("height", 16).attr("rx", 3)
+        .attr("fill", es ? css("--accent") : css("--gray-mark")).attr("fill-opacity", es ? 0.85 : 0.7)
+        .on("mousemove", ev => mostrarTip(ev, [CONT[c], `mediana ${fmtN(q.p50)} km`, `p25–p75: ${fmtN(q.p25)}–${fmtN(q.p75)} km`, `~${D.husosCont[estado.sx][c]} h de diferencia horaria (mediana)`])).on("mouseleave", ocultarTip);
+      svg.append("rect").attr("x", x(q.p50) - 1).attr("y", y - 10).attr("width", 2).attr("height", 20).attr("fill", css("--fg"));
+      svg.append("text").attr("x", w - 2).attr("y", y + 4).attr("text-anchor", "end").text(`~${D.husosCont[estado.sx][c]} h`);
+      if (es && f.km != null) {
+        svg.append("circle").attr("cx", x(Math.min(f.km, 16000))).attr("cy", y).attr("r", 6).attr("fill", css("--s25")).attr("stroke", css("--panel")).attr("stroke-width", 2);
+      }
+    });
+    document.getElementById("leg-km").textContent = f.km == null ? `${f.nombre}: sin viajes en el semestre` : `${f.nombre}: mediana ${fmtN(f.km)} km por viaje`;
+
+    // dispersión
+    const sc = document.getElementById("scatter"); sc.replaceChildren();
+    const sw = sc.clientWidth || 400, sh = Math.min(360, Math.max(260, sw * 0.75)), mm = { l: 44, r: 12, t: 10, b: 36 };
+    const sx = d3.scaleLinear().domain([0, 1]).range([mm.l, sw - mm.r]);
+    const sy = d3.scaleLinear().domain([0, 1]).range([sh - mm.b, mm.t]);
+    const s2 = d3.select(sc).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${sw} ${sh}`);
+    [0, .25, .5, .75, 1].forEach(t => {
+      s2.append("line").attr("x1", sx(0)).attr("x2", sx(1)).attr("y1", sy(t)).attr("y2", sy(t)).attr("stroke", css("--grid"));
+      s2.append("line").attr("x1", sx(t)).attr("x2", sx(t)).attr("y1", sy(0)).attr("y2", sy(1)).attr("stroke", css("--grid"));
+      s2.append("text").attr("x", mm.l - 6).attr("y", sy(t) + 4).attr("text-anchor", "end").text(fmtP(t));
+      s2.append("text").attr("x", sx(t)).attr("y", sh - mm.b + 16).attr("text-anchor", "middle").text(fmtP(t));
+    });
+    s2.append("text").attr("x", (mm.l + sw - mm.r) / 2).attr("y", sh - 4).attr("text-anchor", "middle").text("% de sus nados en 25 m");
+    s2.append("line").attr("x1", sx(0)).attr("y1", sy(0)).attr("x2", sx(1)).attr("y2", sy(1)).attr("stroke", css("--faint"));
+    s2.append("text").attr("x", sx(.97)).attr("y", sy(.97) + 14).attr("text-anchor", "end").text("misma proporción");
+    const PZ = D.piscina[estado.sx];
+    const rr = d3.scaleSqrt().domain([30, d3.max(PZ, d => d.nad)]).range([3, 11]);
+    const datos = [...PZ].sort((a, b) => (a.fed === f.fed) - (b.fed === f.fed) || (a.cont === f.cont) - (b.cont === f.cont));
+    s2.append("g").selectAll("circle").data(datos).join("circle")
+      .attr("cx", d => sx(d.p25)).attr("cy", d => sy(d.min25)).attr("r", d => rr(d.nad))
+      .attr("fill", d => d.fed === f.fed ? css("--s25") : d.cont === f.cont ? css("--accent") : css("--gray-mark"))
+      .attr("fill-opacity", d => d.fed === f.fed ? 1 : 0.7).attr("stroke", css("--panel")).attr("stroke-width", 1.5)
+      .on("mousemove", (ev, d) => mostrarTip(ev, [d.fed, `${fmtP(d.p25)} de sus nados en 25 m`, `${fmtP(d.min25)} de sus mínimas B en 25 m (${d.nmin} nadadores)`])).on("mouseleave", ocultarTip);
+    const pf = PZ.find(d => d.fed === f.fed);
+    if (pf) s2.append("text").attr("x", sx(pf.p25) + rr(pf.nad) + 4).attr("y", sy(pf.min25) + 4).attr("class", "ink").style("font-weight", 600).text(f.fed);
+    const leg = document.getElementById("leg-scatter"); leg.replaceChildren();
+    [["--s25", pf ? f.nombre : `${f.nombre} (menos de 5 nadadores con mínima)`], ["--accent", `Resto de ${CONT[f.cont]}`], ["--gray-mark", "Otras federaciones"]].forEach(([c, t]) => {
+      const s = document.createElement("span"); const i = document.createElement("i"); i.className = "dot"; i.style.background = css(c); s.append(i, document.createTextNode(t)); leg.appendChild(s);
+    });
+    dibujarPesas(); dibujarBrecha();
+  }
+
+  const fmtR = v => v.toLocaleString("es-CL", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  function dibujarPesas() {
+    const host = document.getElementById("dumbbell"); host.replaceChildren();
+    const P = [...D.pruebas].sort((a, b) => b.F.ratio - a.F.ratio);
+    const w = host.clientWidth || 400, fila = 24, m = { l: 104, r: 16, t: 22 }, h = P.length * fila + m.t + 22;
+    const lo = Math.min(0.9, d3.min(P, d => Math.min(d.F.ratio, d.M.ratio)) - 0.05);
+    const hi = d3.max(P, d => Math.max(d.F.ratio, d.M.ratio)) + 0.08;
+    const x = d3.scaleLinear().domain([lo, hi]).range([m.l, w - m.r]);
+    const svg = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`);
+    x.ticks(w > 420 ? 6 : 4).forEach(t => {
+      svg.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", m.t - 6).attr("y2", h - 20).attr("stroke", css("--grid"));
+      svg.append("text").attr("x", x(t)).attr("y", h - 6).attr("text-anchor", "middle").text(fmtR(t));
+    });
+    svg.append("line").attr("x1", x(1)).attr("x2", x(1)).attr("y1", m.t - 10).attr("y2", h - 20).attr("stroke", css("--fg")).attr("stroke-width", 1.2);
+    svg.append("text").attr("x", x(1) + 4).attr("y", m.t - 10).attr("class", "ink").text("1 = sin ventaja");
+    P.forEach((d, i) => {
+      const y = m.t + i * fila + 8;
+      svg.append("text").attr("x", 0).attr("y", y + 4).attr("class", "ink").text(d.prueba);
+      svg.append("line").attr("x1", x(d.F.ratio)).attr("x2", x(d.M.ratio)).attr("y1", y).attr("y2", y).attr("stroke", css("--gray-mark")).attr("stroke-width", 2);
+      [["F", "--accent", "Mujeres"], ["M", "--s25", "Hombres"]].forEach(([sx, c, nom]) => {
+        const v = d[sx];
+        svg.append("circle").attr("cx", x(v.ratio)).attr("cy", y).attr("r", 6).attr("fill", css(c)).attr("stroke", css("--panel")).attr("stroke-width", 2)
+          .on("mousemove", ev => mostrarTip(ev, [`${d.prueba} · ${nom}`, `razón ${fmtR(v.ratio)}`, `${fmtP(v.n25)} de los nados en 25 m`, `${fmtP(v.m25)} de las mínimas B en 25 m (${fmtN(v.nB)} nadadores)`]))
+          .on("mouseleave", ocultarTip);
+      });
+    });
+  }
+  function dibujarBrecha() {
+    const host = document.getElementById("scatter-brecha"); host.replaceChildren();
+    document.getElementById("sub-corr").textContent = `Brecha de la tabla oficial (informe, segundos) frente a la razón de mínimas en 25 m · Spearman ${fmtR(D.corr.spearman)}`;
+    document.getElementById("txt-corr").textContent = fmtR(D.corr.spearman);
+    const pts = D.pruebas.flatMap(d => ["F", "M"].map(sx => ({ prueba: d.prueba, sx, g: d[sx].brecha, r: d[sx].ratio })));
+    const w = host.clientWidth || 400, h = Math.min(330, Math.max(250, w * 0.68)), m = { l: 44, r: 14, t: 12, b: 38 };
+    const x = d3.scaleLinear().domain(d3.extent(pts, d => d.g)).nice().range([m.l, w - m.r]);
+    const y = d3.scaleLinear().domain(d3.extent(pts, d => d.r)).nice().range([h - m.b, m.t]);
+    const svg = d3.select(host).append("svg").attr("width", "100%").attr("viewBox", `0 0 ${w} ${h}`);
+    x.ticks(6).forEach(t => {
+      svg.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", m.t).attr("y2", h - m.b).attr("stroke", t === 0 ? css("--faint") : css("--grid"));
+      svg.append("text").attr("x", x(t)).attr("y", h - m.b + 16).attr("text-anchor", "middle").text(`${t} s`);
+    });
+    y.ticks(5).forEach(t => {
+      svg.append("line").attr("x1", m.l).attr("x2", w - m.r).attr("y1", y(t)).attr("y2", y(t)).attr("stroke", css("--grid"));
+      svg.append("text").attr("x", m.l - 6).attr("y", y(t) + 4).attr("text-anchor", "end").text(fmtR(t));
+    });
+    svg.append("text").attr("x", (m.l + w - m.r) / 2).attr("y", h - 4).attr("text-anchor", "middle").text("brecha de la tabla oficial (s) · positiva = más fácil en 25 m");
+    svg.append("g").selectAll("circle").data(pts).join("circle")
+      .attr("cx", d => x(d.g)).attr("cy", d => y(d.r)).attr("r", 6)
+      .attr("fill", d => d.sx === "F" ? css("--accent") : css("--s25")).attr("stroke", css("--panel")).attr("stroke-width", 2)
+      .on("mousemove", (ev, d) => mostrarTip(ev, [`${d.prueba} · ${d.sx === "F" ? "mujeres" : "hombres"}`, `brecha ${fmtR(d.g)} s`, `razón ${fmtR(d.r)}`]))
+      .on("mouseleave", ocultarTip);
+    const ext = [...pts].sort((a, b) => b.r - a.r);
+    [ext[0], ext[ext.length - 1]].forEach(d => {
+      const der = x(d.g) > w * 0.7;
+      svg.append("text").attr("x", x(d.g) + (der ? -9 : 9)).attr("y", y(d.r) + 4)
+        .attr("text-anchor", der ? "end" : "start").attr("class", "ink")
+        .text(`${d.prueba} ${d.sx}`);
+    });
+  }
+
+  // ---------- render ----------
+  function render() {
+    document.querySelectorAll("[data-sem]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.sem === estado.sem)));
+    document.querySelectorAll("[data-sx]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.sx === estado.sx)));
+    document.querySelectorAll("nav.acts [data-view]").forEach(b => b.setAttribute("aria-selected", String(b.dataset.view === estado.vista)));
+    ["resumen", "temporada", "costo"].forEach(v => { document.getElementById("v-" + v).hidden = v !== estado.vista; });
+    sel.value = estado.fed;
+    if (estado.vista === "resumen") { Object.keys(KPI).forEach(tarjeta); calidad(); dibujarFlujos(); dibujarComparacion(); }
+    if (estado.vista === "temporada") dibujarTemporada();
+    if (estado.vista === "costo") dibujarCosto();
+  }
+  const h = (location.hash || "").slice(1);
+  if (["resumen", "temporada", "costo"].includes(h)) estado.vista = h;
+  llenarSelect(); render();
+  let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(render, 150); });
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+  new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+})();
+</script>

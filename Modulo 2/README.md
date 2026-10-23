@@ -73,6 +73,7 @@ su continente como contexto. Chile es solo un ejemplo.
 
 | Archivo | Qué es |
 |---|---|
+| `maqueta_dashboard.html` | **La maqueta del dashboard** para construir en Tableau: abrir en el navegador (necesita internet para las librerías y fuentes). Tres vistas, filtros de federación, semestre y sexo, y una nota de implementación en Tableau por panel |
 | `Fichas_KPI.md` | **Los 3 KPI** con los pasos de la Clase 4, línea base 2024 y lo que falta decidir (⚠) |
 | `../04_kpi_federaciones.ipynb` | Los KPI y sus gráficos en Python: calidad del dato, temporada, mapa de sedes, KPI 1–3, mapas de viajes |
 | `Analisis_factibilidad_ideas.md` | Evaluación de todas las ideas (factibilidad, relevancia, aporte, módulo donde rinden más) |
@@ -80,6 +81,8 @@ su continente como contexto. Chile es solo un ejemplo.
 | `../base_federaciones.py` | Construye la base anonimizada, la clasificación de torneos y las tablas KPI |
 | `../descarga_complementos.py` | Países, continentes y coordenadas |
 | `../datos/kpi_federacion_semestre.csv` | **La tabla para el dashboard**: KPI por federación y semestre, con numeradores, denominadores y columnas de calidad |
+| `../datos/kpi_*_sexo_semestre.csv` | Las mismas tablas separadas por sexo, para el filtro de sexo |
+| `maqueta/` | Plantilla, mapa base y `construir_maqueta.py`, que arma `maqueta_dashboard.html` desde las tablas de `datos/` |
 | `../datos/torneos.csv` | Clasificación de torneos; los casos con `revisar = True` se corrigen en `datos/torneos_override.csv` |
 
 Las clases, la pauta y el brochure (PDF) **no se suben**: son material del curso y el repositorio
@@ -92,6 +95,7 @@ python descarga_temporadas.py --femenino
 python descarga_temporadas.py --masculino
 python descarga_complementos.py
 python base_federaciones.py
+python "Modulo 2/maqueta/construir_maqueta.py"
 ```
 
 ---
@@ -111,18 +115,30 @@ Power BI sirve con un mapa de burbujas en vez de líneas de viaje.
 
 ## Lo que falta decidir (⚠) y ruta propuesta
 
-**Decisiones:**
-1. ¿Tableau o Power BI?
-2. Metas y rangos de cada KPI (sin ellos no hay semáforos). Propuesta: cuartiles del continente.
-3. ¿Agregamos el *hit rate* (KPI de efectividad) y las mínimas 2024?
-4. Revisar los 40 torneos dudosos; conviene hacerlo entre los dos.
+**Decidido (22-oct):** metas por cuartiles del continente · Tableau · la revisión de torneos
+queda como limitación declarada.
+
+**Decidido (23-oct):** el sexo se desagrega solo con un filtro: por continente los KPI de
+mujeres y hombres son casi iguales, y duplicar tarjetas sería ruido. Donde sí cambia la lectura
+es en las pruebas, que tienen su propio panel en la vista 3. La composición de estilos por
+piscina **no** se muestra: es igual en las dos piscinas (libre 53 % en ambas) y la fija nuestra
+descarga de 12 pruebas, no la natación.
+
+**Hallazgo para el PDF y el Capstone:** la razón "proporción de mínimas B logradas en 25 m ÷
+proporción de nados en 25 m" se correlaciona con la brecha de la tabla oficial del informe
+(Spearman 0,81 en las 24 combinaciones de prueba y sexo). Donde la tabla es más fácil en 25 m,
+los nadadores efectivamente consiguen más mínimas en 25 m. El caso extremo es 200 mariposa
+femenino: brecha de 2,86 s y razón 1,74.
+
+**Pendiente:** ¿agregamos el *hit rate* (KPI de efectividad) y las mínimas 2024? Revisar la
+maqueta: qué paneles sobran, cuáles faltan.
 
 **Ruta hasta el domingo:**
 
 | Día | Qué |
 |---|---|
 | mié 21 | Revisar el notebook juntos; fijar metas; corregir torneos |
-| jue 22 | Maqueta de baja fidelidad del dashboard (2–3 vistas: resumen de KPI, temporada, detalle por federación) |
+| jue 22 | ✓ Maqueta del dashboard (`maqueta_dashboard.html`) |
 | vie 23 | Construir el dashboard |
 | sáb 24 | PDF: fases de los KPI, datos, capturas, narrativa |
 | dom 25 | Margen y entrega |

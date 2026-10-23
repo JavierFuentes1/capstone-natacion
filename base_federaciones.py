@@ -22,6 +22,7 @@ Salidas:
   datos/torneos.csv                 clasificación de los 307 torneos
   datos/kpi_federacion_semestre.csv KPI por federación y semestre
   datos/kpi_continente_semestre.csv los mismos KPI por continente
+  datos/kpi_*_sexo_semestre.csv     las dos anteriores, separadas por sexo
 
 Uso:  python base_federaciones.py
 """
@@ -284,20 +285,30 @@ def main():
     print(f"base_dashboard.csv: {len(b):,} filas, {b.id_nadador.nunique():,} nadadores, "
           f"{b.federacion.nunique()} federaciones")
 
-    kf = kpis(b, ["federacion", "continente"])
     # Sesgo de visibilidad: si los torneos nacionales de una federación no llegan
     # al ranking, solo se ven sus nadadores de élite cuando compiten afuera, y sus
     # porcentajes salen inflados (México, Israel o Colombia: 100% en el exterior).
-    # Los KPI de estas federaciones no son comparables con los del resto.
+    # Los KPI de estas federaciones no son comparables con los del resto. La
+    # cobertura es de la federación: vale igual para mujeres y hombres.
     locales = (b[~b.exterior].groupby(["federacion", "semestre"]).competencia.nunique()
                .rename("torneos_locales_en_ranking"))
-    kf = kf.merge(locales, on=["federacion", "semestre"], how="left").fillna(
-        {"torneos_locales_en_ranking": 0})
-    kf["cobertura"] = np.where(kf.torneos_locales_en_ranking > 0,
-                               "con torneos locales", "solo vista en el exterior")
-    kf.to_csv(DATOS / "kpi_federacion_semestre.csv", index=False, encoding="utf-8")
+
+    def con_cobertura(k):
+        k = k.merge(locales, on=["federacion", "semestre"], how="left").fillna(
+            {"torneos_locales_en_ranking": 0})
+        k["cobertura"] = np.where(k.torneos_locales_en_ranking > 0,
+                                  "con torneos locales", "solo vista en el exterior")
+        return k
+
+    con_cobertura(kpis(b, ["federacion", "continente"])).to_csv(
+        DATOS / "kpi_federacion_semestre.csv", index=False, encoding="utf-8")
     kc = kpis(b, ["continente"])
     kc.to_csv(DATOS / "kpi_continente_semestre.csv", index=False, encoding="utf-8")
+    # Las mismas tablas por sexo, para el filtro del dashboard.
+    con_cobertura(kpis(b, ["federacion", "continente", "sexo"])).to_csv(
+        DATOS / "kpi_federacion_sexo_semestre.csv", index=False, encoding="utf-8")
+    kpis(b, ["continente", "sexo"]).to_csv(
+        DATOS / "kpi_continente_sexo_semestre.csv", index=False, encoding="utf-8")
     print("\nKPI por continente:")
     print(kc.round(3).to_string(index=False))
 

@@ -1,0 +1,793 @@
+federacion,continente,sexo,semestre,nadadores,con_minima_A,con_minima_B,compitieron_exterior,compitieron_internacional,con_podio_internacional,podios_internacionales,km_mediana_viaje,pct_con_minima_B,pct_exterior,pct_con_podio_internacional,muestra_suficiente,torneos_locales_en_ranking,cobertura
+AFG,Asia,F,2024-S1,2,0.0,0.0,2,0.0,0.0,0.0,14988.0,0.0,1.0,,False,0.0,solo vista en el exterior
+AFG,Asia,M,2024-S1,5,0.0,0.0,5,1.0,0.0,0.0,5421.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+AFG,Asia,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5421.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+AGU,Americas,F,2024-S1,3,0.0,0.0,3,0.0,0.0,0.0,1659.0,0.0,1.0,,False,0.0,solo vista en el exterior
+AHO,Americas,F,2024-S1,1,0.0,0.0,1,0.0,0.0,0.0,,0.0,1.0,,False,0.0,solo vista en el exterior
+AHO,Americas,F,2024-S2,1,0.0,0.0,1,0.0,0.0,0.0,,0.0,1.0,,False,0.0,solo vista en el exterior
+AHO,Americas,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+AHO,Americas,M,2024-S2,2,0.0,0.0,2,0.0,0.0,0.0,,0.0,1.0,,False,0.0,solo vista en el exterior
+ALB,Europe,F,2024-S1,11,0.0,0.0,11,4.0,1.0,1.0,313.5,0.0,1.0,0.25,True,0.0,solo vista en el exterior
+ALB,Europe,F,2024-S2,4,0.0,0.0,4,2.0,0.0,0.0,706.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ALB,Europe,M,2024-S1,16,0.0,0.0,16,7.0,0.0,0.0,407.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+ALB,Europe,M,2024-S2,13,0.0,0.0,13,2.0,0.0,0.0,1130.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+ALG,Africa,F,2024-S1,7,0.0,1.0,7,7.0,3.0,8.0,2518.0,0.14285714285714285,1.0,0.42857142857142855,False,0.0,solo vista en el exterior
+ALG,Africa,F,2024-S2,3,0.0,1.0,3,2.0,0.0,0.0,2367.5,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+ALG,Africa,M,2024-S1,14,0.0,2.0,14,14.0,5.0,21.0,2518.0,0.14285714285714285,1.0,0.35714285714285715,True,0.0,solo vista en el exterior
+ALG,Africa,M,2024-S2,9,0.0,1.0,9,1.0,0.0,0.0,1738.0,0.1111111111111111,1.0,0.0,False,0.0,solo vista en el exterior
+AND,Europe,F,2024-S1,4,0.0,0.0,4,4.0,0.0,0.0,1427.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+AND,Europe,F,2024-S2,58,0.0,0.0,11,1.0,0.0,0.0,7019.0,0.0,0.1896551724137931,0.0,True,1.0,con torneos locales
+AND,Europe,M,2024-S1,15,0.0,0.0,15,8.0,2.0,2.0,336.0,0.0,1.0,0.25,True,0.0,solo vista en el exterior
+AND,Europe,M,2024-S2,53,0.0,0.0,13,1.0,0.0,0.0,304.0,0.0,0.24528301886792453,0.0,True,1.0,con torneos locales
+ANG,Africa,F,2024-S1,7,0.0,0.0,5,7.0,1.0,1.0,5890.0,0.0,0.7142857142857143,0.14285714285714285,False,1.0,con torneos locales
+ANG,Africa,F,2024-S2,9,0.0,0.0,9,8.0,1.0,2.0,5576.0,0.0,1.0,0.125,False,0.0,solo vista en el exterior
+ANG,Africa,M,2024-S1,12,0.0,0.0,6,12.0,1.0,1.0,5640.0,0.0,0.5,0.08333333333333333,True,1.0,con torneos locales
+ANG,Africa,M,2024-S2,17,0.0,0.0,17,16.0,5.0,8.0,1583.0,0.0,1.0,0.3125,True,0.0,solo vista en el exterior
+ANT,Americas,F,2024-S1,13,0.0,0.0,13,5.0,1.0,1.0,1817.0,0.0,1.0,0.2,True,0.0,solo vista en el exterior
+ANT,Americas,F,2024-S2,11,0.0,0.0,11,2.0,0.0,0.0,758.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+ANT,Americas,M,2024-S1,14,0.0,0.0,14,5.0,1.0,1.0,1817.0,0.0,1.0,0.2,True,0.0,solo vista en el exterior
+ANT,Americas,M,2024-S2,13,0.0,0.0,13,3.0,0.0,0.0,758.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+ARG,Americas,F,2024-S1,259,1.0,7.0,22,5.0,0.0,0.0,1040.0,0.02702702702702703,0.08494208494208494,0.0,True,2.0,con torneos locales
+ARG,Americas,F,2024-S2,36,0.0,6.0,36,3.0,0.0,0.0,1137.0,0.16666666666666666,1.0,0.0,True,0.0,solo vista en el exterior
+ARG,Americas,M,2024-S1,309,0.0,5.0,24,4.0,1.0,1.0,1040.0,0.016181229773462782,0.07766990291262135,0.25,True,2.0,con torneos locales
+ARG,Americas,M,2024-S2,38,0.0,3.0,38,1.0,0.0,0.0,1137.0,0.07894736842105263,1.0,0.0,True,0.0,solo vista en el exterior
+ARM,Europe,F,2024-S1,4,0.0,0.0,4,4.0,0.0,0.0,2018.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ARM,Europe,F,2024-S2,2,0.0,0.0,2,1.0,0.0,0.0,2166.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ARM,Europe,M,2024-S1,2,0.0,1.0,2,2.0,0.0,0.0,2544.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+ARM,Europe,M,2024-S2,7,0.0,0.0,7,2.0,0.0,0.0,2107.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ART,Europe,M,2024-S1,3,0.0,1.0,3,2.0,0.0,0.0,,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+ART,Europe,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ARU,Americas,F,2024-S1,102,0.0,0.0,8,7.0,2.0,2.0,3501.0,0.0,0.0784313725490196,0.2857142857142857,True,1.0,con torneos locales
+ARU,Americas,F,2024-S2,52,0.0,0.0,10,2.0,0.0,0.0,781.0,0.0,0.19230769230769232,0.0,True,1.0,con torneos locales
+ARU,Americas,M,2024-S1,115,0.0,2.0,15,11.0,2.0,3.0,3501.0,0.017391304347826087,0.13043478260869565,0.18181818181818182,True,1.0,con torneos locales
+ARU,Americas,M,2024-S2,66,0.0,2.0,8,2.0,0.0,0.0,781.0,0.030303030303030304,0.12121212121212122,0.0,True,1.0,con torneos locales
+ASA,Oceania,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,16215.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ASA,Oceania,M,2024-S1,1,0.0,0.0,1,1.0,1.0,1.0,9726.0,0.0,1.0,1.0,False,0.0,solo vista en el exterior
+ASA,Oceania,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,16120.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+AUS,Oceania,F,2024-S1,1352,34.0,102.0,21,12.0,4.0,4.0,12388.0,0.07544378698224852,0.015532544378698224,0.3333333333333333,True,5.0,con torneos locales
+AUS,Oceania,F,2024-S2,1292,31.0,84.0,54,29.0,12.0,20.0,7599.0,0.06501547987616099,0.04179566563467492,0.41379310344827586,True,4.0,con torneos locales
+AUS,Oceania,M,2024-S1,1393,27.0,114.0,25,14.0,3.0,3.0,12388.0,0.08183776022972003,0.017946877243359655,0.21428571428571427,True,5.0,con torneos locales
+AUS,Oceania,M,2024-S2,1296,32.0,93.0,71,33.0,11.0,13.0,7405.0,0.07175925925925926,0.05478395061728395,0.3333333333333333,True,4.0,con torneos locales
+AUT,Europe,F,2024-S1,286,0.0,5.0,42,133.0,3.0,5.0,387.0,0.017482517482517484,0.14685314685314685,0.022556390977443608,True,2.0,con torneos locales
+AUT,Europe,F,2024-S2,121,1.0,5.0,121,111.0,2.0,2.0,111.0,0.04132231404958678,1.0,0.018018018018018018,True,0.0,solo vista en el exterior
+AUT,Europe,M,2024-S1,281,3.0,14.0,51,118.0,7.0,12.0,387.0,0.0498220640569395,0.18149466192170818,0.059322033898305086,True,2.0,con torneos locales
+AUT,Europe,M,2024-S2,114,4.0,14.0,114,102.0,0.0,0.0,111.0,0.12280701754385964,1.0,0.0,True,0.0,solo vista en el exterior
+AZE,Europe,F,2024-S1,6,0.0,0.0,6,2.0,0.0,0.0,2279.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+AZE,Europe,F,2024-S2,6,0.0,0.0,6,1.0,0.0,0.0,2492.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+AZE,Europe,M,2024-S1,10,0.0,1.0,10,3.0,0.0,0.0,2417.0,0.1,1.0,0.0,True,0.0,solo vista en el exterior
+AZE,Europe,M,2024-S2,11,0.0,1.0,11,1.0,0.0,0.0,2492.0,0.09090909090909091,1.0,0.0,True,0.0,solo vista en el exterior
+BAH,Americas,F,2024-S1,240,0.0,0.0,3,2.0,0.0,0.0,6331.0,0.0,0.0125,0.0,True,2.0,con torneos locales
+BAH,Americas,F,2024-S2,16,0.0,0.0,16,1.0,0.0,0.0,792.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+BAH,Americas,M,2024-S1,267,0.0,1.0,5,4.0,1.0,1.0,1719.0,0.003745318352059925,0.018726591760299626,0.25,True,2.0,con torneos locales
+BAH,Americas,M,2024-S2,13,1.0,2.0,13,2.0,0.0,0.0,792.0,0.15384615384615385,1.0,0.0,True,0.0,solo vista en el exterior
+BAN,Asia,F,2024-S1,17,0.0,0.0,17,1.0,0.0,0.0,8443.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+BAN,Asia,F,2024-S2,13,0.0,0.0,13,2.0,0.0,0.0,8439.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+BAN,Asia,M,2024-S1,8,0.0,0.0,8,1.0,0.0,0.0,8443.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BAN,Asia,M,2024-S2,9,0.0,0.0,9,1.0,0.0,0.0,8439.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BAR,Americas,F,2024-S1,174,0.0,0.0,17,15.0,3.0,8.0,4399.0,0.0,0.09770114942528736,0.2,True,2.0,con torneos locales
+BAR,Americas,F,2024-S2,17,0.0,0.0,17,1.0,0.0,0.0,1926.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+BAR,Americas,M,2024-S1,181,0.0,1.0,14,9.0,2.0,2.0,3892.0,0.0055248618784530384,0.07734806629834254,0.2222222222222222,True,2.0,con torneos locales
+BAR,Americas,M,2024-S2,30,0.0,0.0,30,3.0,0.0,0.0,1926.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+BDI,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,3493.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BDI,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,6395.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BDI,Africa,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,2716.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BDI,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,6078.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BEL,Europe,F,2024-S1,399,3.0,10.0,64,238.0,68.0,104.0,217.0,0.02506265664160401,0.16040100250626566,0.2857142857142857,True,2.0,con torneos locales
+BEL,Europe,F,2024-S2,366,4.0,8.0,102,15.0,1.0,3.0,217.0,0.02185792349726776,0.2786885245901639,0.06666666666666667,True,2.0,con torneos locales
+BEL,Europe,M,2024-S1,370,1.0,7.0,57,234.0,57.0,94.0,217.0,0.01891891891891892,0.15405405405405406,0.24358974358974358,True,2.0,con torneos locales
+BEL,Europe,M,2024-S2,408,1.0,5.0,122,11.0,3.0,7.0,217.0,0.012254901960784314,0.29901960784313725,0.2727272727272727,True,2.0,con torneos locales
+BEN,Africa,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,2376.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BEN,Africa,F,2024-S2,4,0.0,0.0,4,1.0,0.0,0.0,518.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BEN,Africa,M,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,2376.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BEN,Africa,M,2024-S2,7,0.0,0.0,7,3.0,2.0,4.0,518.0,0.0,1.0,0.6666666666666666,False,0.0,solo vista en el exterior
+BER,Americas,F,2024-S1,44,0.0,2.0,11,10.0,1.0,2.0,3371.0,0.045454545454545456,0.25,0.1,True,2.0,con torneos locales
+BER,Americas,F,2024-S2,2,0.0,1.0,2,2.0,0.0,0.0,6375.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+BER,Americas,M,2024-S1,43,0.0,1.0,14,12.0,3.0,8.0,3519.0,0.023255813953488372,0.32558139534883723,0.25,True,2.0,con torneos locales
+BER,Americas,M,2024-S2,3,0.0,1.0,3,3.0,0.0,0.0,5604.5,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+BHU,Asia,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,2873.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BHU,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,6439.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BIH,Europe,F,2024-S1,190,1.0,2.0,31,89.0,6.0,11.0,137.0,0.010526315789473684,0.1631578947368421,0.06741573033707865,True,3.0,con torneos locales
+BIH,Europe,F,2024-S2,8,1.0,2.0,8,3.0,0.0,0.0,349.0,0.25,1.0,0.0,False,0.0,solo vista en el exterior
+BIH,Europe,M,2024-S1,258,0.0,2.0,55,163.0,13.0,19.0,137.0,0.007751937984496124,0.2131782945736434,0.07975460122699386,True,3.0,con torneos locales
+BIH,Europe,M,2024-S2,37,0.0,3.0,37,12.0,0.0,0.0,362.0,0.08108108108108109,1.0,0.0,True,0.0,solo vista en el exterior
+BIZ,Americas,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,9877.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BLR,Europe,F,2024-S1,144,1.0,2.0,3,1.0,0.0,0.0,1704.0,0.013888888888888888,0.020833333333333332,0.0,True,1.0,con torneos locales
+BLR,Europe,F,2024-S2,209,1.0,2.0,8,1.0,0.0,0.0,1379.0,0.009569377990430622,0.03827751196172249,0.0,True,2.0,con torneos locales
+BLR,Europe,M,2024-S1,168,0.0,2.0,12,0.0,0.0,0.0,1704.0,0.011904761904761904,0.07142857142857142,,True,1.0,con torneos locales
+BLR,Europe,M,2024-S2,240,0.0,10.0,13,1.0,0.0,0.0,1379.0,0.041666666666666664,0.05416666666666667,0.0,True,2.0,con torneos locales
+BOL,Americas,F,2024-S1,91,0.0,1.0,3,2.0,0.0,0.0,3418.0,0.01098901098901099,0.03296703296703297,0.0,True,2.0,con torneos locales
+BOL,Americas,F,2024-S2,53,0.0,0.0,2,2.0,0.0,0.0,10354.5,0.0,0.03773584905660377,0.0,True,2.0,con torneos locales
+BOL,Americas,M,2024-S1,157,0.0,0.0,12,4.0,0.0,0.0,6840.0,0.0,0.07643312101910828,0.0,True,2.0,con torneos locales
+BOL,Americas,M,2024-S2,110,0.0,0.0,4,2.0,0.0,0.0,6631.0,0.0,0.03636363636363636,0.0,True,2.0,con torneos locales
+BOT,Africa,F,2024-S1,154,0.0,0.0,7,7.0,0.0,0.0,2214.0,0.0,0.045454545454545456,0.0,True,1.0,con torneos locales
+BOT,Africa,F,2024-S2,12,0.0,0.0,12,12.0,5.0,7.0,929.0,0.0,1.0,0.4166666666666667,True,0.0,solo vista en el exterior
+BOT,Africa,M,2024-S1,124,0.0,0.0,8,8.0,1.0,1.0,2214.0,0.0,0.06451612903225806,0.125,True,1.0,con torneos locales
+BOT,Africa,M,2024-S2,12,0.0,0.0,12,12.0,3.0,3.0,929.0,0.0,1.0,0.25,True,0.0,solo vista en el exterior
+BRA,Americas,F,2024-S1,117,4.0,28.0,23,20.0,5.0,14.0,10034.0,0.23931623931623933,0.19658119658119658,0.25,True,1.0,con torneos locales
+BRA,Americas,F,2024-S2,128,4.0,25.0,7,7.0,0.0,0.0,10731.0,0.1953125,0.0546875,0.0,True,1.0,con torneos locales
+BRA,Americas,M,2024-S1,178,8.0,58.0,38,36.0,11.0,20.0,9943.0,0.3258426966292135,0.21348314606741572,0.3055555555555556,True,1.0,con torneos locales
+BRA,Americas,M,2024-S2,208,8.0,56.0,16,14.0,2.0,4.0,10067.0,0.2692307692307692,0.07692307692307693,0.14285714285714285,True,1.0,con torneos locales
+BRN,Asia,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,5075.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BRN,Asia,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,8647.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BRN,Asia,M,2024-S1,4,1.0,1.0,4,4.0,1.0,1.0,4574.0,0.25,1.0,0.25,False,0.0,solo vista en el exterior
+BRN,Asia,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,3653.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BRU,Asia,F,2024-S1,2,0.0,0.0,2,1.0,0.0,0.0,1382.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BRU,Asia,F,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,10642.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BRU,Asia,M,2024-S1,3,0.0,0.0,3,2.0,0.0,0.0,1382.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BRU,Asia,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,10059.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BUL,Europe,F,2024-S1,206,1.0,3.0,11,6.0,0.0,0.0,1445.0,0.014563106796116505,0.05339805825242718,0.0,True,2.0,con torneos locales
+BUL,Europe,F,2024-S2,320,1.0,4.0,8,2.0,0.0,0.0,1619.0,0.0125,0.025,0.0,True,1.0,con torneos locales
+BUL,Europe,M,2024-S1,280,4.0,9.0,17,10.0,2.0,4.0,1607.0,0.03214285714285714,0.060714285714285714,0.2,True,2.0,con torneos locales
+BUL,Europe,M,2024-S2,406,3.0,9.0,11,5.0,0.0,0.0,1365.0,0.022167487684729065,0.027093596059113302,0.0,True,1.0,con torneos locales
+BUR,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,2851.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BUR,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4107.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BUR,Africa,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,5757.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+BUR,Africa,M,2024-S2,2,0.0,0.0,2,1.0,0.0,0.0,2425.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAF,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,2238.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAF,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4937.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAF,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,3075.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAF,Africa,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,4500.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAM,Asia,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,5744.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAM,Asia,F,2024-S2,4,0.0,0.0,4,2.0,0.0,0.0,472.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAM,Asia,M,2024-S1,3,0.0,0.0,3,2.0,0.0,0.0,3737.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAM,Asia,M,2024-S2,9,0.0,0.0,9,1.0,0.0,0.0,472.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CAN,Americas,F,2024-S1,700,21.0,66.0,58,144.0,22.0,49.0,3505.0,0.09428571428571429,0.08285714285714285,0.1527777777777778,True,4.0,con torneos locales
+CAN,Americas,F,2024-S2,530,14.0,50.0,43,16.0,4.0,17.0,7124.0,0.09433962264150944,0.08113207547169811,0.25,True,2.0,con torneos locales
+CAN,Americas,M,2024-S1,722,9.0,47.0,56,138.0,19.0,30.0,6009.0,0.06509695290858726,0.07756232686980609,0.13768115942028986,True,4.0,con torneos locales
+CAN,Americas,M,2024-S2,578,7.0,35.0,32,14.0,3.0,5.0,7124.0,0.06055363321799308,0.05536332179930796,0.21428571428571427,True,2.0,con torneos locales
+CAY,Americas,F,2024-S1,18,0.0,2.0,18,5.0,2.0,3.0,654.0,0.1111111111111111,1.0,0.4,True,0.0,solo vista en el exterior
+CAY,Americas,F,2024-S2,5,0.0,2.0,5,2.0,0.0,0.0,5466.5,0.4,1.0,0.0,False,0.0,solo vista en el exterior
+CAY,Americas,M,2024-S1,16,0.0,1.0,16,5.0,2.0,4.0,654.0,0.0625,1.0,0.4,True,0.0,solo vista en el exterior
+CAY,Americas,M,2024-S2,7,1.0,1.0,7,1.0,0.0,0.0,3783.0,0.14285714285714285,1.0,0.0,False,0.0,solo vista en el exterior
+CGO,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5659.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CGO,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,4821.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CGO,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5659.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CHI,Americas,F,2024-S1,20,0.0,1.0,20,3.0,0.0,0.0,1552.0,0.05,1.0,0.0,True,0.0,solo vista en el exterior
+CHI,Americas,F,2024-S2,140,0.0,0.0,2,1.0,0.0,0.0,10294.5,0.0,0.014285714285714285,0.0,True,1.0,con torneos locales
+CHI,Americas,M,2024-S1,37,0.0,3.0,37,5.0,0.0,0.0,1552.0,0.08108108108108109,1.0,0.0,True,0.0,solo vista en el exterior
+CHI,Americas,M,2024-S2,206,0.0,2.0,3,3.0,0.0,0.0,12652.0,0.009708737864077669,0.014563106796116505,0.0,True,1.0,con torneos locales
+CHN,Asia,F,2024-S1,258,31.0,109.0,15,12.0,2.0,2.0,6305.0,0.42248062015503873,0.05813953488372093,0.16666666666666666,True,1.0,con torneos locales
+CHN,Asia,F,2024-S2,277,44.0,137.0,35,33.0,9.0,16.0,8541.0,0.49458483754512633,0.1263537906137184,0.2727272727272727,True,2.0,con torneos locales
+CHN,Asia,M,2024-S1,315,16.0,74.0,10,8.0,1.0,1.0,6305.0,0.23492063492063492,0.031746031746031744,0.125,True,1.0,con torneos locales
+CHN,Asia,M,2024-S2,315,20.0,92.0,30,32.0,4.0,9.0,8541.0,0.2920634920634921,0.09523809523809523,0.125,True,2.0,con torneos locales
+CIV,Africa,F,2024-S1,2,0.0,0.0,2,1.0,0.0,0.0,5352.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CIV,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,6329.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CIV,Africa,M,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,651.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CMR,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,1494.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CMR,Africa,F,2024-S2,4,0.0,0.0,4,2.0,0.0,0.0,4802.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CMR,Africa,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,1494.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CMR,Africa,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,4802.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COD,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,1338.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COD,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4479.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COD,Africa,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,2085.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COD,Africa,M,2024-S2,4,0.0,0.0,4,4.0,0.0,0.0,2832.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COK,Oceania,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,10980.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COK,Oceania,F,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,16350.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COK,Oceania,M,2024-S1,3,0.0,1.0,3,3.0,0.0,0.0,5044.0,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+COK,Oceania,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,11188.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COL,Americas,F,2024-S1,221,0.0,5.0,25,20.0,9.0,22.0,1640.0,0.02262443438914027,0.11312217194570136,0.45,True,1.0,con torneos locales
+COL,Americas,F,2024-S2,7,0.0,2.0,7,2.0,0.0,0.0,5726.0,0.2857142857142857,1.0,0.0,False,1.0,con torneos locales
+COL,Americas,M,2024-S1,287,0.0,6.0,36,32.0,9.0,11.0,1082.0,0.020905923344947737,0.1254355400696864,0.28125,True,1.0,con torneos locales
+COL,Americas,M,2024-S2,9,0.0,3.0,9,3.0,0.0,0.0,2709.0,0.3333333333333333,1.0,0.0,False,1.0,con torneos locales
+COM,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,4242.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COM,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,7516.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COM,Africa,M,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,3412.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+COM,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,7938.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CPV,Africa,F,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,4943.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CPV,Africa,F,2024-S2,3,0.0,0.0,3,2.0,1.0,1.0,3604.5,0.0,1.0,0.5,False,0.0,solo vista en el exterior
+CPV,Africa,M,2024-S1,6,0.0,0.0,6,6.0,0.0,0.0,4943.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CPV,Africa,M,2024-S2,5,0.0,0.0,5,2.0,0.0,0.0,2844.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CRC,Americas,F,2024-S1,55,0.0,1.0,55,55.0,24.0,48.0,1777.0,0.01818181818181818,1.0,0.43636363636363634,True,0.0,solo vista en el exterior
+CRC,Americas,F,2024-S2,5,0.0,0.0,5,3.0,0.0,0.0,5513.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CRC,Americas,M,2024-S1,66,0.0,0.0,66,66.0,26.0,56.0,1777.0,0.0,1.0,0.3939393939393939,True,0.0,solo vista en el exterior
+CRC,Americas,M,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,8889.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CRO,Europe,F,2024-S1,219,1.0,3.0,57,163.0,11.0,16.0,150.0,0.0136986301369863,0.2602739726027397,0.06748466257668712,True,4.0,con torneos locales
+CRO,Europe,F,2024-S2,168,1.0,6.0,18,10.0,0.0,0.0,243.0,0.03571428571428571,0.10714285714285714,0.0,True,3.0,con torneos locales
+CRO,Europe,M,2024-S1,342,3.0,8.0,97,260.0,8.0,10.0,150.0,0.023391812865497075,0.28362573099415206,0.03076923076923077,True,4.0,con torneos locales
+CRO,Europe,M,2024-S2,300,1.0,13.0,27,20.0,0.0,0.0,300.0,0.043333333333333335,0.09,0.0,True,3.0,con torneos locales
+CUB,Americas,F,2024-S1,4,0.0,2.0,4,4.0,2.0,6.0,7813.0,0.5,1.0,0.5,False,0.0,solo vista en el exterior
+CUB,Americas,F,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,7618.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CUB,Americas,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,5053.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CUB,Americas,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,8231.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CUR,Americas,F,2024-S1,2,0.0,0.0,2,0.0,0.0,0.0,1690.0,0.0,1.0,,False,0.0,solo vista en el exterior
+CUR,Americas,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,8866.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CUR,Americas,M,2024-S1,3,0.0,0.0,3,1.0,0.0,0.0,12343.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CUR,Americas,M,2024-S2,3,0.0,0.0,3,1.0,0.0,0.0,4451.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+CYP,Europe,F,2024-S1,24,1.0,2.0,24,22.0,1.0,2.0,904.0,0.08333333333333333,1.0,0.045454545454545456,True,0.0,solo vista en el exterior
+CYP,Europe,F,2024-S2,16,0.0,1.0,16,12.0,0.0,0.0,1909.0,0.0625,1.0,0.0,True,0.0,solo vista en el exterior
+CYP,Europe,M,2024-S1,29,0.0,0.0,29,28.0,0.0,0.0,904.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+CYP,Europe,M,2024-S2,22,0.0,0.0,22,12.0,0.0,0.0,1909.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+CZE,Europe,F,2024-S1,463,3.0,4.0,135,206.0,15.0,29.0,412.0,0.008639308855291577,0.2915766738660907,0.07281553398058252,True,4.0,con torneos locales
+CZE,Europe,F,2024-S2,210,3.0,6.0,57,6.0,0.0,0.0,422.0,0.02857142857142857,0.2714285714285714,0.0,True,1.0,con torneos locales
+CZE,Europe,M,2024-S1,438,2.0,13.0,104,183.0,16.0,23.0,441.5,0.02968036529680365,0.2374429223744292,0.08743169398907104,True,4.0,con torneos locales
+CZE,Europe,M,2024-S2,241,4.0,15.0,82,13.0,0.0,0.0,422.0,0.06224066390041494,0.34024896265560167,0.0,True,1.0,con torneos locales
+DEN,Europe,F,2024-S1,321,5.0,14.0,79,74.0,17.0,29.0,956.0,0.04361370716510903,0.24610591900311526,0.22972972972972974,True,2.0,con torneos locales
+DEN,Europe,F,2024-S2,741,4.0,18.0,39,27.0,13.0,23.0,84.0,0.024291497975708502,0.05263157894736842,0.48148148148148145,True,11.0,con torneos locales
+DEN,Europe,M,2024-S1,332,0.0,11.0,76,68.0,6.0,11.0,956.0,0.03313253012048193,0.2289156626506024,0.08823529411764706,True,2.0,con torneos locales
+DEN,Europe,M,2024-S2,781,1.0,13.0,30,23.0,12.0,16.0,84.0,0.016645326504481434,0.03841229193341869,0.5217391304347826,True,11.0,con torneos locales
+DJI,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,2875.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DJI,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5550.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DJI,Africa,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,4387.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DJI,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4953.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DMA,Americas,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,7826.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DMA,Americas,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,7027.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DMA,Americas,M,2024-S1,1,0.0,0.0,1,0.0,0.0,0.0,7260.0,0.0,1.0,,False,0.0,solo vista en el exterior
+DMA,Americas,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,6810.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DOM,Americas,F,2024-S1,122,0.0,0.0,21,122.0,22.0,31.0,3228.0,0.0,0.1721311475409836,0.18032786885245902,True,1.0,con torneos locales
+DOM,Americas,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,8427.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+DOM,Americas,M,2024-S1,132,0.0,1.0,20,132.0,23.0,43.0,3228.0,0.007575757575757576,0.15151515151515152,0.17424242424242425,True,1.0,con torneos locales
+DOM,Americas,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,8427.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ECU,Americas,F,2024-S1,2,0.0,1.0,2,1.0,0.0,0.0,7008.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+ECU,Americas,F,2024-S2,3,0.0,1.0,3,1.0,0.0,0.0,2633.0,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+ECU,Americas,M,2024-S1,2,0.0,0.0,2,1.0,0.0,0.0,7748.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ECU,Americas,M,2024-S2,4,0.0,0.0,4,2.0,0.0,0.0,6599.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+EGY,Africa,F,2024-S1,11,1.0,1.0,11,11.0,7.0,20.0,3883.0,0.09090909090909091,1.0,0.6363636363636364,True,0.0,solo vista en el exterior
+EGY,Africa,F,2024-S2,2,0.0,1.0,2,2.0,0.0,0.0,3006.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+EGY,Africa,M,2024-S1,21,1.0,7.0,21,21.0,10.0,24.0,4268.0,0.3333333333333333,1.0,0.47619047619047616,True,0.0,solo vista en el exterior
+EGY,Africa,M,2024-S2,3,1.0,2.0,3,3.0,0.0,0.0,2526.0,0.6666666666666666,1.0,0.0,False,0.0,solo vista en el exterior
+ERI,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,4321.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ERI,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4396.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ERI,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,1747.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ERI,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4877.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ESA,Americas,F,2024-S1,12,0.0,0.0,12,11.0,2.0,3.0,1778.0,0.0,1.0,0.18181818181818182,True,0.0,solo vista en el exterior
+ESA,Americas,F,2024-S2,2,0.0,1.0,2,2.0,0.0,0.0,9562.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+ESA,Americas,M,2024-S1,7,0.0,0.0,7,7.0,2.0,2.0,2280.5,0.0,1.0,0.2857142857142857,False,0.0,solo vista en el exterior
+ESA,Americas,M,2024-S2,8,0.0,0.0,8,1.0,0.0,0.0,2493.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ESP,Europe,F,2024-S1,551,8.0,33.0,74,105.0,23.0,47.0,1150.0,0.05989110707803993,0.13430127041742287,0.21904761904761905,True,4.0,con torneos locales
+ESP,Europe,F,2024-S2,508,8.0,42.0,59,17.0,6.0,9.0,1033.0,0.08267716535433071,0.11614173228346457,0.35294117647058826,True,5.0,con torneos locales
+ESP,Europe,M,2024-S1,832,6.0,47.0,89,130.0,21.0,36.0,1150.0,0.056490384615384616,0.10697115384615384,0.16153846153846155,True,4.0,con torneos locales
+ESP,Europe,M,2024-S2,573,9.0,47.0,70,23.0,10.0,16.0,1033.0,0.08202443280977312,0.12216404886561955,0.43478260869565216,True,5.0,con torneos locales
+EST,Europe,F,2024-S1,244,1.0,3.0,109,50.0,8.0,15.0,223.0,0.012295081967213115,0.44672131147540983,0.16,True,1.0,con torneos locales
+EST,Europe,F,2024-S2,141,1.0,4.0,30,22.0,9.0,14.0,1078.0,0.028368794326241134,0.2127659574468085,0.4090909090909091,True,2.0,con torneos locales
+EST,Europe,M,2024-S1,269,1.0,5.0,107,50.0,5.0,10.0,223.0,0.01858736059479554,0.39776951672862454,0.1,True,1.0,con torneos locales
+EST,Europe,M,2024-S2,158,2.0,6.0,43,33.0,8.0,10.0,1078.0,0.0379746835443038,0.2721518987341772,0.24242424242424243,True,2.0,con torneos locales
+ETH,Africa,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,4308.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ETH,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4995.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ETH,Africa,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,4308.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+FIJ,Oceania,F,2024-S1,10,0.0,0.0,10,9.0,4.0,4.0,2832.0,0.0,1.0,0.4444444444444444,True,0.0,solo vista en el exterior
+FIJ,Oceania,F,2024-S2,5,0.0,0.0,5,2.0,0.0,0.0,3509.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+FIJ,Oceania,M,2024-S1,12,0.0,0.0,12,12.0,0.0,0.0,2832.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+FIJ,Oceania,M,2024-S2,6,0.0,1.0,6,2.0,0.0,0.0,3509.0,0.16666666666666666,1.0,0.0,False,0.0,solo vista en el exterior
+FIN,Europe,F,2024-S1,508,0.0,7.0,79,63.0,8.0,10.0,396.0,0.013779527559055118,0.15551181102362205,0.12698412698412698,True,3.0,con torneos locales
+FIN,Europe,F,2024-S2,646,1.0,10.0,77,22.0,11.0,19.0,610.0,0.015479876160990712,0.11919504643962849,0.5,True,3.0,con torneos locales
+FIN,Europe,M,2024-S1,385,2.0,5.0,57,36.0,3.0,4.0,396.0,0.012987012987012988,0.14805194805194805,0.08333333333333333,True,3.0,con torneos locales
+FIN,Europe,M,2024-S2,524,1.0,4.0,53,19.0,7.0,9.0,396.0,0.007633587786259542,0.10114503816793893,0.3684210526315789,True,3.0,con torneos locales
+FRA,Europe,F,2024-S1,684,12.0,53.0,126,305.0,33.0,82.0,328.0,0.07748538011695906,0.18421052631578946,0.10819672131147541,True,8.0,con torneos locales
+FRA,Europe,F,2024-S2,555,9.0,39.0,57,9.0,1.0,1.0,328.0,0.07027027027027027,0.10270270270270271,0.1111111111111111,True,5.0,con torneos locales
+FRA,Europe,M,2024-S1,920,14.0,70.0,140,364.0,29.0,60.0,395.0,0.07608695652173914,0.15217391304347827,0.07967032967032966,True,8.0,con torneos locales
+FRA,Europe,M,2024-S2,685,12.0,66.0,88,17.0,4.0,11.0,623.0,0.09635036496350365,0.12846715328467154,0.23529411764705882,True,5.0,con torneos locales
+FRO,Europe,F,2024-S1,29,0.0,0.0,22,20.0,2.0,2.0,822.0,0.0,0.7586206896551724,0.1,True,1.0,con torneos locales
+FRO,Europe,F,2024-S2,31,0.0,0.0,7,6.0,1.0,1.0,1139.0,0.0,0.22580645161290322,0.16666666666666666,True,1.0,con torneos locales
+FRO,Europe,M,2024-S1,27,0.0,0.0,19,19.0,5.0,7.0,822.0,0.0,0.7037037037037037,0.2631578947368421,True,1.0,con torneos locales
+FRO,Europe,M,2024-S2,26,0.0,1.0,9,9.0,2.0,3.0,1139.0,0.038461538461538464,0.34615384615384615,0.2222222222222222,True,1.0,con torneos locales
+FSM,Oceania,F,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,4074.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+FSM,Oceania,F,2024-S2,5,0.0,0.0,5,1.0,0.0,0.0,4890.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+FSM,Oceania,M,2024-S1,5,0.0,0.0,5,5.0,1.0,1.0,4074.0,0.0,1.0,0.2,False,0.0,solo vista en el exterior
+FSM,Oceania,M,2024-S2,3,0.0,0.0,3,1.0,0.0,0.0,4890.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAB,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,1503.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAB,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5605.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAB,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,3340.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAB,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5605.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAM,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,4026.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAM,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4261.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAM,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,9722.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GAM,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4261.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GBR,Europe,F,2024-S1,701,17.0,68.0,238,272.0,30.0,46.0,1029.0,0.09700427960057062,0.33951497860199714,0.11029411764705882,True,3.0,con torneos locales
+GBR,Europe,F,2024-S2,731,11.0,50.0,89,57.0,19.0,31.0,344.0,0.06839945280437756,0.12175102599179206,0.3333333333333333,True,1.0,con torneos locales
+GBR,Europe,M,2024-S1,716,21.0,75.0,243,301.0,27.0,38.0,1029.0,0.10474860335195531,0.3393854748603352,0.08970099667774087,True,3.0,con torneos locales
+GBR,Europe,M,2024-S2,733,14.0,43.0,95,56.0,20.0,33.0,344.0,0.058663028649386086,0.1296043656207367,0.35714285714285715,True,1.0,con torneos locales
+GBS,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,3896.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GBS,Africa,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,3109.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GEO,Europe,F,2024-S1,8,0.0,0.0,8,2.0,0.0,0.0,1762.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GEO,Europe,F,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,2128.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GEO,Europe,M,2024-S1,16,0.0,2.0,16,12.0,0.0,0.0,2053.0,0.125,1.0,0.0,True,0.0,solo vista en el exterior
+GEO,Europe,M,2024-S2,10,0.0,1.0,10,8.0,0.0,0.0,2155.0,0.1,1.0,0.0,True,0.0,solo vista en el exterior
+GEQ,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,1268.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GEQ,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5311.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GER,Europe,F,2024-S1,596,8.0,42.0,217,371.0,80.0,133.0,601.0,0.07046979865771812,0.3640939597315436,0.215633423180593,True,3.0,con torneos locales
+GER,Europe,F,2024-S2,380,7.0,28.0,147,73.0,7.0,8.0,616.0,0.07368421052631578,0.3868421052631579,0.0958904109589041,True,1.0,con torneos locales
+GER,Europe,M,2024-S1,675,14.0,56.0,255,427.0,98.0,153.0,601.0,0.08296296296296296,0.37777777777777777,0.22950819672131148,True,3.0,con torneos locales
+GER,Europe,M,2024-S2,439,8.0,36.0,179,83.0,9.0,10.0,616.0,0.08200455580865604,0.40774487471526194,0.10843373493975904,True,1.0,con torneos locales
+GHA,Africa,F,2024-S1,3,0.0,0.0,2,3.0,0.0,0.0,5109.0,0.0,0.6666666666666666,0.0,False,1.0,con torneos locales
+GHA,Africa,F,2024-S2,14,0.0,0.0,2,2.0,2.0,6.0,4915.5,0.0,0.14285714285714285,1.0,True,2.0,con torneos locales
+GHA,Africa,M,2024-S1,8,0.0,0.0,4,8.0,2.0,2.0,5917.0,0.0,0.5,0.25,False,1.0,con torneos locales
+GHA,Africa,M,2024-S2,17,0.0,0.0,2,7.0,4.0,8.0,4915.5,0.0,0.11764705882352941,0.5714285714285714,True,2.0,con torneos locales
+GIB,Europe,F,2024-S1,1,0.0,0.0,1,0.0,0.0,0.0,1759.0,0.0,1.0,,False,0.0,solo vista en el exterior
+GIB,Europe,F,2024-S2,1,0.0,0.0,1,0.0,0.0,0.0,1942.0,0.0,1.0,,False,0.0,solo vista en el exterior
+GIB,Europe,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,2742.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GRE,Europe,F,2024-S1,777,3.0,12.0,16,256.0,26.0,31.0,1053.0,0.015444015444015444,0.02059202059202059,0.1015625,True,4.0,con torneos locales
+GRE,Europe,F,2024-S2,848,3.0,10.0,15,5.0,0.0,0.0,1862.0,0.01179245283018868,0.01768867924528302,0.0,True,4.0,con torneos locales
+GRE,Europe,M,2024-S1,847,8.0,29.0,26,271.0,30.0,44.0,808.0,0.03423848878394333,0.030696576151121605,0.11070110701107011,True,4.0,con torneos locales
+GRE,Europe,M,2024-S2,880,7.0,20.0,24,11.0,1.0,1.0,1862.0,0.022727272727272728,0.02727272727272727,0.09090909090909091,True,4.0,con torneos locales
+GRN,Americas,F,2024-S1,9,0.0,0.0,9,1.0,0.0,0.0,2185.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GRN,Americas,F,2024-S2,7,0.0,0.0,7,2.0,0.0,0.0,192.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GRN,Americas,M,2024-S1,5,0.0,0.0,5,2.0,1.0,1.0,2185.0,0.0,1.0,0.5,False,0.0,solo vista en el exterior
+GRN,Americas,M,2024-S2,4,0.0,0.0,4,1.0,0.0,0.0,192.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUA,Americas,F,2024-S1,22,0.0,0.0,22,22.0,8.0,10.0,1527.0,0.0,1.0,0.36363636363636365,True,0.0,solo vista en el exterior
+GUA,Americas,F,2024-S2,4,0.0,0.0,4,3.0,0.0,0.0,9512.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUA,Americas,M,2024-S1,25,0.0,2.0,25,25.0,5.0,10.0,1527.0,0.08,1.0,0.2,True,0.0,solo vista en el exterior
+GUA,Americas,M,2024-S2,2,0.0,1.0,2,2.0,0.0,0.0,10122.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+GUI,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,6721.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUI,Africa,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,4410.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUI,Africa,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,6721.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUI,Africa,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,4410.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUM,Oceania,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,9691.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUM,Oceania,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,11370.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUM,Oceania,M,2024-S1,3,0.0,0.0,3,3.0,1.0,1.0,4703.0,0.0,1.0,0.3333333333333333,False,0.0,solo vista en el exterior
+GUM,Oceania,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,11370.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUY,Americas,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,7455.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUY,Americas,F,2024-S2,7,0.0,0.0,7,1.0,0.0,0.0,694.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUY,Americas,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,16940.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+GUY,Americas,M,2024-S2,4,0.0,0.0,4,1.0,0.0,0.0,694.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+HAI,Americas,F,2024-S1,3,0.0,0.0,3,2.0,0.0,0.0,2958.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+HAI,Americas,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,7932.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+HAI,Americas,M,2024-S1,4,0.0,0.0,4,2.0,1.0,1.0,1897.0,0.0,1.0,0.5,False,0.0,solo vista en el exterior
+HAI,Americas,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,7932.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+HKG,Asia,F,2024-S1,413,1.0,12.0,59,13.0,1.0,8.0,2516.0,0.029055690072639227,0.14285714285714285,0.07692307692307693,True,6.0,con torneos locales
+HKG,Asia,F,2024-S2,503,2.0,10.0,16,13.0,1.0,7.0,8570.0,0.019880715705765408,0.03180914512922465,0.07692307692307693,True,4.0,con torneos locales
+HKG,Asia,M,2024-S1,517,1.0,7.0,50,8.0,1.0,1.0,2516.0,0.013539651837524178,0.09671179883945841,0.125,True,6.0,con torneos locales
+HKG,Asia,M,2024-S2,638,3.0,6.0,20,14.0,0.0,0.0,6864.0,0.009404388714733543,0.03134796238244514,0.0,True,4.0,con torneos locales
+HON,Americas,F,2024-S1,12,0.0,0.0,12,12.0,5.0,8.0,1880.0,0.0,1.0,0.4166666666666667,True,0.0,solo vista en el exterior
+HON,Americas,F,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,9854.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+HON,Americas,M,2024-S1,19,0.0,1.0,19,19.0,4.0,4.0,2025.0,0.05263157894736842,1.0,0.21052631578947367,True,0.0,solo vista en el exterior
+HON,Americas,M,2024-S2,6,0.0,0.0,6,3.0,0.0,0.0,8623.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+HUN,Europe,F,2024-S1,235,15.0,26.0,73,50.0,12.0,18.0,385.0,0.11063829787234042,0.31063829787234043,0.24,True,1.0,con torneos locales
+HUN,Europe,F,2024-S2,263,10.0,30.0,20,175.0,1.0,3.0,946.0,0.11406844106463879,0.07604562737642585,0.005714285714285714,True,3.0,con torneos locales
+HUN,Europe,M,2024-S1,231,12.0,31.0,62,41.0,10.0,19.0,385.0,0.1341991341991342,0.2683982683982684,0.24390243902439024,True,1.0,con torneos locales
+HUN,Europe,M,2024-S2,281,10.0,26.0,25,202.0,2.0,5.0,1137.0,0.09252669039145907,0.08896797153024912,0.009900990099009901,True,3.0,con torneos locales
+INA,Asia,F,2024-S1,56,0.0,0.0,56,7.0,2.0,2.0,1906.0,0.0,1.0,0.2857142857142857,True,0.0,solo vista en el exterior
+INA,Asia,F,2024-S2,26,0.0,0.0,26,5.0,0.0,0.0,2614.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+INA,Asia,M,2024-S1,62,0.0,1.0,62,10.0,1.0,1.0,1906.0,0.016129032258064516,1.0,0.1,True,0.0,solo vista en el exterior
+INA,Asia,M,2024-S2,32,0.0,0.0,32,5.0,0.0,0.0,2614.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+IND,Asia,F,2024-S1,15,0.0,0.0,15,5.0,1.0,1.0,4466.0,0.0,1.0,0.2,True,0.0,solo vista en el exterior
+IND,Asia,F,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,7174.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+IND,Asia,M,2024-S1,39,0.0,5.0,39,10.0,2.0,2.0,4466.0,0.1282051282051282,1.0,0.2,True,0.0,solo vista en el exterior
+IND,Asia,M,2024-S2,4,0.0,1.0,4,2.0,0.0,0.0,6555.5,0.25,1.0,0.0,False,0.0,solo vista en el exterior
+IRI,Asia,M,2024-S1,9,0.0,2.0,9,3.0,1.0,1.0,5895.0,0.2222222222222222,1.0,0.3333333333333333,False,0.0,solo vista en el exterior
+IRI,Asia,M,2024-S2,1,0.0,1.0,1,1.0,0.0,0.0,4333.0,1.0,1.0,0.0,False,0.0,solo vista en el exterior
+IRL,Europe,F,2024-S1,424,3.0,13.0,28,211.0,17.0,53.0,762.0,0.030660377358490566,0.0660377358490566,0.08056872037914692,True,4.0,con torneos locales
+IRL,Europe,F,2024-S2,758,3.0,7.0,18,6.0,0.0,0.0,1699.0,0.009234828496042216,0.023746701846965697,0.0,True,2.0,con torneos locales
+IRL,Europe,M,2024-S1,347,5.0,19.0,41,216.0,20.0,37.0,762.0,0.05475504322766571,0.11815561959654179,0.09259259259259259,True,4.0,con torneos locales
+IRL,Europe,M,2024-S2,629,5.0,9.0,22,9.0,0.0,0.0,1895.0,0.014308426073131956,0.034976152623211444,0.0,True,2.0,con torneos locales
+IRQ,Asia,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,1123.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+IRQ,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,3861.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ISL,Europe,F,2024-S1,118,1.0,2.0,13,97.0,9.0,14.0,1885.0,0.01694915254237288,0.11016949152542373,0.09278350515463918,True,2.0,con torneos locales
+ISL,Europe,F,2024-S2,171,1.0,5.0,19,15.0,7.0,11.0,1959.0,0.029239766081871343,0.1111111111111111,0.4666666666666667,True,3.0,con torneos locales
+ISL,Europe,M,2024-S1,83,1.0,2.0,17,65.0,9.0,19.0,1921.5,0.024096385542168676,0.20481927710843373,0.13846153846153847,True,2.0,con torneos locales
+ISL,Europe,M,2024-S2,128,0.0,6.0,23,16.0,2.0,2.0,2229.0,0.046875,0.1796875,0.125,True,3.0,con torneos locales
+ISR,Europe,F,2024-S1,215,5.0,10.0,18,18.0,2.0,6.0,3123.5,0.046511627906976744,0.08372093023255814,0.1111111111111111,True,1.0,con torneos locales
+ISR,Europe,F,2024-S2,10,2.0,5.0,10,3.0,0.0,0.0,2598.0,0.5,1.0,0.0,True,0.0,solo vista en el exterior
+ISR,Europe,M,2024-S1,293,6.0,25.0,36,36.0,9.0,15.0,3191.0,0.08532423208191127,0.12286689419795221,0.25,True,1.0,con torneos locales
+ISR,Europe,M,2024-S2,17,4.0,10.0,17,9.0,0.0,0.0,2598.0,0.5882352941176471,1.0,0.0,True,0.0,solo vista en el exterior
+ISV,Americas,F,2024-S1,12,0.0,0.0,12,5.0,1.0,4.0,1537.0,0.0,1.0,0.2,True,0.0,solo vista en el exterior
+ISV,Americas,F,2024-S2,10,0.0,0.0,10,2.0,0.0,0.0,157.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+ISV,Americas,M,2024-S1,7,0.0,1.0,7,7.0,2.0,2.0,3769.0,0.14285714285714285,1.0,0.2857142857142857,False,0.0,solo vista en el exterior
+ISV,Americas,M,2024-S2,9,0.0,1.0,9,2.0,0.0,0.0,157.0,0.1111111111111111,1.0,0.0,False,0.0,solo vista en el exterior
+ITA,Europe,F,2024-S1,1266,21.0,117.0,414,555.0,47.0,85.0,14.0,0.0924170616113744,0.32701421800947866,0.08468468468468468,True,3.0,con torneos locales
+ITA,Europe,F,2024-S2,675,19.0,96.0,50,14.0,1.0,1.0,1211.0,0.14222222222222222,0.07407407407407407,0.07142857142857142,True,2.0,con torneos locales
+ITA,Europe,M,2024-S1,1503,23.0,136.0,457,575.0,62.0,102.0,205.0,0.09048569527611444,0.3040585495675316,0.10782608695652174,True,3.0,con torneos locales
+ITA,Europe,M,2024-S2,645,28.0,112.0,54,23.0,4.0,12.0,955.0,0.17364341085271318,0.08372093023255814,0.17391304347826086,True,2.0,con torneos locales
+JAM,Americas,F,2024-S1,222,0.0,0.0,22,9.0,4.0,5.0,1918.5,0.0,0.0990990990990991,0.4444444444444444,True,1.0,con torneos locales
+JAM,Americas,F,2024-S2,246,0.0,0.0,7,3.0,0.0,0.0,1135.0,0.0,0.028455284552845527,0.0,True,2.0,con torneos locales
+JAM,Americas,M,2024-S1,218,0.0,0.0,25,12.0,1.0,1.0,2544.0,0.0,0.11467889908256881,0.08333333333333333,True,1.0,con torneos locales
+JAM,Americas,M,2024-S2,217,0.0,0.0,7,3.0,0.0,0.0,6077.5,0.0,0.03225806451612903,0.0,True,2.0,con torneos locales
+JOR,Asia,F,2024-S1,7,0.0,0.0,7,2.0,0.0,0.0,8541.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+JOR,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,2369.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+JOR,Asia,M,2024-S1,5,0.0,0.0,5,1.0,0.0,0.0,8541.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+JOR,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,2369.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+JPN,Asia,F,2024-S1,563,25.0,119.0,24,13.0,8.0,11.0,9958.0,0.2113676731793961,0.04262877442273535,0.6153846153846154,True,2.0,con torneos locales
+JPN,Asia,F,2024-S2,1825,33.0,205.0,40,19.0,2.0,2.0,7951.0,0.11232876712328767,0.021917808219178082,0.10526315789473684,True,8.0,con torneos locales
+JPN,Asia,M,2024-S1,853,28.0,212.0,36,21.0,8.0,14.0,8255.0,0.2485345838218054,0.04220398593200469,0.38095238095238093,True,2.0,con torneos locales
+JPN,Asia,M,2024-S2,2472,39.0,284.0,51,22.0,3.0,3.0,7951.0,0.11488673139158576,0.02063106796116505,0.13636363636363635,True,8.0,con torneos locales
+KAZ,Asia,F,2024-S1,104,0.0,3.0,11,6.0,0.0,0.0,5138.0,0.028846153846153848,0.10576923076923077,0.0,True,1.0,con torneos locales
+KAZ,Asia,F,2024-S2,3,0.0,2.0,3,3.0,0.0,0.0,5466.0,0.6666666666666666,1.0,0.0,False,0.0,solo vista en el exterior
+KAZ,Asia,M,2024-S1,180,2.0,5.0,20,5.0,0.0,0.0,5138.0,0.027777777777777776,0.1111111111111111,0.0,True,1.0,con torneos locales
+KAZ,Asia,M,2024-S2,8,0.0,4.0,8,7.0,0.0,0.0,5466.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+KEN,Africa,F,2024-S1,14,0.0,0.0,14,10.0,0.0,0.0,5023.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+KEN,Africa,F,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,5452.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KEN,Africa,M,2024-S1,19,0.0,0.0,19,12.0,0.0,0.0,4311.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+KEN,Africa,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,5452.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KGZ,Asia,F,2024-S1,3,0.0,0.0,3,1.0,0.0,0.0,5259.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KGZ,Asia,F,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,4942.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KGZ,Asia,M,2024-S1,3,0.0,1.0,3,1.0,1.0,1.0,5307.5,0.3333333333333333,1.0,1.0,False,0.0,solo vista en el exterior
+KGZ,Asia,M,2024-S2,2,1.0,1.0,2,2.0,0.0,0.0,4370.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+KOR,Asia,F,2024-S1,58,3.0,26.0,8,8.0,0.0,0.0,7081.0,0.4482758620689655,0.13793103448275862,0.0,True,1.0,con torneos locales
+KOR,Asia,F,2024-S2,78,5.0,21.0,15,74.0,1.0,1.0,8162.0,0.2692307692307692,0.19230769230769232,0.013513513513513514,True,1.0,con torneos locales
+KOR,Asia,M,2024-S1,64,8.0,38.0,14,14.0,4.0,6.0,9114.0,0.59375,0.21875,0.2857142857142857,True,1.0,con torneos locales
+KOR,Asia,M,2024-S2,124,10.0,24.0,16,122.0,3.0,3.0,8162.0,0.1935483870967742,0.12903225806451613,0.02459016393442623,True,1.0,con torneos locales
+KOS,Europe,F,2024-S1,18,0.0,0.0,18,3.0,1.0,1.0,230.0,0.0,1.0,0.3333333333333333,True,0.0,solo vista en el exterior
+KOS,Europe,F,2024-S2,6,0.0,0.0,6,2.0,0.0,0.0,1408.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KOS,Europe,M,2024-S1,17,0.0,0.0,17,3.0,0.0,0.0,384.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+KOS,Europe,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,1383.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KSA,Asia,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,922.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KSA,Asia,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,4307.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KSA,Asia,M,2024-S1,5,0.0,0.0,5,1.0,0.0,0.0,8122.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KSA,Asia,M,2024-S2,4,0.0,0.0,4,3.0,0.0,0.0,3741.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KUW,Asia,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,2014.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KUW,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,3775.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+KUW,Asia,M,2024-S1,15,0.0,0.0,15,5.0,0.0,0.0,7565.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+KUW,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,3172.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LAO,Asia,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,5321.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LAO,Asia,F,2024-S2,5,0.0,0.0,5,3.0,0.0,0.0,7966.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LAO,Asia,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,9650.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LAO,Asia,M,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,7966.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LAT,Europe,F,2024-S1,238,0.0,1.0,35,12.0,3.0,5.0,223.0,0.004201680672268907,0.14705882352941177,0.25,True,2.0,con torneos locales
+LAT,Europe,F,2024-S2,127,0.0,1.0,23,6.0,0.0,0.0,262.0,0.007874015748031496,0.18110236220472442,0.0,True,1.0,con torneos locales
+LAT,Europe,M,2024-S1,368,0.0,3.0,64,32.0,3.0,4.0,262.0,0.008152173913043478,0.17391304347826086,0.09375,True,2.0,con torneos locales
+LAT,Europe,M,2024-S2,222,0.0,4.0,27,16.0,1.0,1.0,907.0,0.018018018018018018,0.12162162162162163,0.0625,True,1.0,con torneos locales
+LBA,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,3332.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LBA,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,2801.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LBA,Africa,M,2024-S1,8,0.0,0.0,8,8.0,0.0,0.0,3999.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LBA,Africa,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,2300.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LBN,Asia,F,2024-S1,16,0.0,0.0,16,8.0,1.0,1.0,2491.5,0.0,1.0,0.125,True,0.0,solo vista en el exterior
+LBN,Asia,F,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,2640.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LBN,Asia,M,2024-S1,12,0.0,2.0,12,5.0,1.0,3.0,2802.0,0.16666666666666666,1.0,0.2,True,0.0,solo vista en el exterior
+LBN,Asia,M,2024-S2,3,0.0,2.0,3,2.0,0.0,0.0,2065.0,0.6666666666666666,1.0,0.0,False,0.0,solo vista en el exterior
+LCA,Americas,F,2024-S1,18,0.0,0.0,18,2.0,0.0,0.0,176.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+LCA,Americas,F,2024-S2,5,0.0,0.0,5,1.0,0.0,0.0,382.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LCA,Americas,M,2024-S1,18,0.0,0.0,18,4.0,2.0,3.0,2120.0,0.0,1.0,0.5,True,0.0,solo vista en el exterior
+LCA,Americas,M,2024-S2,5,0.0,0.0,5,2.0,0.0,0.0,382.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LES,Africa,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,2794.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LIE,Europe,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,155.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+LIE,Europe,F,2024-S2,1,0.0,0.0,1,0.0,0.0,0.0,109.0,0.0,1.0,,False,0.0,solo vista en el exterior
+LIE,Europe,M,2024-S1,6,0.0,0.0,6,5.0,1.0,1.0,155.0,0.0,1.0,0.2,False,0.0,solo vista en el exterior
+LIE,Europe,M,2024-S2,2,0.0,0.0,2,0.0,0.0,0.0,109.0,0.0,1.0,,False,0.0,solo vista en el exterior
+LTU,Europe,F,2024-S1,160,1.0,4.0,12,47.0,14.0,17.0,1958.0,0.025,0.075,0.2978723404255319,True,3.0,con torneos locales
+LTU,Europe,F,2024-S2,30,2.0,6.0,19,8.0,2.0,3.0,889.0,0.2,0.6333333333333333,0.25,True,1.0,con torneos locales
+LTU,Europe,M,2024-S1,242,2.0,13.0,28,71.0,15.0,26.0,1393.0,0.05371900826446281,0.11570247933884298,0.2112676056338028,True,3.0,con torneos locales
+LTU,Europe,M,2024-S2,44,2.0,8.0,34,19.0,5.0,5.0,900.5,0.18181818181818182,0.7727272727272727,0.2631578947368421,True,1.0,con torneos locales
+LUX,Europe,F,2024-S1,57,0.0,0.0,9,56.0,6.0,11.0,764.0,0.0,0.15789473684210525,0.10714285714285714,True,2.0,con torneos locales
+LUX,Europe,F,2024-S2,168,0.0,0.0,9,0.0,0.0,0.0,234.0,0.0,0.05357142857142857,,True,2.0,con torneos locales
+LUX,Europe,M,2024-S1,81,0.0,5.0,16,80.0,11.0,18.0,1323.0,0.06172839506172839,0.19753086419753085,0.1375,True,2.0,con torneos locales
+LUX,Europe,M,2024-S2,164,0.0,1.0,20,3.0,0.0,0.0,234.0,0.006097560975609756,0.12195121951219512,0.0,True,2.0,con torneos locales
+MAA,Americas,F,2024-S1,2,0.0,0.0,2,1.0,0.0,0.0,,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAA,Americas,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAA,Americas,M,2024-S1,4,0.0,0.0,4,0.0,0.0,0.0,,0.0,1.0,,False,0.0,solo vista en el exterior
+MAA,Americas,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAC,Asia,F,2024-S1,4,0.0,0.0,4,1.0,0.0,0.0,1064.0,0.0,1.0,0.0,False,1.0,con torneos locales
+MAC,Asia,F,2024-S2,4,0.0,0.0,4,4.0,0.0,0.0,2115.0,0.0,1.0,0.0,False,1.0,con torneos locales
+MAC,Asia,M,2024-S1,5,0.0,0.0,5,2.0,0.0,0.0,1064.0,0.0,1.0,0.0,False,1.0,con torneos locales
+MAC,Asia,M,2024-S2,6,0.0,1.0,6,5.0,0.0,0.0,2332.0,0.16666666666666666,1.0,0.0,False,1.0,con torneos locales
+MAD,Africa,F,2024-S1,3,0.0,0.0,3,2.0,1.0,2.0,6947.0,0.0,1.0,0.5,False,0.0,solo vista en el exterior
+MAD,Africa,F,2024-S2,4,0.0,0.0,4,4.0,1.0,3.0,7877.0,0.0,1.0,0.25,False,0.0,solo vista en el exterior
+MAD,Africa,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,4347.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAD,Africa,M,2024-S2,5,0.0,0.0,5,5.0,0.0,0.0,7809.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAR,Africa,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,5216.0,0.0,1.0,0.0,False,1.0,con torneos locales
+MAR,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,1812.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAR,Africa,M,2024-S1,7,0.0,1.0,7,5.0,0.0,0.0,1770.0,0.14285714285714285,1.0,0.0,False,1.0,con torneos locales
+MAR,Africa,M,2024-S2,5,0.0,1.0,5,3.0,0.0,0.0,2622.0,0.2,1.0,0.0,False,0.0,solo vista en el exterior
+MAS,Asia,F,2024-S1,337,0.0,1.0,34,128.0,14.0,20.0,317.0,0.002967359050445104,0.10089020771513353,0.109375,True,2.0,con torneos locales
+MAS,Asia,F,2024-S2,45,0.0,0.0,45,8.0,1.0,1.0,1167.0,0.0,1.0,0.125,True,0.0,solo vista en el exterior
+MAS,Asia,M,2024-S1,483,0.0,4.0,46,173.0,14.0,26.0,742.0,0.008281573498964804,0.09523809523809523,0.08092485549132948,True,2.0,con torneos locales
+MAS,Asia,M,2024-S2,61,0.0,5.0,61,13.0,0.0,0.0,1167.0,0.08196721311475409,1.0,0.0,True,0.0,solo vista en el exterior
+MAW,Africa,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,4692.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAW,Africa,F,2024-S2,4,0.0,0.0,4,4.0,0.0,0.0,6870.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAW,Africa,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,5932.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MAW,Africa,M,2024-S2,7,0.0,0.0,7,7.0,1.0,2.0,2059.0,0.0,1.0,0.14285714285714285,False,0.0,solo vista en el exterior
+MDA,Europe,F,2024-S1,5,0.0,1.0,5,2.0,1.0,2.0,656.0,0.2,1.0,0.5,False,0.0,solo vista en el exterior
+MDA,Europe,F,2024-S2,3,0.0,2.0,3,3.0,0.0,0.0,785.5,0.6666666666666666,1.0,0.0,False,0.0,solo vista en el exterior
+MDA,Europe,M,2024-S1,19,0.0,0.0,19,8.0,2.0,4.0,656.0,0.0,1.0,0.25,True,0.0,solo vista en el exterior
+MDA,Europe,M,2024-S2,9,0.0,0.0,9,3.0,0.0,0.0,854.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MDV,Asia,F,2024-S1,18,0.0,0.0,18,4.0,0.0,0.0,3413.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+MDV,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,7104.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MDV,Asia,M,2024-S1,19,0.0,0.0,19,8.0,0.0,0.0,3413.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+MDV,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,7104.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MEX,Americas,F,2024-S1,138,0.0,9.0,14,136.0,39.0,63.0,3253.0,0.06521739130434782,0.10144927536231885,0.2867647058823529,True,1.0,con torneos locales
+MEX,Americas,F,2024-S2,4,1.0,3.0,4,3.0,0.0,0.0,8749.0,0.75,1.0,0.0,False,0.0,solo vista en el exterior
+MEX,Americas,M,2024-S1,157,2.0,11.0,27,151.0,42.0,69.0,3228.0,0.07006369426751592,0.17197452229299362,0.2781456953642384,True,1.0,con torneos locales
+MEX,Americas,M,2024-S2,6,1.0,3.0,6,4.0,0.0,0.0,8749.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+MGL,Asia,F,2024-S1,114,0.0,1.0,15,2.0,1.0,6.0,4037.0,0.008771929824561403,0.13157894736842105,0.5,True,3.0,con torneos locales
+MGL,Asia,F,2024-S2,14,0.0,1.0,14,14.0,0.0,0.0,2459.0,0.07142857142857142,1.0,0.0,True,0.0,solo vista en el exterior
+MGL,Asia,M,2024-S1,149,0.0,0.0,19,2.0,0.0,0.0,4037.0,0.0,0.12751677852348994,0.0,True,3.0,con torneos locales
+MGL,Asia,M,2024-S2,26,0.0,0.0,26,26.0,0.0,0.0,2459.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+MHL,Oceania,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,12183.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MHL,Oceania,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,13510.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MHL,Oceania,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,12183.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MHL,Oceania,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,13303.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MKD,Europe,F,2024-S1,10,0.0,0.0,10,10.0,4.0,6.0,507.0,0.0,1.0,0.4,True,0.0,solo vista en el exterior
+MKD,Europe,F,2024-S2,2,0.0,0.0,2,1.0,0.0,0.0,671.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MKD,Europe,M,2024-S1,18,0.0,0.0,18,17.0,1.0,1.0,507.0,0.0,1.0,0.058823529411764705,True,0.0,solo vista en el exterior
+MKD,Europe,M,2024-S2,5,0.0,0.0,5,2.0,0.0,0.0,687.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MLI,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,5644.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MLI,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,2430.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MLI,Africa,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,4463.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MLI,Africa,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,2430.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MLT,Europe,F,2024-S1,157,0.0,0.0,18,18.0,3.0,3.0,1671.0,0.0,0.11464968152866242,0.16666666666666666,True,1.0,con torneos locales
+MLT,Europe,F,2024-S2,9,0.0,1.0,9,1.0,0.0,0.0,1370.0,0.1111111111111111,1.0,0.0,False,0.0,solo vista en el exterior
+MLT,Europe,M,2024-S1,163,0.0,1.0,25,24.0,2.0,2.0,1671.0,0.006134969325153374,0.15337423312883436,0.08333333333333333,True,1.0,con torneos locales
+MLT,Europe,M,2024-S2,16,0.0,0.0,16,1.0,0.0,0.0,1370.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+MNE,Europe,F,2024-S1,25,0.0,0.0,25,7.0,0.0,0.0,92.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+MNE,Europe,F,2024-S2,3,0.0,0.0,3,1.0,0.0,0.0,382.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MNE,Europe,M,2024-S1,15,0.0,1.0,15,10.0,0.0,0.0,274.0,0.06666666666666667,1.0,0.0,True,0.0,solo vista en el exterior
+MNE,Europe,M,2024-S2,2,0.0,0.0,2,1.0,0.0,0.0,525.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MON,Europe,F,2024-S1,12,0.0,1.0,1,12.0,0.0,0.0,2579.5,0.08333333333333333,0.08333333333333333,0.0,True,1.0,con torneos locales
+MON,Europe,F,2024-S2,2,0.0,1.0,2,0.0,0.0,0.0,546.0,0.5,1.0,,False,0.0,solo vista en el exterior
+MON,Europe,M,2024-S1,26,0.0,2.0,11,25.0,0.0,0.0,395.0,0.07692307692307693,0.4230769230769231,0.0,True,1.0,con torneos locales
+MON,Europe,M,2024-S2,10,0.0,1.0,10,1.0,0.0,0.0,578.0,0.1,1.0,0.0,True,0.0,solo vista en el exterior
+MOZ,Africa,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,4734.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MOZ,Africa,F,2024-S2,14,0.0,0.0,14,14.0,3.0,13.0,1887.0,0.0,1.0,0.21428571428571427,True,0.0,solo vista en el exterior
+MOZ,Africa,M,2024-S1,4,0.0,0.0,4,4.0,0.0,0.0,6451.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MOZ,Africa,M,2024-S2,10,0.0,0.0,10,10.0,4.0,11.0,1887.0,0.0,1.0,0.4,True,0.0,solo vista en el exterior
+MRI,Africa,F,2024-S1,106,0.0,0.0,3,3.0,1.0,2.0,6477.0,0.0,0.02830188679245283,0.3333333333333333,True,1.0,con torneos locales
+MRI,Africa,F,2024-S2,6,0.0,0.0,6,5.0,1.0,2.0,6299.5,0.0,1.0,0.2,False,0.0,solo vista en el exterior
+MRI,Africa,M,2024-S1,120,0.0,0.0,5,5.0,0.0,0.0,9444.5,0.0,0.041666666666666664,0.0,True,1.0,con torneos locales
+MRI,Africa,M,2024-S2,10,0.0,0.0,10,9.0,2.0,5.0,4184.0,0.0,1.0,0.2222222222222222,True,0.0,solo vista en el exterior
+MTN,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,4054.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MTN,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,3649.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+MYA,Asia,M,2024-S1,2,0.0,0.0,2,0.0,0.0,0.0,1964.0,0.0,1.0,,False,0.0,solo vista en el exterior
+MYA,Asia,M,2024-S2,8,0.0,0.0,8,1.0,0.0,0.0,633.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NAM,Africa,F,2024-S1,4,0.0,0.0,4,4.0,1.0,1.0,3650.0,0.0,1.0,0.25,False,0.0,solo vista en el exterior
+NAM,Africa,F,2024-S2,55,0.0,0.0,4,54.0,14.0,40.0,7730.0,0.0,0.07272727272727272,0.25925925925925924,True,1.0,con torneos locales
+NAM,Africa,M,2024-S1,7,0.0,2.0,7,5.0,2.0,6.0,3650.0,0.2857142857142857,1.0,0.4,False,0.0,solo vista en el exterior
+NAM,Africa,M,2024-S2,55,0.0,2.0,3,54.0,17.0,60.0,7795.0,0.03636363636363636,0.05454545454545454,0.3148148148148148,True,1.0,con torneos locales
+NCA,Americas,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,9315.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NCA,Americas,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,9460.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NCA,Americas,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,8841.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NED,Europe,F,2024-S1,261,9.0,21.0,43,104.0,37.0,66.0,1067.0,0.08045977011494253,0.16475095785440613,0.3557692307692308,True,2.0,con torneos locales
+NED,Europe,F,2024-S2,129,7.0,18.0,25,74.0,19.0,29.0,463.0,0.13953488372093023,0.1937984496124031,0.25675675675675674,True,2.0,con torneos locales
+NED,Europe,M,2024-S1,285,9.0,25.0,58,111.0,36.0,62.0,915.0,0.08771929824561403,0.20350877192982456,0.32432432432432434,True,2.0,con torneos locales
+NED,Europe,M,2024-S2,124,3.0,18.0,30,67.0,17.0,25.0,427.0,0.14516129032258066,0.24193548387096775,0.2537313432835821,True,2.0,con torneos locales
+NEP,Asia,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,3231.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NEP,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,5892.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NEP,Asia,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,3231.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NEP,Asia,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,5892.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NGR,Africa,F,2024-S1,3,0.0,0.0,3,1.0,0.0,0.0,7766.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NGR,Africa,F,2024-S2,5,0.0,0.0,5,3.0,2.0,2.0,1009.0,0.0,1.0,0.6666666666666666,False,0.0,solo vista en el exterior
+NGR,Africa,M,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,4219.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NGR,Africa,M,2024-S2,8,0.0,0.0,8,5.0,2.0,7.0,1009.0,0.0,1.0,0.4,False,0.0,solo vista en el exterior
+NIA,Europe,F,2024-S1,4,2.0,3.0,4,3.0,1.0,1.0,,0.75,1.0,0.3333333333333333,False,0.0,solo vista en el exterior
+NIA,Europe,F,2024-S2,4,2.0,2.0,4,3.0,2.0,4.0,,0.5,1.0,0.6666666666666666,False,0.0,solo vista en el exterior
+NIA,Europe,M,2024-S1,2,2.0,2.0,2,2.0,0.0,0.0,,1.0,1.0,0.0,False,0.0,solo vista en el exterior
+NIA,Europe,M,2024-S2,2,1.0,2.0,2,2.0,1.0,2.0,,1.0,1.0,0.5,False,0.0,solo vista en el exterior
+NIG,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,3706.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NIG,Africa,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,3517.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NIG,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,4428.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NIG,Africa,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,2610.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NMA,Oceania,F,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,4872.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NMA,Oceania,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,11269.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NMA,Oceania,M,2024-S1,4,0.0,0.0,4,4.0,1.0,1.0,4872.0,0.0,1.0,0.25,False,0.0,solo vista en el exterior
+NMA,Oceania,M,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,11269.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+NOR,Europe,F,2024-S1,454,0.0,5.0,68,27.0,0.0,0.0,720.0,0.011013215859030838,0.14977973568281938,0.0,True,1.0,con torneos locales
+NOR,Europe,F,2024-S2,377,0.0,9.0,34,15.0,2.0,3.0,707.0,0.023872679045092837,0.09018567639257294,0.13333333333333333,True,3.0,con torneos locales
+NOR,Europe,M,2024-S1,450,0.0,9.0,79,51.0,3.0,3.0,1078.0,0.02,0.17555555555555555,0.058823529411764705,True,1.0,con torneos locales
+NOR,Europe,M,2024-S2,418,0.0,14.0,62,33.0,13.0,23.0,707.0,0.03349282296650718,0.14832535885167464,0.3939393939393939,True,3.0,con torneos locales
+NZL,Oceania,F,2024-S1,236,5.0,18.0,26,8.0,2.0,2.0,2225.0,0.07627118644067797,0.11016949152542373,0.25,True,2.0,con torneos locales
+NZL,Oceania,F,2024-S2,295,4.0,24.0,43,14.0,0.0,0.0,2289.0,0.08135593220338982,0.14576271186440679,0.0,True,1.0,con torneos locales
+NZL,Oceania,M,2024-S1,269,4.0,15.0,19,6.0,2.0,2.0,2225.0,0.055762081784386616,0.07063197026022305,0.3333333333333333,True,2.0,con torneos locales
+NZL,Oceania,M,2024-S2,349,4.0,14.0,51,15.0,1.0,1.0,2289.0,0.04011461318051576,0.14613180515759314,0.06666666666666667,True,1.0,con torneos locales
+OMA,Asia,M,2024-S1,6,0.0,0.0,6,2.0,0.0,0.0,6706.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+OMA,Asia,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,4493.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PAK,Asia,F,2024-S1,14,0.0,0.0,14,1.0,1.0,1.0,5279.0,0.0,1.0,1.0,True,0.0,solo vista en el exterior
+PAK,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,5413.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PAK,Asia,M,2024-S1,18,0.0,0.0,18,3.0,0.0,0.0,5279.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+PAK,Asia,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,5413.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PAN,Americas,F,2024-S1,26,0.0,1.0,26,26.0,1.0,2.0,2782.0,0.038461538461538464,1.0,0.038461538461538464,True,0.0,solo vista en el exterior
+PAN,Americas,F,2024-S2,4,0.0,1.0,4,3.0,0.0,0.0,9996.0,0.25,1.0,0.0,False,0.0,solo vista en el exterior
+PAN,Americas,M,2024-S1,22,0.0,0.0,22,22.0,4.0,6.0,2782.0,0.0,1.0,0.18181818181818182,True,0.0,solo vista en el exterior
+PAN,Americas,M,2024-S2,4,0.0,0.0,4,2.0,0.0,0.0,8572.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PAR,Americas,F,2024-S1,255,0.0,0.0,5,1.0,0.0,0.0,1487.0,0.0,0.0196078431372549,0.0,True,3.0,con torneos locales
+PAR,Americas,F,2024-S2,72,0.0,0.0,4,2.0,0.0,0.0,10569.5,0.0,0.05555555555555555,0.0,True,1.0,con torneos locales
+PAR,Americas,M,2024-S1,280,0.0,0.0,6,2.0,0.0,0.0,10045.0,0.0,0.02142857142857143,0.0,True,3.0,con torneos locales
+PAR,Americas,M,2024-S2,98,0.0,1.0,4,2.0,0.0,0.0,10979.0,0.01020408163265306,0.04081632653061224,0.0,True,1.0,con torneos locales
+PER,Americas,F,2024-S1,83,0.0,4.0,23,8.0,3.0,5.0,2512.0,0.04819277108433735,0.27710843373493976,0.375,True,2.0,con torneos locales
+PER,Americas,F,2024-S2,37,0.0,1.0,17,4.0,0.0,0.0,3592.0,0.02702702702702703,0.4594594594594595,0.0,True,1.0,con torneos locales
+PER,Americas,M,2024-S1,101,0.0,3.0,26,5.0,1.0,2.0,1618.0,0.0297029702970297,0.25742574257425743,0.2,True,2.0,con torneos locales
+PER,Americas,M,2024-S2,46,0.0,2.0,22,3.0,0.0,0.0,1618.0,0.043478260869565216,0.4782608695652174,0.0,True,1.0,con torneos locales
+PHI,Asia,F,2024-S1,38,1.0,3.0,12,8.0,0.0,0.0,7214.0,0.07894736842105263,0.3157894736842105,0.0,True,1.0,con torneos locales
+PHI,Asia,F,2024-S2,11,1.0,3.0,11,5.0,0.0,0.0,2532.0,0.2727272727272727,1.0,0.0,True,1.0,con torneos locales
+PHI,Asia,M,2024-S1,52,0.0,1.0,11,7.0,2.0,3.0,10643.0,0.019230769230769232,0.21153846153846154,0.2857142857142857,True,1.0,con torneos locales
+PHI,Asia,M,2024-S2,24,0.0,2.0,24,14.0,0.0,0.0,2532.0,0.08333333333333333,1.0,0.0,True,1.0,con torneos locales
+PLE,Asia,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,10140.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PLE,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,2740.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PLE,Asia,M,2024-S1,3,0.0,0.0,3,2.0,0.0,0.0,900.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PLE,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,2740.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PLW,Oceania,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,6600.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PLW,Oceania,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,12322.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PLW,Oceania,M,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,4314.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PLW,Oceania,M,2024-S2,4,0.0,0.0,4,4.0,0.0,0.0,11310.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PNG,Oceania,F,2024-S1,4,0.0,0.0,4,4.0,1.0,1.0,2664.0,0.0,1.0,0.25,False,0.0,solo vista en el exterior
+PNG,Oceania,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,13541.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PNG,Oceania,M,2024-S1,5,0.0,0.0,5,5.0,1.0,1.0,4827.0,0.0,1.0,0.2,False,0.0,solo vista en el exterior
+PNG,Oceania,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,14026.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+POL,Europe,F,2024-S1,600,5.0,20.0,49,30.0,3.0,7.0,732.0,0.03333333333333333,0.08166666666666667,0.1,True,3.0,con torneos locales
+POL,Europe,F,2024-S2,213,5.0,17.0,26,8.0,1.0,3.0,964.0,0.07981220657276995,0.12206572769953052,0.125,True,1.0,con torneos locales
+POL,Europe,M,2024-S1,733,9.0,38.0,66,27.0,4.0,5.0,732.0,0.05184174624829468,0.09004092769440655,0.14814814814814814,True,3.0,con torneos locales
+POL,Europe,M,2024-S2,264,8.0,20.0,33,12.0,2.0,3.0,489.0,0.07575757575757576,0.125,0.16666666666666666,True,1.0,con torneos locales
+POR,Europe,F,2024-S1,501,2.0,12.0,22,412.0,19.0,47.0,1723.0,0.023952095808383235,0.043912175648702596,0.04611650485436893,True,4.0,con torneos locales
+POR,Europe,F,2024-S2,423,0.0,7.0,7,3.0,0.0,0.0,2484.0,0.016548463356973995,0.016548463356973995,0.0,True,2.0,con torneos locales
+POR,Europe,M,2024-S1,583,1.0,11.0,36,449.0,19.0,41.0,1580.0,0.018867924528301886,0.06174957118353345,0.042316258351893093,True,4.0,con torneos locales
+POR,Europe,M,2024-S2,455,1.0,6.0,18,4.0,0.0,0.0,2808.5,0.013186813186813187,0.03956043956043956,0.0,True,2.0,con torneos locales
+PRK,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,7945.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PRK,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,7945.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+PUR,Americas,F,2024-S1,92,0.0,1.0,14,91.0,14.0,23.0,2644.0,0.010869565217391304,0.15217391304347827,0.15384615384615385,True,1.0,con torneos locales
+PUR,Americas,F,2024-S2,52,1.0,1.0,4,1.0,0.0,0.0,5773.0,0.019230769230769232,0.07692307692307693,0.0,True,2.0,con torneos locales
+PUR,Americas,M,2024-S1,100,1.0,3.0,11,99.0,8.0,16.0,2865.0,0.03,0.11,0.08080808080808081,True,1.0,con torneos locales
+PUR,Americas,M,2024-S2,53,0.0,3.0,4,3.0,0.0,0.0,7575.5,0.05660377358490566,0.07547169811320754,0.0,True,2.0,con torneos locales
+QAT,Asia,F,2024-S1,13,0.0,0.0,12,1.0,0.0,0.0,7214.0,0.0,0.9230769230769231,0.0,True,1.0,con torneos locales
+QAT,Asia,M,2024-S1,26,0.0,1.0,24,3.0,0.0,0.0,7214.0,0.038461538461538464,0.9230769230769231,0.0,True,1.0,con torneos locales
+QAT,Asia,M,2024-S2,4,0.0,1.0,4,3.0,0.0,0.0,5871.5,0.25,1.0,0.0,False,0.0,solo vista en el exterior
+ROU,Europe,F,2024-S1,231,1.0,7.0,12,8.0,0.0,0.0,1083.0,0.030303030303030304,0.05194805194805195,0.0,True,1.0,con torneos locales
+ROU,Europe,F,2024-S2,198,1.0,10.0,28,17.0,0.0,0.0,737.0,0.050505050505050504,0.1414141414141414,0.0,True,1.0,con torneos locales
+ROU,Europe,M,2024-S1,408,2.0,12.0,19,14.0,1.0,6.0,1461.0,0.029411764705882353,0.04656862745098039,0.07142857142857142,True,1.0,con torneos locales
+ROU,Europe,M,2024-S2,343,4.0,16.0,42,32.0,1.0,1.0,737.0,0.04664723032069971,0.12244897959183673,0.03125,True,1.0,con torneos locales
+RSA,Africa,F,2024-S1,183,5.0,21.0,29,24.0,14.0,26.0,6511.0,0.11475409836065574,0.15846994535519127,0.5833333333333334,True,2.0,con torneos locales
+RSA,Africa,F,2024-S2,278,6.0,17.0,23,19.0,8.0,26.0,8685.0,0.06115107913669065,0.08273381294964029,0.42105263157894735,True,1.0,con torneos locales
+RSA,Africa,M,2024-S1,221,3.0,16.0,36,32.0,12.0,21.0,8202.0,0.07239819004524888,0.16289592760180996,0.375,True,2.0,con torneos locales
+RSA,Africa,M,2024-S2,293,4.0,12.0,23,22.0,12.0,39.0,8685.0,0.040955631399317405,0.07849829351535836,0.5454545454545454,True,1.0,con torneos locales
+RUS,Europe,F,2024-S1,271,8.0,65.0,7,6.0,1.0,2.0,8871.0,0.23985239852398524,0.025830258302583026,0.16666666666666666,True,1.0,con torneos locales
+RUS,Europe,F,2024-S2,682,15.0,84.0,20,10.0,1.0,1.0,1706.5,0.12316715542521994,0.02932551319648094,0.1,True,3.0,con torneos locales
+RUS,Europe,M,2024-S1,392,24.0,108.0,9,8.0,4.0,6.0,2256.0,0.2755102040816326,0.02295918367346939,0.5,True,1.0,con torneos locales
+RUS,Europe,M,2024-S2,1054,28.0,137.0,33,16.0,4.0,5.0,1966.0,0.12998102466793168,0.031309297912713474,0.25,True,3.0,con torneos locales
+RWA,Africa,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,2003.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+RWA,Africa,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,5928.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+RWA,Africa,M,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,2003.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+RWA,Africa,M,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,5606.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SAM,Oceania,F,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,3896.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SAM,Oceania,F,2024-S2,4,0.0,0.0,4,1.0,0.0,0.0,4551.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SAM,Oceania,M,2024-S1,7,0.0,0.0,7,5.0,1.0,1.0,3896.0,0.0,1.0,0.2,False,0.0,solo vista en el exterior
+SAM,Oceania,M,2024-S2,7,0.0,0.0,7,2.0,0.0,0.0,4551.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SEN,Africa,F,2024-S1,1,0.0,0.0,1,1.0,1.0,3.0,4050.0,0.0,1.0,1.0,False,0.0,solo vista en el exterior
+SEN,Africa,F,2024-S2,3,0.0,0.0,3,1.0,1.0,3.0,1847.0,0.0,1.0,1.0,False,0.0,solo vista en el exterior
+SEN,Africa,M,2024-S1,6,0.0,0.0,6,6.0,1.0,2.0,4001.5,0.0,1.0,0.16666666666666666,False,0.0,solo vista en el exterior
+SEN,Africa,M,2024-S2,10,0.0,0.0,10,5.0,5.0,11.0,1847.0,0.0,1.0,1.0,True,0.0,solo vista en el exterior
+SEY,Africa,F,2024-S1,5,0.0,0.0,5,4.0,0.0,0.0,4820.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SEY,Africa,F,2024-S2,7,0.0,0.0,7,5.0,0.0,0.0,4579.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SEY,Africa,M,2024-S1,17,0.0,0.0,17,7.0,0.0,0.0,3356.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+SEY,Africa,M,2024-S2,6,0.0,0.0,6,6.0,1.0,2.0,4579.0,0.0,1.0,0.16666666666666666,False,0.0,solo vista en el exterior
+SGP,Asia,F,2024-S1,455,0.0,7.0,28,9.0,0.0,0.0,6206.0,0.015384615384615385,0.06153846153846154,0.0,True,2.0,con torneos locales
+SGP,Asia,F,2024-S2,128,2.0,6.0,81,87.0,0.0,0.0,1414.0,0.046875,0.6328125,0.0,True,1.0,con torneos locales
+SGP,Asia,M,2024-S1,595,0.0,11.0,46,15.0,0.0,0.0,6206.0,0.018487394957983194,0.0773109243697479,0.0,True,2.0,con torneos locales
+SGP,Asia,M,2024-S2,173,1.0,6.0,95,130.0,1.0,1.0,2000.5,0.03468208092485549,0.5491329479768786,0.007692307692307693,True,1.0,con torneos locales
+SKN,Americas,F,2024-S1,2,0.0,0.0,2,1.0,0.0,0.0,1750.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SKN,Americas,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,4796.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SKN,Americas,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,7842.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SLE,Africa,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,5158.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SLE,Africa,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,4936.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SLE,Africa,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,3390.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SLE,Africa,M,2024-S2,4,0.0,0.0,4,2.0,1.0,2.0,1329.0,0.0,1.0,0.5,False,0.0,solo vista en el exterior
+SLO,Europe,F,2024-S1,226,2.0,4.0,93,91.0,13.0,22.0,275.0,0.017699115044247787,0.41150442477876104,0.14285714285714285,True,3.0,con torneos locales
+SLO,Europe,F,2024-S2,166,1.0,6.0,32,2.0,0.0,0.0,134.0,0.03614457831325301,0.1927710843373494,0.0,True,3.0,con torneos locales
+SLO,Europe,M,2024-S1,226,0.0,5.0,126,115.0,8.0,13.0,266.0,0.022123893805309734,0.5575221238938053,0.06956521739130435,True,3.0,con torneos locales
+SLO,Europe,M,2024-S2,225,0.0,3.0,23,1.0,0.0,0.0,134.0,0.013333333333333334,0.10222222222222223,0.0,True,3.0,con torneos locales
+SMR,Europe,F,2024-S1,5,0.0,0.0,3,4.0,0.0,0.0,14.0,0.0,0.6,0.0,False,1.0,con torneos locales
+SMR,Europe,M,2024-S1,2,0.0,1.0,2,2.0,0.0,0.0,231.0,0.5,1.0,0.0,False,1.0,con torneos locales
+SMR,Europe,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,642.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SOL,Oceania,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,2227.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SOL,Oceania,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,15052.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SOL,Oceania,M,2024-S1,4,0.0,0.0,4,4.0,0.0,0.0,4363.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SOL,Oceania,M,2024-S2,1,0.0,0.0,1,0.0,0.0,0.0,3506.0,0.0,1.0,,False,0.0,solo vista en el exterior
+SRB,Europe,F,2024-S1,95,1.0,4.0,93,92.0,16.0,20.0,258.0,0.042105263157894736,0.9789473684210527,0.17391304347826086,True,1.0,con torneos locales
+SRB,Europe,F,2024-S2,6,0.0,3.0,6,3.0,0.0,0.0,767.5,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+SRB,Europe,M,2024-S1,131,2.0,10.0,129,129.0,18.0,28.0,258.0,0.07633587786259542,0.9847328244274809,0.13953488372093023,True,1.0,con torneos locales
+SRB,Europe,M,2024-S2,15,1.0,4.0,15,9.0,0.0,0.0,385.0,0.26666666666666666,1.0,0.0,True,0.0,solo vista en el exterior
+SRI,Asia,F,2024-S1,13,0.0,0.0,13,3.0,0.0,0.0,4424.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+SRI,Asia,F,2024-S2,3,0.0,0.0,3,1.0,0.0,0.0,7340.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SRI,Asia,M,2024-S1,10,0.0,0.0,10,2.0,0.0,0.0,4424.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+SRI,Asia,M,2024-S2,3,0.0,0.0,3,1.0,0.0,0.0,7683.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+STP,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,1289.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SUD,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,2587.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SUD,Africa,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,3785.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SUD,Africa,M,2024-S1,4,0.0,1.0,4,4.0,1.0,2.0,3160.0,0.25,1.0,0.25,False,0.0,solo vista en el exterior
+SUD,Africa,M,2024-S2,3,0.0,1.0,3,2.0,0.0,0.0,3741.0,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+SUI,Europe,F,2024-S1,727,1.0,8.0,72,391.0,28.0,49.0,690.0,0.011004126547455296,0.09903713892709766,0.07161125319693094,True,5.0,con torneos locales
+SUI,Europe,F,2024-S2,285,0.0,6.0,32,1.0,0.0,0.0,1461.0,0.021052631578947368,0.11228070175438597,0.0,True,1.0,con torneos locales
+SUI,Europe,M,2024-S1,696,5.0,13.0,93,352.0,26.0,54.0,739.0,0.01867816091954023,0.1336206896551724,0.07386363636363637,True,5.0,con torneos locales
+SUI,Europe,M,2024-S2,297,4.0,11.0,37,7.0,2.0,4.0,1461.0,0.037037037037037035,0.12457912457912458,0.2857142857142857,True,1.0,con torneos locales
+SUR,Americas,F,2024-S1,2,0.0,0.0,2,0.0,0.0,0.0,3253.0,0.0,1.0,,False,0.0,solo vista en el exterior
+SUR,Americas,F,2024-S2,7,0.0,0.0,7,2.0,0.0,0.0,1783.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SUR,Americas,M,2024-S1,8,0.0,0.0,8,3.0,0.0,0.0,3253.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SUR,Americas,M,2024-S2,11,0.0,0.0,11,2.0,0.0,0.0,1783.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+SVK,Europe,F,2024-S1,274,1.0,5.0,110,35.0,3.0,4.0,207.0,0.01824817518248175,0.40145985401459855,0.08571428571428572,True,1.0,con torneos locales
+SVK,Europe,F,2024-S2,131,1.0,7.0,19,13.0,0.0,0.0,193.0,0.05343511450381679,0.1450381679389313,0.0,True,1.0,con torneos locales
+SVK,Europe,M,2024-S1,282,0.0,5.0,129,42.0,5.0,8.0,207.0,0.01773049645390071,0.4574468085106383,0.11904761904761904,True,1.0,con torneos locales
+SVK,Europe,M,2024-S2,138,0.0,5.0,21,14.0,0.0,0.0,327.0,0.036231884057971016,0.15217391304347827,0.0,True,1.0,con torneos locales
+SWE,Europe,F,2024-S1,353,5.0,16.0,54,257.0,12.0,28.0,1621.0,0.0453257790368272,0.1529745042492918,0.04669260700389105,True,3.0,con torneos locales
+SWE,Europe,F,2024-S2,602,7.0,20.0,67,26.0,9.0,15.0,649.0,0.03322259136212625,0.11129568106312292,0.34615384615384615,True,6.0,con torneos locales
+SWE,Europe,M,2024-S1,422,3.0,12.0,67,296.0,6.0,11.0,1621.0,0.02843601895734597,0.15876777251184834,0.02027027027027027,True,3.0,con torneos locales
+SWE,Europe,M,2024-S2,630,3.0,12.0,47,24.0,13.0,19.0,649.0,0.01904761904761905,0.0746031746031746,0.5416666666666666,True,6.0,con torneos locales
+SWZ,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,6156.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SWZ,Africa,F,2024-S2,7,0.0,0.0,7,7.0,1.0,2.0,1514.0,0.0,1.0,0.14285714285714285,False,0.0,solo vista en el exterior
+SWZ,Africa,M,2024-S1,5,0.0,0.0,5,4.0,0.0,0.0,2752.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SWZ,Africa,M,2024-S2,8,0.0,0.0,8,8.0,2.0,3.0,1514.0,0.0,1.0,0.25,False,0.0,solo vista en el exterior
+SYR,Asia,F,2024-S1,2,0.0,0.0,2,1.0,0.0,0.0,8285.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SYR,Asia,F,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,7472.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SYR,Asia,M,2024-S1,6,0.0,0.0,6,2.0,0.0,0.0,5791.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+SYR,Asia,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,2789.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TAH,Oceania,F,2024-S2,1,0.0,0.0,1,0.0,0.0,0.0,4541.0,0.0,1.0,,False,0.0,solo vista en el exterior
+TAN,Africa,F,2024-S1,55,0.0,0.0,3,3.0,0.0,0.0,3807.0,0.0,0.05454545454545454,0.0,True,1.0,con torneos locales
+TAN,Africa,F,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,6359.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TAN,Africa,M,2024-S1,61,0.0,0.0,4,3.0,0.0,0.0,3807.0,0.0,0.06557377049180328,0.0,True,1.0,con torneos locales
+TAN,Africa,M,2024-S2,4,0.0,0.0,4,3.0,0.0,0.0,6359.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TCN,Americas,F,2024-S1,11,0.0,0.0,11,3.0,0.0,0.0,698.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+TCN,Americas,M,2024-S1,7,0.0,0.0,7,3.0,0.0,0.0,698.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TCN,Americas,M,2024-S2,1,0.0,0.0,1,0.0,0.0,0.0,684.0,0.0,1.0,,False,0.0,solo vista en el exterior
+TGA,Oceania,F,2024-S1,4,0.0,0.0,4,2.0,0.0,0.0,9259.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TGA,Oceania,F,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,3882.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TGA,Oceania,M,2024-S1,3,0.0,0.0,3,3.0,1.0,1.0,3303.0,0.0,1.0,0.3333333333333333,False,0.0,solo vista en el exterior
+TGA,Oceania,M,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,16689.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+THA,Asia,F,2024-S1,290,0.0,2.0,29,3.0,0.0,0.0,2161.0,0.006896551724137931,0.1,0.0,True,1.0,con torneos locales
+THA,Asia,F,2024-S2,107,0.0,3.0,10,4.0,0.0,0.0,6794.0,0.028037383177570093,0.09345794392523364,0.0,True,2.0,con torneos locales
+THA,Asia,M,2024-S1,389,0.0,2.0,24,4.0,0.0,0.0,1414.0,0.005141388174807198,0.061696658097686374,0.0,True,1.0,con torneos locales
+THA,Asia,M,2024-S2,123,0.0,2.0,12,3.0,0.0,0.0,6794.0,0.016260162601626018,0.0975609756097561,0.0,True,2.0,con torneos locales
+TJK,Asia,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,2339.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TJK,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,4832.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TJK,Asia,M,2024-S1,3,0.0,0.0,3,1.0,0.0,0.0,2339.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TJK,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,4832.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TKM,Asia,F,2024-S1,6,0.0,0.0,6,2.0,0.0,0.0,5862.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TKM,Asia,F,2024-S2,3,0.0,0.0,3,3.0,0.0,0.0,3340.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TKM,Asia,M,2024-S1,8,0.0,0.0,8,2.0,0.0,0.0,5862.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TKM,Asia,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,3340.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TLS,Asia,F,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,8898.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TLS,Asia,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,12581.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TLS,Asia,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,8898.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TLS,Asia,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,12581.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TOG,Africa,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,2380.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TOG,Africa,F,2024-S2,3,0.0,0.0,3,2.0,0.0,0.0,4458.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TOG,Africa,M,2024-S1,1,0.0,0.0,1,1.0,0.0,0.0,5636.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TOG,Africa,M,2024-S2,8,0.0,0.0,8,5.0,0.0,0.0,383.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TPE,Asia,F,2024-S1,164,0.0,4.0,22,5.0,0.0,0.0,982.0,0.024390243902439025,0.13414634146341464,0.0,True,3.0,con torneos locales
+TPE,Asia,F,2024-S2,18,1.0,2.0,18,18.0,0.0,0.0,790.0,0.1111111111111111,1.0,0.0,True,0.0,solo vista en el exterior
+TPE,Asia,M,2024-S1,207,2.0,5.0,32,3.0,1.0,1.0,982.0,0.024154589371980676,0.15458937198067632,0.3333333333333333,True,3.0,con torneos locales
+TPE,Asia,M,2024-S2,22,1.0,4.0,22,22.0,0.0,0.0,790.0,0.18181818181818182,1.0,0.0,True,0.0,solo vista en el exterior
+TTO,Americas,F,2024-S1,22,0.0,2.0,22,13.0,7.0,13.0,3507.5,0.09090909090909091,1.0,0.5384615384615384,True,0.0,solo vista en el exterior
+TTO,Americas,F,2024-S2,133,0.0,0.0,3,2.0,0.0,0.0,7838.0,0.0,0.022556390977443608,0.0,True,1.0,con torneos locales
+TTO,Americas,M,2024-S1,24,1.0,2.0,24,19.0,8.0,15.0,4382.0,0.08333333333333333,1.0,0.42105263157894735,True,0.0,solo vista en el exterior
+TTO,Americas,M,2024-S2,171,1.0,2.0,5,2.0,1.0,2.0,7233.0,0.011695906432748537,0.029239766081871343,0.5,True,1.0,con torneos locales
+TUN,Africa,F,2024-S1,9,0.0,0.0,9,8.0,1.0,1.0,4762.0,0.0,1.0,0.125,False,0.0,solo vista en el exterior
+TUN,Africa,F,2024-S2,3,0.0,0.0,3,1.0,0.0,0.0,1824.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+TUN,Africa,M,2024-S1,12,2.0,4.0,12,12.0,2.0,4.0,1751.0,0.3333333333333333,1.0,0.16666666666666666,True,0.0,solo vista en el exterior
+TUN,Africa,M,2024-S2,5,1.0,3.0,5,3.0,0.0,0.0,1523.5,0.6,1.0,0.0,False,0.0,solo vista en el exterior
+TUR,Europe,F,2024-S1,227,0.0,13.0,56,18.0,2.0,2.0,118.0,0.05726872246696035,0.24669603524229075,0.1111111111111111,True,3.0,con torneos locales
+TUR,Europe,F,2024-S2,181,1.0,13.0,13,4.0,0.0,0.0,1450.0,0.0718232044198895,0.0718232044198895,0.0,True,2.0,con torneos locales
+TUR,Europe,M,2024-S1,430,3.0,16.0,111,37.0,1.0,2.0,118.0,0.037209302325581395,0.25813953488372093,0.02702702702702703,True,3.0,con torneos locales
+TUR,Europe,M,2024-S2,279,1.0,23.0,32,10.0,0.0,0.0,1450.0,0.08243727598566308,0.11469534050179211,0.0,True,2.0,con torneos locales
+UAE,Asia,F,2024-S1,13,0.0,0.0,13,10.0,1.0,1.0,4039.0,0.0,1.0,0.1,True,0.0,solo vista en el exterior
+UAE,Asia,F,2024-S2,3,0.0,0.0,3,1.0,0.0,0.0,5090.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+UAE,Asia,M,2024-S1,9,0.0,0.0,9,6.0,0.0,0.0,4039.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+UAE,Asia,M,2024-S2,4,0.0,0.0,4,4.0,0.0,0.0,4644.5,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+UGA,Africa,F,2024-S1,3,0.0,1.0,3,3.0,2.0,3.0,3625.0,0.3333333333333333,1.0,0.6666666666666666,False,0.0,solo vista en el exterior
+UGA,Africa,F,2024-S2,3,0.0,2.0,3,3.0,0.0,0.0,5267.0,0.6666666666666666,1.0,0.0,False,0.0,solo vista en el exterior
+UGA,Africa,M,2024-S1,5,0.0,0.0,5,5.0,0.0,0.0,3625.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+UGA,Africa,M,2024-S2,7,0.0,0.0,7,7.0,2.0,4.0,5178.0,0.0,1.0,0.2857142857142857,False,0.0,solo vista en el exterior
+UKR,Europe,F,2024-S1,110,0.0,1.0,20,6.0,4.0,7.0,998.0,0.00909090909090909,0.18181818181818182,0.6666666666666666,True,1.0,con torneos locales
+UKR,Europe,F,2024-S2,21,0.0,2.0,21,13.0,0.0,0.0,1007.0,0.09523809523809523,1.0,0.0,True,0.0,solo vista en el exterior
+UKR,Europe,M,2024-S1,211,2.0,24.0,51,23.0,8.0,10.0,1185.0,0.11374407582938388,0.24170616113744076,0.34782608695652173,True,1.0,con torneos locales
+UKR,Europe,M,2024-S2,65,1.0,21.0,65,36.0,0.0,0.0,1007.0,0.3230769230769231,1.0,0.0,True,0.0,solo vista en el exterior
+URU,Americas,F,2024-S1,23,0.0,1.0,23,5.0,0.0,0.0,859.0,0.043478260869565216,1.0,0.0,True,0.0,solo vista en el exterior
+URU,Americas,F,2024-S2,2,0.0,1.0,2,2.0,0.0,0.0,11643.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+URU,Americas,M,2024-S1,22,0.0,1.0,22,4.0,1.0,2.0,859.0,0.045454545454545456,1.0,0.25,True,0.0,solo vista en el exterior
+URU,Americas,M,2024-S2,3,0.0,1.0,3,2.0,0.0,0.0,10767.0,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+USA,Americas,F,2024-S1,1483,67.0,294.0,144,909.0,82.0,169.0,5433.0,0.19824679703304113,0.09710047201618341,0.09020902090209021,True,9.0,con torneos locales
+USA,Americas,F,2024-S2,482,38.0,122.0,93,31.0,12.0,38.0,5709.0,0.25311203319502074,0.19294605809128632,0.3870967741935484,True,4.0,con torneos locales
+USA,Americas,M,2024-S1,1703,73.0,346.0,162,1020.0,72.0,142.0,5433.0,0.20317087492660013,0.09512624779800352,0.07058823529411765,True,9.0,con torneos locales
+USA,Americas,M,2024-S2,513,29.0,109.0,101,41.0,9.0,15.0,5709.0,0.2124756335282651,0.1968810916179337,0.21951219512195122,True,4.0,con torneos locales
+UZB,Asia,F,2024-S1,5,0.0,0.0,5,0.0,0.0,0.0,1238.0,0.0,1.0,,False,0.0,solo vista en el exterior
+UZB,Asia,F,2024-S2,2,0.0,0.0,2,1.0,0.0,0.0,4633.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+UZB,Asia,M,2024-S1,4,0.0,3.0,4,2.0,0.0,0.0,6121.0,0.75,1.0,0.0,False,0.0,solo vista en el exterior
+UZB,Asia,M,2024-S2,2,0.0,1.0,2,2.0,0.0,0.0,4177.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+VAN,Oceania,F,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,1975.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+VAN,Oceania,F,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,15878.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+VAN,Oceania,M,2024-S1,3,0.0,0.0,3,3.0,0.0,0.0,1975.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+VAN,Oceania,M,2024-S2,2,0.0,0.0,2,2.0,0.0,0.0,15878.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+VEN,Americas,F,2024-S1,12,0.0,3.0,12,9.0,2.0,3.0,7611.0,0.25,1.0,0.2222222222222222,True,0.0,solo vista en el exterior
+VEN,Americas,F,2024-S2,4,0.0,2.0,4,3.0,0.0,0.0,7508.0,0.5,1.0,0.0,False,0.0,solo vista en el exterior
+VEN,Americas,M,2024-S1,12,2.0,3.0,12,11.0,4.0,7.0,4125.5,0.25,1.0,0.36363636363636365,True,0.0,solo vista en el exterior
+VEN,Americas,M,2024-S2,9,1.0,3.0,9,3.0,0.0,0.0,7356.0,0.3333333333333333,1.0,0.0,False,0.0,solo vista en el exterior
+VIE,Asia,F,2024-S1,15,0.0,1.0,15,0.0,0.0,0.0,1326.0,0.06666666666666667,1.0,,True,0.0,solo vista en el exterior
+VIE,Asia,F,2024-S2,116,0.0,1.0,13,2.0,0.0,0.0,865.0,0.008620689655172414,0.11206896551724138,0.0,True,2.0,con torneos locales
+VIE,Asia,M,2024-S1,19,0.0,4.0,19,5.0,0.0,0.0,1326.0,0.21052631578947367,1.0,0.0,True,0.0,solo vista en el exterior
+VIE,Asia,M,2024-S2,177,0.0,5.0,26,3.0,0.0,0.0,865.0,0.02824858757062147,0.14689265536723164,0.0,True,2.0,con torneos locales
+VIN,Americas,F,2024-S1,28,0.0,0.0,28,4.0,0.0,0.0,2161.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+VIN,Americas,F,2024-S2,7,0.0,0.0,7,5.0,0.0,0.0,7227.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+VIN,Americas,M,2024-S1,33,0.0,0.0,33,10.0,0.0,0.0,7285.0,0.0,1.0,0.0,True,0.0,solo vista en el exterior
+VIN,Americas,M,2024-S2,13,0.0,0.0,13,7.0,2.0,2.0,7227.0,0.0,1.0,0.2857142857142857,True,0.0,solo vista en el exterior
+YEM,Asia,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,1063.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+YEM,Asia,M,2024-S2,1,0.0,0.0,1,1.0,0.0,0.0,5465.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ZAM,Africa,F,2024-S1,2,0.0,0.0,2,1.0,1.0,1.0,3789.0,0.0,1.0,1.0,False,0.0,solo vista en el exterior
+ZAM,Africa,F,2024-S2,14,0.0,0.0,14,13.0,6.0,19.0,1422.0,0.0,1.0,0.46153846153846156,True,0.0,solo vista en el exterior
+ZAM,Africa,M,2024-S1,2,0.0,0.0,2,2.0,0.0,0.0,8412.0,0.0,1.0,0.0,False,0.0,solo vista en el exterior
+ZAM,Africa,M,2024-S2,11,0.0,0.0,11,11.0,2.0,3.0,1422.0,0.0,1.0,0.18181818181818182,True,0.0,solo vista en el exterior
+ZIM,Africa,F,2024-S1,15,0.0,0.0,15,5.0,2.0,2.0,4232.0,0.0,1.0,0.4,True,0.0,solo vista en el exterior
+ZIM,Africa,F,2024-S2,16,0.0,0.0,16,16.0,11.0,17.0,1396.0,0.0,1.0,0.6875,True,0.0,solo vista en el exterior
+ZIM,Africa,M,2024-S1,11,0.0,1.0,11,5.0,1.0,2.0,4232.0,0.09090909090909091,1.0,0.2,True,0.0,solo vista en el exterior
+ZIM,Africa,M,2024-S2,13,0.0,1.0,13,11.0,2.0,6.0,1396.0,0.07692307692307693,1.0,0.18181818181818182,True,0.0,solo vista en el exterior

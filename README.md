@@ -122,14 +122,16 @@ python descarga_temporadas.py --femenino     # -> datos/nadosFull_v2_femenino.cs
 python descarga_temporadas.py --masculino
 python descarga_complementos.py              # países y continente, coordenadas de sedes (Nominatim)
 python base_federaciones.py                  # base anonimizada, torneos y KPI
+python "Modulo 2/maqueta/construir_maqueta.py"   # maqueta del dashboard
 ```
 
 | Archivo | Qué hace |
 |---|---|
 | `descarga_temporadas.py` | Desde el 17-oct guarda país del club y de la sede, parte en dos las ventanas que topan en 5.000 y avisa de las consultas fallidas. La v2 recupera 11.578 nados: 7.782 del tope de abril y 3.788 de dos consultas que habían fallado sin aviso (50 libre M de diciembre y 400 libre M de agosto, en 50 m). `nadosFull_<sexo>.csv`, la base del informe, no se toca |
 | `descarga_complementos.py` | `datos/paises.csv` (continente), `datos/sedes.csv` y `datos/paises_coord.csv`. Coordenadas © colaboradores de OpenStreetMap (ODbL) |
-| `base_federaciones.py` | Imputa la federación en cascada (oficial → club → sede), clasifica los torneos, calcula km y husos horarios desde la ciudad base y las marcas mínimas de Beijing 2026 → `datos/base_dashboard.csv` (anonimizada, no se versiona), `datos/torneos.csv`, `datos/kpi_federacion_semestre.csv`, `datos/kpi_continente_semestre.csv` |
+| `base_federaciones.py` | Imputa la federación en cascada (oficial → club → sede), clasifica los torneos, calcula km y husos horarios desde la ciudad base y las marcas mínimas de Beijing 2026 → `datos/base_dashboard.csv` (anonimizada, no se versiona), `datos/torneos.csv`, `datos/kpi_federacion_semestre.csv`, `datos/kpi_continente_semestre.csv` y sus versiones por sexo (`datos/kpi_*_sexo_semestre.csv`) |
 | `04_kpi_federaciones.ipynb` | Los tres KPI y sus gráficos en Python (calidad del dato, temporada, mapa de sedes, mapas de viajes), antes de maquetar el dashboard |
+| `Modulo 2/maqueta/construir_maqueta.py` | Arma `Modulo 2/maqueta_dashboard.html`, la maqueta del dashboard para Tableau, desde las tablas de `datos/` |
 
 Las correcciones manuales a la clasificación de torneos van en `datos/torneos_override.csv`
 (columnas `competencia, alcance, categoria`); los casos dudosos vienen marcados con
